@@ -1,0 +1,59 @@
+# configs/jepa_run4.yaml — JEPA Run 4 configuration (26.6M, harder masking, 50 epochs)
+data:
+  root_dir    : /scratch/$USER/data/active_matter/data
+  stats_path  : /scratch/$USER/data/active_matter/stats.yaml
+  clip_len    : 16
+  spatial_size: 224
+model:
+  in_channels        : 11
+  t_patch            : 2
+  h_patch            : 16
+  w_patch            : 16
+  embed_dim          : 384
+  encoder_depth      : 12
+  predictor_depth    : 6
+  predictor_embed_dim: 192
+  num_heads          : 6
+  mlp_ratio          : 4.0
+  ema_start          : 0.996
+  ema_end            : 1.000
+masking:
+  num_target_blocks : 6
+  target_scale      : [0.20, 0.40]
+  target_ratio      : [0.75, 1.50]
+  context_keep_ratio: 0.80
+training:
+  epochs        : 50
+  batch_size    : 16
+  lr            : 3.0e-4
+  min_lr        : 1.0e-6
+  weight_decay  : 0.05
+  warmup_epochs : 10
+  grad_clip     : 1.0
+  loss_type     : smooth_l1
+  use_amp       : true
+  num_workers   : 4
+  val_batches   : 20
+  save_every    : 10
+  seed          : 42
+  checkpoint_dir: /scratch/$USER/data/active_matter/checkpoints/jepa_run4
+supervised:
+  epochs       : 100
+  lr           : 3.0e-4
+  min_lr       : 1.0e-6
+  weight_decay : 0.05
+  warmup_epochs: 10
+  batch_size   : 8
+  val_batches  : 20
+probe:
+  epochs            : 100
+  lr                : 1.0e-3
+  weight_decay      : 1.0e-4
+  batch_size        : 256
+  extract_batch_size: 8
+  pool              : mean
+logging:
+  wandb_project      : active-matter-jepa
+  run_name           : jepa-run4-26M-harder-masking
+  log_every          : 20
+  collapse_check_every: 5

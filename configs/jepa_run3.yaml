@@ -1,0 +1,66 @@
+# configs/jepa_run3.yaml — JEPA Run 3 configuration (3.5M, full dataset, 50 epochs)
+
+data:
+  root_dir    : /scratch/$USER/data/active_matter/data
+  stats_path  : /scratch/$USER/data/active_matter/stats.yaml
+  clip_len    : 16       # time steps per sample
+  spatial_size: 224      # H = W after crop
+
+model:
+  in_channels        : 11
+  t_patch            : 2
+  h_patch            : 16
+  w_patch            : 16
+  embed_dim          : 192
+  encoder_depth      : 4
+  predictor_depth    : 4
+  predictor_embed_dim: 96
+  num_heads          : 3
+  mlp_ratio          : 4.0
+  ema_start          : 0.996   # EMA momentum at step 0
+  ema_end            : 1.000   # EMA momentum at final step
+
+masking:
+  num_target_blocks : 4
+  target_scale      : [0.15, 0.30]   # fraction of N per block
+  target_ratio      : [0.75, 1.50]   # spatial aspect ratio h/w
+  context_keep_ratio: 0.90
+
+training:
+  epochs        : 50         # more epochs — dataset is now 5x larger
+  batch_size    : 16
+  lr            : 1.5e-4        # slightly higher LR for larger dataset
+  min_lr        : 1.0e-6
+  weight_decay  : 0.05
+  warmup_epochs : 10          # longer warmup proportional to epoch count
+  grad_clip     : 1.0
+  loss_type     : smooth_l1   # smooth_l1 | mse | cosine
+  use_amp       : true        # mixed precision (set false for debugging)
+  num_workers   : 4
+  val_batches   : 20          # number of val batches to evaluate per epoch
+  save_every    : 10          # save periodic checkpoint every N epochs
+  seed          : 42
+  checkpoint_dir: /scratch/$USER/data/active_matter/checkpoints/jepa_run3
+
+supervised:
+  epochs       : 100
+  lr           : 3.0e-4
+  min_lr       : 1.0e-6
+  weight_decay : 0.05
+  warmup_epochs: 5
+  batch_size   : 8
+  val_batches  : 20
+    
+probe:
+  epochs            : 100
+  lr                : 1.0e-3
+  weight_decay      : 1.0e-4
+  batch_size        : 256    # mini-batch size for linear layer training
+  extract_batch_size: 8      # batch size when running encoder forward pass
+  pool              : mean   # mean | cls_like
+
+logging:
+  wandb_project      : active-matter-jepa
+  run_name           : jepa-run3-3.5M-full
+  log_every          : 20    # steps between console + wandb logs
+  collapse_check_every: 5    # epochs between collapse checks
