@@ -25,19 +25,20 @@ singularity exec --nv \
     $IMAGE /bin/bash -c "
     source /ext3/miniconda3/etc/profile.d/conda.sh
     conda activate active_matter
-    export WANDB_API_KEY=YOUR_WANDB_API_KEY
     cd /scratch/$USER/data/active_matter
 
     echo '── Linear probe ──'
     python scripts/probe.py \
         --config configs/jepa.yaml \
-        --checkpoint $CKPT 
+        --checkpoint $CKPT \
+        --no-wandb
 
     echo '── kNN regression ──'
     python scripts/eval_knn.py \
         --config configs/jepa.yaml \
         --checkpoint $CKPT \
-        --k 1 5 10 20 50 
+        --k 1 5 10 20 50 \
+        --no-wandb
 "
 
 echo "End time : $(date)"
