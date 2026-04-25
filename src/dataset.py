@@ -97,13 +97,13 @@ class ActiveMatterDataset(Dataset):
         """
         Build index of (filepath, instance_idx, window_start) tuples.
 
-        Uses a sliding window with stride 1 to match the dataset specification
-        which defines 8,750 training samples from 45 files x 3 instances.
+        Uses a sliding window with stride 1 over the raw HDF5 files.
 
         With T_raw=81, clip_len=16:
-            n_windows = 81 - 16 + 1 = 66 sliding windows per (file, instance)
-            45 files x 3 instances x 66 windows = 8,910 training samples
-            (~8,750 after val/test splits are accounted for)
+            n_windows = 81 - 16 + 1 = 66 sliding windows per trajectory
+            175 trajectories x 66 windows = 11,550 training samples
+            (more than the pre-processed spec count of 8,750 due to
+            stride-1 windowing vs the pre-processed dataset larger stride)
 
         During training, a small random jitter is applied to the window start
         to add temporal augmentation variety while keeping the window valid.
