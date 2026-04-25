@@ -55,7 +55,7 @@ while true; do
         EPOCH=$(get_epoch)
         echo "[$TIMESTAMP] No jepa job found. Last epoch: $EPOCH" | tee -a $LOG_FILE
 
-        if [ "$EPOCH" -ge 49 ] 2>/dev/null; then
+        if [ "$EPOCH" -ge 99 ] 2>/dev/null; then
             echo "[$TIMESTAMP] Training complete at epoch $EPOCH. Stopping monitor." | tee -a $LOG_FILE
             rm -f $PID_FILE
             exit 0
