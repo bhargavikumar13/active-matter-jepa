@@ -5,9 +5,12 @@ Self-supervised representation learning on the `active_matter` dataset from
 Joint-Embedding Predictive Architecture (JEPA).
 
 Our best model achieves a normalised test MSE of **0.095** via linear probing,
-outperforming an end-to-end supervised baseline (0.134), suggesting that
-SSL representations can generalise better than supervised training on this small,
-label-scarce physical simulation dataset.
+outperforming the supervised baseline on combined MSE (0.095 vs 0.134) and
+particularly on α prediction (0.038 vs 0.229), though the supervised baseline
+remains stronger on ζ (0.039 vs 0.152) — suggesting the two parameters occupy different parts of the
+representation space: α as a global property captured well by mean pooling, ζ as a finer
+local alignment property with more headroom for improvement under
+spatial-selective pooling.
 
 ---
 
@@ -36,10 +39,7 @@ kNN regression uses cosine similarity in frozen embedding space.
 
 > **Official evaluation:** Linear probing (0.095) and kNN (0.258) only, in compliance with
 > project requirements. Attention pooling and ensemble methods are exploratory analyses, not used for official evaluation.
->
-> **Run 4 kNN (0.424)** is worse than Run 3 (0.257) despite 7.6× more parameters — this likely
-> reflects objective misalignment rather than simple overfitting. Aggressive masking
-> may have optimised local prediction at the expense of global parameter-predictive structure.
+> See Scaling Analysis for discussion of Run 4's poor performance despite low val loss.
 
 ---
 
@@ -60,7 +60,8 @@ trajectory is governed by two physical parameters:
 | Spatial resolution | 256×256 (cropped to 224×224) |
 | Physical channels | 11 |
 | Training samples (stride-1) | 11,550 train / 1,584 val / 1,716 test |
-| Total size | ~52 GB |
+| Windows per trajectory | up to 66 (= 81 − 16 + 1, stride-1) |
+| Total size | ~52 GB (raw HDF5) |
 
 ### Physical channels
 
@@ -83,7 +84,9 @@ representations rather than raw pixels, encouraging the model to learn
 higher-level structure and dynamics instead of low-level reconstruction.
 Unlike contrastive methods (e.g., SimCLR), no data augmentation is required —
 which is important for physical fields where augmentations have no natural
-physical analogue.
+physical analogue. We adapt I-JEPA (Assran et al., 2023) to 3D spatiotemporal
+data independently of V-JEPA (Bardes et al., 2024); the core EMA + predictor
+design follows I-JEPA with tubelet embeddings replacing 2D patches.
 
 
 ```
@@ -173,7 +176,7 @@ active_matter/
 ├── requirements.txt                  # Python dependencies
 ├── ENV.md                            # Environment setup guide
 ├── visualization_active_matter.ipynb # Dataset exploration notebook
-└── README.md                            # This file
+└── README.md                         # This file
 ```
 
 Scripts marked *(experimental)* are prepared for potential future competition
@@ -285,6 +288,10 @@ bash run.sh python scripts/train.py --config configs/jepa.yaml \
 
 ## Scaling Analysis
 
+Runs 1–3 progressively scale training data (135 → 875 → 11,550 samples) using the
+small 3.5M model to isolate the effect of data size. Runs 4–5 use the full dataset
+with the 26.6M model, varying masking strategy and training duration.
+
 | Run | Samples | Params | Val loss | LP MSE | kNN MSE |
 |---|---|---|---|---|---|
 | Run 1 | 135 | 3.5M | 0.1417 | 0.719 | 0.869 |
@@ -293,11 +300,17 @@ bash run.sh python scripts/train.py --config configs/jepa.yaml \
 | Run 4 | 11,550 | 26.6M | 0.0424 | 0.316 | 0.424 |
 | Run 5 | 11,550 | 26.6M | 0.0699 | **0.095** | **0.258** |
 
-Key insight: JEPA val loss is not a reliable proxy for downstream LP or kNN MSE.
-Run 4 achieves the best val loss (0.0424) but worst performance on both LP (0.316)
-and kNN (0.424) — suggesting objective misalignment rather than simple overfitting.
-Aggressive masking may preferentially optimise local spatiotemporal prediction at the expense
-of global parameter-predictive structure.
+Key insight: **JEPA val loss is not a reliable proxy for downstream performance.**
+The clearest evidence: Run 4 and Run 5 share the same architecture (26.6M parameters)
+but Run 4 achieves lower val loss (0.0424 vs 0.0699) yet far worse LP MSE (0.316 vs 0.095)
+and kNN MSE (0.424 vs 0.258). Run 4 used harder masking (6 blocks, 20–40% scale,
+80% context keep, lr=3e-4, 50 epochs) vs Run 5 (4 blocks, 15–30% scale, 90% context
+keep, lr=1.5e-4, 100 epochs) — suggesting that aggressive masking may preferentially
+optimise local spatiotemporal prediction at the expense of global parameter-predictive
+structure. This is consistent with the broader SSL finding that pretraining loss can
+diverge from downstream utility — and suggests the combination of masking
+strategy, learning rate, and training duration matters more than val loss
+as a model selection criterion.
 
 ---
 
@@ -311,13 +324,13 @@ Additional experiments on the Run 5 encoder comparing different evaluation strat
 | Separate probes (α, ζ) | 0.090 | 0.039 | 0.142 | Independent probes per parameter |
 | L2 sweep (wd=1e-5) | 0.0935 | 0.039 | 0.149 | Default wd=1e-4 nearly optimal |
 | 5-fold CV ensemble | 0.0951 | 0.041 | 0.149 | Stable across folds (±0.005) |
-| Epoch ensemble (80+90+best) | 0.0913 | 0.039 | 0.144 | ep90 best single (0.0913) |
-| **Attention pooling probe** | **0.0879** | **0.035** | **0.141** | **Best overall result** |
+| Epoch ensemble (80+90+best) | 0.0913 | 0.039 | 0.144 | epoch 90 checkpoint is best single model (0.0913) |
+| **Attention pooling probe** | **0.0879** | **0.035** | **0.141** | **Best result (excluded from official metric)** |
 
 Key findings:
-- Attention pooling (0.0879) outperforms mean pooling (0.095) by 7.5%, particularly for ζ (0.141 vs 0.152), suggesting the encoder produces spatially differentiated representations where selective token weighting may recover locally-encoded information that mean pooling averages out.
-- Separate probes improve ζ from 0.152 → 0.142, suggesting α and ζ encode largely independent structure that may compete when predicted jointly.
-- Default weight decay (1e-4) is nearly optimal — 1e-5 gives marginal improvement (0.0935 vs 0.0936), indicating the representations are naturally well-regularized.
+- Attention pooling (0.0879) outperforms mean pooling (0.095) by 7.5% overall. Both α (0.038→0.035, ~8% relative) and ζ (0.152→0.141, ~7% relative) improve by similar relative margins — the larger absolute gain for ζ reflects its higher baseline error rather than a qualitative asymmetry. That said, ζ has more headroom for improvement, consistent with it encoding finer spatial structure that mean pooling partially averages out.
+- Separate probes improve ζ from 0.152 → 0.142 (6.6% relative) while α barely changes (0.038 → 0.039), suggesting some interference between targets in the joint probe — ζ benefits from being predicted independently while α is largely unaffected, consistent with α encoding a global property and ζ encoding finer local alignment structure.
+- Default weight decay (1e-4) is nearly optimal — the best sweep value (wd=1e-5, MSE=0.0935) improves over the default (wd=1e-4, MSE=0.095) by ~1.6%, indicating the representations are naturally well-regularized and not sensitive to L2 strength.
 - CV variance is low (±0.005), confirming results are robust across data splits.
 
 ---
@@ -359,6 +372,13 @@ All experiments use:
   title={The Well: a Large-Scale Collection of Diverse Physics Simulations for Machine Learning},
   author={Ohana, Ruben and others},
   journal={arXiv preprint arXiv:2412.00568},
+  year={2024}
+}
+
+@inproceedings{bardes2024vjepa,
+  title={V-JEPA: Latent Video Prediction for Visual Representation Learning},
+  author={Bardes, Adrien and others},
+  booktitle={ICLR},
   year={2024}
 }
 
