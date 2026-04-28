@@ -7,10 +7,10 @@ Joint-Embedding Predictive Architecture (JEPA).
 Our best model achieves a normalised test MSE of **0.095** via linear probing,
 outperforming the supervised baseline on combined MSE (0.095 vs 0.134) and
 particularly on α prediction (0.038 vs 0.229), though the supervised baseline
-remains stronger on ζ (0.039 vs 0.152) — suggesting the two parameters occupy different parts of the
-representation space: α appears well-captured by mean pooling across all tokens, while ζ 
-benefits from spatially selective aggregation — consistent with 
-attention pooling and separate probes both improving ζ more than α
+remains stronger on ζ (0.039 vs 0.152) — suggesting the two parameters are encoded differently in the
+representation space: α appears well-captured by mean pooling across all tokens, while ζ
+benefits from spatially selective aggregation, consistent with attention pooling
+and separate probes both improving ζ more than α.
 
 ---
 
@@ -328,8 +328,8 @@ Additional experiments on the Run 5 encoder comparing different evaluation strat
 | **Attention pooling probe** | **0.0879** | **0.035** | **0.141** | **Best result (excluded from official metric)** |
 
 Key findings:
-- Attention pooling (0.0879) outperforms mean pooling (0.095) by 7.5% overall. Both α (0.038→0.035, ~8% relative) and ζ (0.152→0.141, ~7% relative) improve by similar relative margins — the larger absolute gain for ζ reflects its higher baseline error rather than a qualitative asymmetry. That said, ζ has more headroom for improvement, consistent with it encoding finer spatial structure that mean pooling partially averages out.
-- Separate probes improve ζ from 0.152 → 0.142 (6.6% relative) while α barely changes (0.038 → 0.039), suggesting some interference between targets in the joint probe — ζ benefits from being predicted independently while α is largely unaffected, consistent with α encoding a global property and ζ encoding finer local alignment structure.
+- Attention pooling (0.0879) outperforms mean pooling (0.095) by 7.5% overall. Both α (0.038→0.035, ~8% relative) and ζ (0.152→0.141, ~7% relative) improve by similar relative margins — the larger absolute gain for ζ reflects its higher baseline error rather than a qualitative asymmetry. That said, ζ has more headroom for improvement, consistent with ζ having more headroom for improvement under spatially selective aggregation.
+- Separate probes improve ζ from 0.152 → 0.142 (6.6% relative) while α barely changes (0.038 → 0.039), suggesting some interference between targets in the joint probe — ζ benefits from being predicted independently while α is largely unaffected, consistent with the two parameters being encoded differently in the representation space.
 - Default weight decay (1e-4) is nearly optimal — the best sweep value (wd=1e-5, MSE=0.0935) improves over the default (wd=1e-4, MSE=0.095) by ~1.6%, indicating the representations are naturally well-regularized and not sensitive to L2 strength.
 - CV variance is low (±0.005), confirming results are robust across data splits.
 
