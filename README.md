@@ -8,9 +8,9 @@ Our best model achieves a normalised test MSE of **0.095** via linear probing,
 outperforming the supervised baseline on combined MSE (0.095 vs 0.134) and
 particularly on α prediction (0.038 vs 0.229), though the supervised baseline
 remains stronger on ζ (0.039 vs 0.152) — suggesting the two parameters occupy different parts of the
-representation space: α as a global property captured well by mean pooling, ζ as a finer
-local alignment property with more headroom for improvement under
-spatial-selective pooling.
+representation space: α appears well-captured by mean pooling across all tokens, while ζ 
+benefits from spatially selective aggregation — consistent with 
+attention pooling and separate probes both improving ζ more than α
 
 ---
 
