@@ -143,7 +143,7 @@ active_matter/
 │   ├── compute_stats.py              # Per-channel mean/std computation
 │   ├── generate_submission.py        # Submission CSV generator (experimental)
 │   ├── probe_cv.py                   # 5-fold cross-validation probe (experimental)
-│   ├── probe_sweep.py                # L2 regularization sweep (experimental)
+│   ├── probe_sweep.py               # L2 regularization sweep (experimental)
 │   ├── probe_separate.py             # Separate probes for α and ζ (experimental)
 │   ├── probe_ensemble_checkpoints.py # Epoch ensemble probe (experimental)
 │   ├── attention_pool_probe.py       # Attention pooling probe (experimental)
@@ -153,6 +153,10 @@ active_matter/
 │   ├── jepa_run3.yaml                # Run 3 — 3.5M, full dataset
 │   ├── jepa_run4.yaml                # Run 4 — 26.6M, harder masking
 │   └── jepa_run5.yaml                # Run 5 — 26.6M, easier masking (best)
+├── checkpoints/
+│   └── jepa/
+│       └── probe/
+│           └── linear_probe__best__mean.pt  # Trained linear head (included in repo)
 ├── slurm/
 │   ├── train.sbatch                  # GPU pre-training job
 │   ├── probe.sbatch                  # Linear probe + kNN evaluation job
@@ -385,7 +389,7 @@ Additional experiments on the Run 5 encoder comparing different evaluation strat
 | L2 sweep (wd=1e-5) | 0.0935 | 0.039 | 0.149 | Default wd=1e-4 nearly optimal |
 | 5-fold CV ensemble | 0.0951 | 0.041 | 0.149 | Stable across folds (±0.005) |
 | Epoch ensemble (80+90+best) | 0.0913 | 0.039 | 0.144 | epoch 90 checkpoint is best single model (0.0913) |
-| **Attention pooling probe** | **0.0879** | **0.035** | **0.141** | **Best result (excluded from official metric)** |
+| **Attention pooling probe** | **0.0879** | **0.035** | **0.141** | **Best exploratory result (not used in official evaluation)** |
 
 Key findings:
 - Attention pooling (0.0879) outperforms mean pooling (0.095) by 7.5% overall. Both α (0.038→0.035, ~8% relative) and ζ (0.152→0.141, ~7% relative) improve by similar relative margins — the larger absolute gain for ζ reflects its higher baseline error rather than a qualitative asymmetry. That said, ζ exhibits greater headroom for improvement under spatially selective aggregation.
