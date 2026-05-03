@@ -1,0 +1,2166 @@
+Job ID     : 162454
+Node       : b-19-58
+Start time : Fri Apr 10 10:00:28 EDT 2026
+Starting training...
+Device: cuda
+  GPU: NVIDIA A100-SXM4-40GB
+Loaded channel stats from /scratch/va2661/data/active_matter/stats.yaml
+  Raw stats keys: ['mean', 'mean_delta', 'rms', 'rms_delta', 'std', 'std_delta']
+  mean: ['1.0000', '-0.0000', '0.0000', '0.5018', '-0.0062', '-0.0062', '0.4982', '0.0000', '0.0000', '0.0000', '-0.0000']
+  std : ['0.0030', '0.5772', '0.5671', '0.3201', '0.3311', '0.3311', '0.3202', '0.4073', '0.4322', '0.4322', '0.4073']
+Dataset sizes  — train: 11,550  val: 1,584  test: 1,716
+Batches/epoch  — train: 721  val: 99
+
+Model parameters: encoder=23.46M  predictor=3.12M  total=26.58M
+
+Starting training from epoch 0 / 50
+
+  Epoch 000 [   0/721]  loss=0.4480  lr=0.00e+00  ema_tau=0.99600
+  Epoch 000 [  20/721]  loss=0.4386  lr=1.66e-06  ema_tau=0.99600
+  Epoch 000 [  40/721]  loss=0.4135  lr=3.33e-06  ema_tau=0.99600
+  Epoch 000 [  60/721]  loss=0.4006  lr=4.99e-06  ema_tau=0.99600
+  Epoch 000 [  80/721]  loss=0.3797  lr=6.66e-06  ema_tau=0.99600
+  Epoch 000 [ 100/721]  loss=0.3702  lr=8.32e-06  ema_tau=0.99600
+  Epoch 000 [ 120/721]  loss=0.3608  lr=9.99e-06  ema_tau=0.99600
+  Epoch 000 [ 140/721]  loss=0.3475  lr=1.17e-05  ema_tau=0.99600
+  Epoch 000 [ 160/721]  loss=0.3457  lr=1.33e-05  ema_tau=0.99600
+  Epoch 000 [ 180/721]  loss=0.3343  lr=1.50e-05  ema_tau=0.99600
+  Epoch 000 [ 200/721]  loss=0.3263  lr=1.66e-05  ema_tau=0.99600
+  Epoch 000 [ 220/721]  loss=0.3212  lr=1.83e-05  ema_tau=0.99600
+  Epoch 000 [ 240/721]  loss=0.3043  lr=2.00e-05  ema_tau=0.99600
+  Epoch 000 [ 260/721]  loss=0.2957  lr=2.16e-05  ema_tau=0.99600
+  Epoch 000 [ 280/721]  loss=0.2846  lr=2.33e-05  ema_tau=0.99600
+  Epoch 000 [ 300/721]  loss=0.2778  lr=2.50e-05  ema_tau=0.99600
+  Epoch 000 [ 320/721]  loss=0.2660  lr=2.66e-05  ema_tau=0.99600
+  Epoch 000 [ 340/721]  loss=0.2460  lr=2.83e-05  ema_tau=0.99600
+  Epoch 000 [ 360/721]  loss=0.2460  lr=3.00e-05  ema_tau=0.99600
+  Epoch 000 [ 380/721]  loss=0.2355  lr=3.16e-05  ema_tau=0.99600
+  Epoch 000 [ 400/721]  loss=0.2096  lr=3.33e-05  ema_tau=0.99600
+  Epoch 000 [ 420/721]  loss=0.1987  lr=3.50e-05  ema_tau=0.99600
+  Epoch 000 [ 440/721]  loss=0.1991  lr=3.66e-05  ema_tau=0.99600
+  Epoch 000 [ 460/721]  loss=0.1802  lr=3.83e-05  ema_tau=0.99600
+  Epoch 000 [ 480/721]  loss=0.1625  lr=3.99e-05  ema_tau=0.99600
+  Epoch 000 [ 500/721]  loss=0.1543  lr=4.16e-05  ema_tau=0.99600
+  Epoch 000 [ 520/721]  loss=0.1690  lr=4.33e-05  ema_tau=0.99600
+  Epoch 000 [ 540/721]  loss=0.1481  lr=4.49e-05  ema_tau=0.99600
+  Epoch 000 [ 560/721]  loss=0.1579  lr=4.66e-05  ema_tau=0.99600
+  Epoch 000 [ 580/721]  loss=0.1512  lr=4.83e-05  ema_tau=0.99600
+  Epoch 000 [ 600/721]  loss=0.1403  lr=4.99e-05  ema_tau=0.99600
+  Epoch 000 [ 620/721]  loss=0.1453  lr=5.16e-05  ema_tau=0.99600
+  Epoch 000 [ 640/721]  loss=0.1430  lr=5.33e-05  ema_tau=0.99600
+  Epoch 000 [ 660/721]  loss=0.1455  lr=5.49e-05  ema_tau=0.99600
+  Epoch 000 [ 680/721]  loss=0.1270  lr=5.66e-05  ema_tau=0.99600
+  Epoch 000 [ 700/721]  loss=0.1456  lr=5.83e-05  ema_tau=0.99600
+  Epoch 000 [ 720/721]  loss=0.1453  lr=5.99e-05  ema_tau=0.99600
+
+Epoch 000 done | avg_loss=0.2539 | time=407.4s
+  Collapse check — embed_std=0.0197  mean_cos_sim=0.8274
+  Val loss: 0.1280
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/epoch_0000.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 001 [   0/721]  loss=0.1374  lr=6.00e-05  ema_tau=0.99600
+  Epoch 001 [  20/721]  loss=0.1565  lr=6.17e-05  ema_tau=0.99600
+  Epoch 001 [  40/721]  loss=0.1477  lr=6.33e-05  ema_tau=0.99600
+  Epoch 001 [  60/721]  loss=0.1487  lr=6.50e-05  ema_tau=0.99600
+  Epoch 001 [  80/721]  loss=0.1373  lr=6.67e-05  ema_tau=0.99600
+  Epoch 001 [ 100/721]  loss=0.1452  lr=6.83e-05  ema_tau=0.99601
+  Epoch 001 [ 120/721]  loss=0.1663  lr=7.00e-05  ema_tau=0.99601
+  Epoch 001 [ 140/721]  loss=0.1636  lr=7.17e-05  ema_tau=0.99601
+  Epoch 001 [ 160/721]  loss=0.1599  lr=7.33e-05  ema_tau=0.99601
+  Epoch 001 [ 180/721]  loss=0.1446  lr=7.50e-05  ema_tau=0.99601
+  Epoch 001 [ 200/721]  loss=0.1457  lr=7.66e-05  ema_tau=0.99601
+  Epoch 001 [ 220/721]  loss=0.1499  lr=7.83e-05  ema_tau=0.99601
+  Epoch 001 [ 240/721]  loss=0.1464  lr=8.00e-05  ema_tau=0.99601
+  Epoch 001 [ 260/721]  loss=0.1492  lr=8.16e-05  ema_tau=0.99601
+  Epoch 001 [ 280/721]  loss=0.1451  lr=8.33e-05  ema_tau=0.99601
+  Epoch 001 [ 300/721]  loss=0.1581  lr=8.50e-05  ema_tau=0.99601
+  Epoch 001 [ 320/721]  loss=0.1656  lr=8.66e-05  ema_tau=0.99601
+  Epoch 001 [ 340/721]  loss=0.1555  lr=8.83e-05  ema_tau=0.99601
+  Epoch 001 [ 360/721]  loss=0.1490  lr=9.00e-05  ema_tau=0.99601
+  Epoch 001 [ 380/721]  loss=0.1701  lr=9.16e-05  ema_tau=0.99601
+  Epoch 001 [ 400/721]  loss=0.1548  lr=9.33e-05  ema_tau=0.99601
+  Epoch 001 [ 420/721]  loss=0.1611  lr=9.50e-05  ema_tau=0.99601
+  Epoch 001 [ 440/721]  loss=0.1564  lr=9.66e-05  ema_tau=0.99601
+  Epoch 001 [ 460/721]  loss=0.1733  lr=9.83e-05  ema_tau=0.99601
+  Epoch 001 [ 480/721]  loss=0.1905  lr=9.99e-05  ema_tau=0.99601
+  Epoch 001 [ 500/721]  loss=0.1606  lr=1.02e-04  ema_tau=0.99601
+  Epoch 001 [ 520/721]  loss=0.1732  lr=1.03e-04  ema_tau=0.99601
+  Epoch 001 [ 540/721]  loss=0.1816  lr=1.05e-04  ema_tau=0.99601
+  Epoch 001 [ 560/721]  loss=0.1726  lr=1.07e-04  ema_tau=0.99601
+  Epoch 001 [ 580/721]  loss=0.1967  lr=1.08e-04  ema_tau=0.99601
+  Epoch 001 [ 600/721]  loss=0.1796  lr=1.10e-04  ema_tau=0.99601
+  Epoch 001 [ 620/721]  loss=0.1861  lr=1.12e-04  ema_tau=0.99601
+  Epoch 001 [ 640/721]  loss=0.1736  lr=1.13e-04  ema_tau=0.99601
+  Epoch 001 [ 660/721]  loss=0.1689  lr=1.15e-04  ema_tau=0.99601
+  Epoch 001 [ 680/721]  loss=0.1727  lr=1.17e-04  ema_tau=0.99601
+  Epoch 001 [ 700/721]  loss=0.1936  lr=1.18e-04  ema_tau=0.99602
+  Epoch 001 [ 720/721]  loss=0.1784  lr=1.20e-04  ema_tau=0.99602
+
+Epoch 001 done | avg_loss=0.1617 | time=294.8s
+  Val loss: 0.1830
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+
+  Epoch 002 [   0/721]  loss=0.2021  lr=1.20e-04  ema_tau=0.99602
+  Epoch 002 [  20/721]  loss=0.2034  lr=1.22e-04  ema_tau=0.99602
+  Epoch 002 [  40/721]  loss=0.1902  lr=1.23e-04  ema_tau=0.99602
+  Epoch 002 [  60/721]  loss=0.1743  lr=1.25e-04  ema_tau=0.99602
+  Epoch 002 [  80/721]  loss=0.1904  lr=1.27e-04  ema_tau=0.99602
+  Epoch 002 [ 100/721]  loss=0.1989  lr=1.28e-04  ema_tau=0.99602
+  Epoch 002 [ 120/721]  loss=0.1702  lr=1.30e-04  ema_tau=0.99602
+  Epoch 002 [ 140/721]  loss=0.1699  lr=1.32e-04  ema_tau=0.99602
+  Epoch 002 [ 160/721]  loss=0.1929  lr=1.33e-04  ema_tau=0.99602
+  Epoch 002 [ 180/721]  loss=0.1889  lr=1.35e-04  ema_tau=0.99602
+  Epoch 002 [ 200/721]  loss=0.2056  lr=1.37e-04  ema_tau=0.99602
+  Epoch 002 [ 220/721]  loss=0.2039  lr=1.38e-04  ema_tau=0.99602
+  Epoch 002 [ 240/721]  loss=0.1913  lr=1.40e-04  ema_tau=0.99602
+  Epoch 002 [ 260/721]  loss=0.2046  lr=1.42e-04  ema_tau=0.99602
+  Epoch 002 [ 280/721]  loss=0.2092  lr=1.43e-04  ema_tau=0.99602
+  Epoch 002 [ 300/721]  loss=0.2284  lr=1.45e-04  ema_tau=0.99602
+  Epoch 002 [ 320/721]  loss=0.2294  lr=1.47e-04  ema_tau=0.99602
+  Epoch 002 [ 340/721]  loss=0.1691  lr=1.48e-04  ema_tau=0.99602
+  Epoch 002 [ 360/721]  loss=0.1961  lr=1.50e-04  ema_tau=0.99602
+  Epoch 002 [ 380/721]  loss=0.1669  lr=1.52e-04  ema_tau=0.99603
+  Epoch 002 [ 400/721]  loss=0.2260  lr=1.53e-04  ema_tau=0.99603
+  Epoch 002 [ 420/721]  loss=0.1908  lr=1.55e-04  ema_tau=0.99603
+  Epoch 002 [ 440/721]  loss=0.1826  lr=1.57e-04  ema_tau=0.99603
+  Epoch 002 [ 460/721]  loss=0.1712  lr=1.58e-04  ema_tau=0.99603
+  Epoch 002 [ 480/721]  loss=0.2166  lr=1.60e-04  ema_tau=0.99603
+  Epoch 002 [ 500/721]  loss=0.1683  lr=1.62e-04  ema_tau=0.99603
+  Epoch 002 [ 520/721]  loss=0.2097  lr=1.63e-04  ema_tau=0.99603
+  Epoch 002 [ 540/721]  loss=0.2123  lr=1.65e-04  ema_tau=0.99603
+  Epoch 002 [ 560/721]  loss=0.1830  lr=1.67e-04  ema_tau=0.99603
+  Epoch 002 [ 580/721]  loss=0.1966  lr=1.68e-04  ema_tau=0.99603
+  Epoch 002 [ 600/721]  loss=0.1912  lr=1.70e-04  ema_tau=0.99603
+  Epoch 002 [ 620/721]  loss=0.2096  lr=1.72e-04  ema_tau=0.99603
+  Epoch 002 [ 640/721]  loss=0.2204  lr=1.73e-04  ema_tau=0.99603
+  Epoch 002 [ 660/721]  loss=0.1711  lr=1.75e-04  ema_tau=0.99603
+  Epoch 002 [ 680/721]  loss=0.1962  lr=1.77e-04  ema_tau=0.99603
+  Epoch 002 [ 700/721]  loss=0.1401  lr=1.78e-04  ema_tau=0.99603
+  Epoch 002 [ 720/721]  loss=0.2192  lr=1.80e-04  ema_tau=0.99604
+
+Epoch 002 done | avg_loss=0.1897 | time=293.1s
+  Val loss: 0.2002
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+
+  Epoch 003 [   0/721]  loss=0.2121  lr=1.80e-04  ema_tau=0.99604
+  Epoch 003 [  20/721]  loss=0.1662  lr=1.82e-04  ema_tau=0.99604
+  Epoch 003 [  40/721]  loss=0.1739  lr=1.83e-04  ema_tau=0.99604
+  Epoch 003 [  60/721]  loss=0.1792  lr=1.85e-04  ema_tau=0.99604
+  Epoch 003 [  80/721]  loss=0.2092  lr=1.87e-04  ema_tau=0.99604
+  Epoch 003 [ 100/721]  loss=0.1913  lr=1.88e-04  ema_tau=0.99604
+  Epoch 003 [ 120/721]  loss=0.1862  lr=1.90e-04  ema_tau=0.99604
+  Epoch 003 [ 140/721]  loss=0.1995  lr=1.92e-04  ema_tau=0.99604
+  Epoch 003 [ 160/721]  loss=0.1926  lr=1.93e-04  ema_tau=0.99604
+  Epoch 003 [ 180/721]  loss=0.2050  lr=1.95e-04  ema_tau=0.99604
+  Epoch 003 [ 200/721]  loss=0.2069  lr=1.97e-04  ema_tau=0.99604
+  Epoch 003 [ 220/721]  loss=0.1904  lr=1.98e-04  ema_tau=0.99604
+  Epoch 003 [ 240/721]  loss=0.1840  lr=2.00e-04  ema_tau=0.99604
+  Epoch 003 [ 260/721]  loss=0.2043  lr=2.02e-04  ema_tau=0.99604
+  Epoch 003 [ 280/721]  loss=0.1912  lr=2.03e-04  ema_tau=0.99605
+  Epoch 003 [ 300/721]  loss=0.1885  lr=2.05e-04  ema_tau=0.99605
+  Epoch 003 [ 320/721]  loss=0.2245  lr=2.07e-04  ema_tau=0.99605
+  Epoch 003 [ 340/721]  loss=0.1990  lr=2.08e-04  ema_tau=0.99605
+  Epoch 003 [ 360/721]  loss=0.1791  lr=2.10e-04  ema_tau=0.99605
+  Epoch 003 [ 380/721]  loss=0.1487  lr=2.12e-04  ema_tau=0.99605
+  Epoch 003 [ 400/721]  loss=0.2233  lr=2.13e-04  ema_tau=0.99605
+  Epoch 003 [ 420/721]  loss=0.2116  lr=2.15e-04  ema_tau=0.99605
+  Epoch 003 [ 440/721]  loss=0.1647  lr=2.17e-04  ema_tau=0.99605
+  Epoch 003 [ 460/721]  loss=0.1699  lr=2.18e-04  ema_tau=0.99605
+  Epoch 003 [ 480/721]  loss=0.1874  lr=2.20e-04  ema_tau=0.99605
+  Epoch 003 [ 500/721]  loss=0.2051  lr=2.22e-04  ema_tau=0.99605
+  Epoch 003 [ 520/721]  loss=0.2211  lr=2.23e-04  ema_tau=0.99605
+  Epoch 003 [ 540/721]  loss=0.2314  lr=2.25e-04  ema_tau=0.99606
+  Epoch 003 [ 560/721]  loss=0.1863  lr=2.27e-04  ema_tau=0.99606
+  Epoch 003 [ 580/721]  loss=0.1736  lr=2.28e-04  ema_tau=0.99606
+  Epoch 003 [ 600/721]  loss=0.1561  lr=2.30e-04  ema_tau=0.99606
+  Epoch 003 [ 620/721]  loss=0.1913  lr=2.32e-04  ema_tau=0.99606
+  Epoch 003 [ 640/721]  loss=0.2105  lr=2.33e-04  ema_tau=0.99606
+  Epoch 003 [ 660/721]  loss=0.2057  lr=2.35e-04  ema_tau=0.99606
+  Epoch 003 [ 680/721]  loss=0.2155  lr=2.37e-04  ema_tau=0.99606
+  Epoch 003 [ 700/721]  loss=0.1888  lr=2.38e-04  ema_tau=0.99606
+  Epoch 003 [ 720/721]  loss=0.1980  lr=2.40e-04  ema_tau=0.99606
+
+Epoch 003 done | avg_loss=0.1954 | time=292.0s
+  Val loss: 0.1990
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+
+  Epoch 004 [   0/721]  loss=0.1955  lr=2.40e-04  ema_tau=0.99606
+  Epoch 004 [  20/721]  loss=0.1826  lr=2.42e-04  ema_tau=0.99606
+  Epoch 004 [  40/721]  loss=0.2172  lr=2.43e-04  ema_tau=0.99606
+  Epoch 004 [  60/721]  loss=0.1955  lr=2.45e-04  ema_tau=0.99607
+  Epoch 004 [  80/721]  loss=0.2293  lr=2.47e-04  ema_tau=0.99607
+  Epoch 004 [ 100/721]  loss=0.2122  lr=2.48e-04  ema_tau=0.99607
+  Epoch 004 [ 120/721]  loss=0.1859  lr=2.50e-04  ema_tau=0.99607
+  Epoch 004 [ 140/721]  loss=0.2064  lr=2.52e-04  ema_tau=0.99607
+  Epoch 004 [ 160/721]  loss=0.2092  lr=2.53e-04  ema_tau=0.99607
+  Epoch 004 [ 180/721]  loss=0.1931  lr=2.55e-04  ema_tau=0.99607
+  Epoch 004 [ 200/721]  loss=0.1856  lr=2.57e-04  ema_tau=0.99607
+  Epoch 004 [ 220/721]  loss=0.1770  lr=2.58e-04  ema_tau=0.99607
+  Epoch 004 [ 240/721]  loss=0.1401  lr=2.60e-04  ema_tau=0.99607
+  Epoch 004 [ 260/721]  loss=0.1738  lr=2.62e-04  ema_tau=0.99607
+  Epoch 004 [ 280/721]  loss=0.1910  lr=2.63e-04  ema_tau=0.99608
+  Epoch 004 [ 300/721]  loss=0.1423  lr=2.65e-04  ema_tau=0.99608
+  Epoch 004 [ 320/721]  loss=0.1579  lr=2.67e-04  ema_tau=0.99608
+  Epoch 004 [ 340/721]  loss=0.1568  lr=2.68e-04  ema_tau=0.99608
+  Epoch 004 [ 360/721]  loss=0.2062  lr=2.70e-04  ema_tau=0.99608
+  Epoch 004 [ 380/721]  loss=0.1801  lr=2.72e-04  ema_tau=0.99608
+  Epoch 004 [ 400/721]  loss=0.1392  lr=2.73e-04  ema_tau=0.99608
+  Epoch 004 [ 420/721]  loss=0.2090  lr=2.75e-04  ema_tau=0.99608
+  Epoch 004 [ 440/721]  loss=0.1634  lr=2.77e-04  ema_tau=0.99608
+  Epoch 004 [ 460/721]  loss=0.1750  lr=2.78e-04  ema_tau=0.99608
+  Epoch 004 [ 480/721]  loss=0.2269  lr=2.80e-04  ema_tau=0.99609
+  Epoch 004 [ 500/721]  loss=0.2524  lr=2.82e-04  ema_tau=0.99609
+  Epoch 004 [ 520/721]  loss=0.2120  lr=2.83e-04  ema_tau=0.99609
+  Epoch 004 [ 540/721]  loss=0.1896  lr=2.85e-04  ema_tau=0.99609
+  Epoch 004 [ 560/721]  loss=0.2158  lr=2.87e-04  ema_tau=0.99609
+  Epoch 004 [ 580/721]  loss=0.1767  lr=2.88e-04  ema_tau=0.99609
+  Epoch 004 [ 600/721]  loss=0.1744  lr=2.90e-04  ema_tau=0.99609
+  Epoch 004 [ 620/721]  loss=0.1733  lr=2.92e-04  ema_tau=0.99609
+  Epoch 004 [ 640/721]  loss=0.1980  lr=2.93e-04  ema_tau=0.99609
+  Epoch 004 [ 660/721]  loss=0.1802  lr=2.95e-04  ema_tau=0.99609
+  Epoch 004 [ 680/721]  loss=0.2081  lr=2.97e-04  ema_tau=0.99610
+  Epoch 004 [ 700/721]  loss=0.2045  lr=2.98e-04  ema_tau=0.99610
+  Epoch 004 [ 720/721]  loss=0.1466  lr=3.00e-04  ema_tau=0.99610
+
+Epoch 004 done | avg_loss=0.1903 | time=289.3s
+  Val loss: 0.1610
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+
+  Epoch 005 [   0/721]  loss=0.2027  lr=3.00e-04  ema_tau=0.99610
+  Epoch 005 [  20/721]  loss=0.1816  lr=3.00e-04  ema_tau=0.99610
+  Epoch 005 [  40/721]  loss=0.1448  lr=3.00e-04  ema_tau=0.99610
+  Epoch 005 [  60/721]  loss=0.2341  lr=3.00e-04  ema_tau=0.99610
+  Epoch 005 [  80/721]  loss=0.1619  lr=3.00e-04  ema_tau=0.99610
+  Epoch 005 [ 100/721]  loss=0.1688  lr=3.00e-04  ema_tau=0.99610
+  Epoch 005 [ 120/721]  loss=0.1928  lr=3.00e-04  ema_tau=0.99610
+  Epoch 005 [ 140/721]  loss=0.2196  lr=3.00e-04  ema_tau=0.99611
+  Epoch 005 [ 160/721]  loss=0.1990  lr=3.00e-04  ema_tau=0.99611
+  Epoch 005 [ 180/721]  loss=0.2019  lr=3.00e-04  ema_tau=0.99611
+  Epoch 005 [ 200/721]  loss=0.1612  lr=3.00e-04  ema_tau=0.99611
+  Epoch 005 [ 220/721]  loss=0.1517  lr=3.00e-04  ema_tau=0.99611
+  Epoch 005 [ 240/721]  loss=0.2217  lr=3.00e-04  ema_tau=0.99611
+  Epoch 005 [ 260/721]  loss=0.1794  lr=3.00e-04  ema_tau=0.99611
+  Epoch 005 [ 280/721]  loss=0.2055  lr=3.00e-04  ema_tau=0.99611
+  Epoch 005 [ 300/721]  loss=0.1591  lr=3.00e-04  ema_tau=0.99611
+  Epoch 005 [ 320/721]  loss=0.1657  lr=3.00e-04  ema_tau=0.99612
+  Epoch 005 [ 340/721]  loss=0.1524  lr=3.00e-04  ema_tau=0.99612
+  Epoch 005 [ 360/721]  loss=0.2103  lr=3.00e-04  ema_tau=0.99612
+  Epoch 005 [ 380/721]  loss=0.1949  lr=3.00e-04  ema_tau=0.99612
+  Epoch 005 [ 400/721]  loss=0.1697  lr=3.00e-04  ema_tau=0.99612
+  Epoch 005 [ 420/721]  loss=0.1366  lr=3.00e-04  ema_tau=0.99612
+  Epoch 005 [ 440/721]  loss=0.1911  lr=3.00e-04  ema_tau=0.99612
+  Epoch 005 [ 460/721]  loss=0.1905  lr=3.00e-04  ema_tau=0.99612
+  Epoch 005 [ 480/721]  loss=0.2053  lr=3.00e-04  ema_tau=0.99613
+  Epoch 005 [ 500/721]  loss=0.1381  lr=3.00e-04  ema_tau=0.99613
+  Epoch 005 [ 520/721]  loss=0.1291  lr=3.00e-04  ema_tau=0.99613
+  Epoch 005 [ 540/721]  loss=0.2338  lr=3.00e-04  ema_tau=0.99613
+  Epoch 005 [ 560/721]  loss=0.1664  lr=3.00e-04  ema_tau=0.99613
+  Epoch 005 [ 580/721]  loss=0.2100  lr=3.00e-04  ema_tau=0.99613
+  Epoch 005 [ 600/721]  loss=0.1593  lr=3.00e-04  ema_tau=0.99613
+  Epoch 005 [ 620/721]  loss=0.2229  lr=3.00e-04  ema_tau=0.99613
+  Epoch 005 [ 640/721]  loss=0.1421  lr=3.00e-04  ema_tau=0.99614
+  Epoch 005 [ 660/721]  loss=0.1760  lr=3.00e-04  ema_tau=0.99614
+  Epoch 005 [ 680/721]  loss=0.2069  lr=3.00e-04  ema_tau=0.99614
+  Epoch 005 [ 700/721]  loss=0.1939  lr=3.00e-04  ema_tau=0.99614
+  Epoch 005 [ 720/721]  loss=0.1978  lr=3.00e-04  ema_tau=0.99614
+
+Epoch 005 done | avg_loss=0.1824 | time=292.3s
+  Collapse check — embed_std=0.0378  mean_cos_sim=0.2545
+  Val loss: 0.1598
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+
+  Epoch 006 [   0/721]  loss=0.2302  lr=3.00e-04  ema_tau=0.99614
+  Epoch 006 [  20/721]  loss=0.1927  lr=3.00e-04  ema_tau=0.99614
+  Epoch 006 [  40/721]  loss=0.1993  lr=3.00e-04  ema_tau=0.99614
+  Epoch 006 [  60/721]  loss=0.1538  lr=3.00e-04  ema_tau=0.99614
+  Epoch 006 [  80/721]  loss=0.1613  lr=3.00e-04  ema_tau=0.99615
+  Epoch 006 [ 100/721]  loss=0.1941  lr=3.00e-04  ema_tau=0.99615
+  Epoch 006 [ 120/721]  loss=0.1880  lr=3.00e-04  ema_tau=0.99615
+  Epoch 006 [ 140/721]  loss=0.1790  lr=2.99e-04  ema_tau=0.99615
+  Epoch 006 [ 160/721]  loss=0.1515  lr=2.99e-04  ema_tau=0.99615
+  Epoch 006 [ 180/721]  loss=0.2071  lr=2.99e-04  ema_tau=0.99615
+  Epoch 006 [ 200/721]  loss=0.2503  lr=2.99e-04  ema_tau=0.99615
+  Epoch 006 [ 220/721]  loss=0.1565  lr=2.99e-04  ema_tau=0.99615
+  Epoch 006 [ 240/721]  loss=0.1740  lr=2.99e-04  ema_tau=0.99616
+  Epoch 006 [ 260/721]  loss=0.1688  lr=2.99e-04  ema_tau=0.99616
+  Epoch 006 [ 280/721]  loss=0.1602  lr=2.99e-04  ema_tau=0.99616
+  Epoch 006 [ 300/721]  loss=0.1682  lr=2.99e-04  ema_tau=0.99616
+  Epoch 006 [ 320/721]  loss=0.1579  lr=2.99e-04  ema_tau=0.99616
+  Epoch 006 [ 340/721]  loss=0.1704  lr=2.99e-04  ema_tau=0.99616
+  Epoch 006 [ 360/721]  loss=0.1813  lr=2.99e-04  ema_tau=0.99616
+  Epoch 006 [ 380/721]  loss=0.1940  lr=2.99e-04  ema_tau=0.99617
+  Epoch 006 [ 400/721]  loss=0.2005  lr=2.99e-04  ema_tau=0.99617
+  Epoch 006 [ 420/721]  loss=0.1655  lr=2.99e-04  ema_tau=0.99617
+  Epoch 006 [ 440/721]  loss=0.1520  lr=2.99e-04  ema_tau=0.99617
+  Epoch 006 [ 460/721]  loss=0.2026  lr=2.99e-04  ema_tau=0.99617
+  Epoch 006 [ 480/721]  loss=0.1841  lr=2.99e-04  ema_tau=0.99617
+  Epoch 006 [ 500/721]  loss=0.1607  lr=2.99e-04  ema_tau=0.99617
+  Epoch 006 [ 520/721]  loss=0.1863  lr=2.99e-04  ema_tau=0.99618
+  Epoch 006 [ 540/721]  loss=0.1998  lr=2.99e-04  ema_tau=0.99618
+  Epoch 006 [ 560/721]  loss=0.1825  lr=2.99e-04  ema_tau=0.99618
+  Epoch 006 [ 580/721]  loss=0.1951  lr=2.99e-04  ema_tau=0.99618
+  Epoch 006 [ 600/721]  loss=0.1586  lr=2.99e-04  ema_tau=0.99618
+  Epoch 006 [ 620/721]  loss=0.1613  lr=2.99e-04  ema_tau=0.99618
+  Epoch 006 [ 640/721]  loss=0.1727  lr=2.99e-04  ema_tau=0.99618
+  Epoch 006 [ 660/721]  loss=0.1702  lr=2.99e-04  ema_tau=0.99619
+  Epoch 006 [ 680/721]  loss=0.1446  lr=2.99e-04  ema_tau=0.99619
+  Epoch 006 [ 700/721]  loss=0.1558  lr=2.99e-04  ema_tau=0.99619
+  Epoch 006 [ 720/721]  loss=0.2169  lr=2.99e-04  ema_tau=0.99619
+
+Epoch 006 done | avg_loss=0.1749 | time=290.2s
+  Val loss: 0.1618
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+
+  Epoch 007 [   0/721]  loss=0.1594  lr=2.99e-04  ema_tau=0.99619
+  Epoch 007 [  20/721]  loss=0.1684  lr=2.99e-04  ema_tau=0.99619
+  Epoch 007 [  40/721]  loss=0.1403  lr=2.98e-04  ema_tau=0.99619
+  Epoch 007 [  60/721]  loss=0.2044  lr=2.98e-04  ema_tau=0.99619
+  Epoch 007 [  80/721]  loss=0.1597  lr=2.98e-04  ema_tau=0.99620
+  Epoch 007 [ 100/721]  loss=0.1622  lr=2.98e-04  ema_tau=0.99620
+  Epoch 007 [ 120/721]  loss=0.1892  lr=2.98e-04  ema_tau=0.99620
+  Epoch 007 [ 140/721]  loss=0.1643  lr=2.98e-04  ema_tau=0.99620
+  Epoch 007 [ 160/721]  loss=0.2197  lr=2.98e-04  ema_tau=0.99620
+  Epoch 007 [ 180/721]  loss=0.1550  lr=2.98e-04  ema_tau=0.99620
+  Epoch 007 [ 200/721]  loss=0.1663  lr=2.98e-04  ema_tau=0.99621
+  Epoch 007 [ 220/721]  loss=0.1578  lr=2.98e-04  ema_tau=0.99621
+  Epoch 007 [ 240/721]  loss=0.1589  lr=2.98e-04  ema_tau=0.99621
+  Epoch 007 [ 260/721]  loss=0.1649  lr=2.98e-04  ema_tau=0.99621
+  Epoch 007 [ 280/721]  loss=0.1458  lr=2.98e-04  ema_tau=0.99621
+  Epoch 007 [ 300/721]  loss=0.2566  lr=2.98e-04  ema_tau=0.99621
+  Epoch 007 [ 320/721]  loss=0.2015  lr=2.98e-04  ema_tau=0.99621
+  Epoch 007 [ 340/721]  loss=0.1642  lr=2.98e-04  ema_tau=0.99622
+  Epoch 007 [ 360/721]  loss=0.1621  lr=2.98e-04  ema_tau=0.99622
+  Epoch 007 [ 380/721]  loss=0.1874  lr=2.98e-04  ema_tau=0.99622
+  Epoch 007 [ 400/721]  loss=0.1315  lr=2.98e-04  ema_tau=0.99622
+  Epoch 007 [ 420/721]  loss=0.1520  lr=2.98e-04  ema_tau=0.99622
+  Epoch 007 [ 440/721]  loss=0.1768  lr=2.98e-04  ema_tau=0.99622
+  Epoch 007 [ 460/721]  loss=0.1741  lr=2.97e-04  ema_tau=0.99623
+  Epoch 007 [ 480/721]  loss=0.1769  lr=2.97e-04  ema_tau=0.99623
+  Epoch 007 [ 500/721]  loss=0.1525  lr=2.97e-04  ema_tau=0.99623
+  Epoch 007 [ 520/721]  loss=0.1691  lr=2.97e-04  ema_tau=0.99623
+  Epoch 007 [ 540/721]  loss=0.1663  lr=2.97e-04  ema_tau=0.99623
+  Epoch 007 [ 560/721]  loss=0.2035  lr=2.97e-04  ema_tau=0.99623
+  Epoch 007 [ 580/721]  loss=0.1386  lr=2.97e-04  ema_tau=0.99624
+  Epoch 007 [ 600/721]  loss=0.1752  lr=2.97e-04  ema_tau=0.99624
+  Epoch 007 [ 620/721]  loss=0.1789  lr=2.97e-04  ema_tau=0.99624
+  Epoch 007 [ 640/721]  loss=0.1922  lr=2.97e-04  ema_tau=0.99624
+  Epoch 007 [ 660/721]  loss=0.1440  lr=2.97e-04  ema_tau=0.99624
+  Epoch 007 [ 680/721]  loss=0.1424  lr=2.97e-04  ema_tau=0.99624
+  Epoch 007 [ 700/721]  loss=0.1682  lr=2.97e-04  ema_tau=0.99625
+  Epoch 007 [ 720/721]  loss=0.1710  lr=2.97e-04  ema_tau=0.99625
+
+Epoch 007 done | avg_loss=0.1687 | time=292.2s
+  Val loss: 0.1475
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+
+  Epoch 008 [   0/721]  loss=0.1538  lr=2.97e-04  ema_tau=0.99625
+  Epoch 008 [  20/721]  loss=0.1751  lr=2.97e-04  ema_tau=0.99625
+  Epoch 008 [  40/721]  loss=0.2157  lr=2.97e-04  ema_tau=0.99625
+  Epoch 008 [  60/721]  loss=0.1530  lr=2.97e-04  ema_tau=0.99625
+  Epoch 008 [  80/721]  loss=0.1614  lr=2.96e-04  ema_tau=0.99625
+  Epoch 008 [ 100/721]  loss=0.1819  lr=2.96e-04  ema_tau=0.99626
+  Epoch 008 [ 120/721]  loss=0.1603  lr=2.96e-04  ema_tau=0.99626
+  Epoch 008 [ 140/721]  loss=0.1247  lr=2.96e-04  ema_tau=0.99626
+  Epoch 008 [ 160/721]  loss=0.1515  lr=2.96e-04  ema_tau=0.99626
+  Epoch 008 [ 180/721]  loss=0.1683  lr=2.96e-04  ema_tau=0.99626
+  Epoch 008 [ 200/721]  loss=0.1273  lr=2.96e-04  ema_tau=0.99626
+  Epoch 008 [ 220/721]  loss=0.1540  lr=2.96e-04  ema_tau=0.99627
+  Epoch 008 [ 240/721]  loss=0.1302  lr=2.96e-04  ema_tau=0.99627
+  Epoch 008 [ 260/721]  loss=0.1334  lr=2.96e-04  ema_tau=0.99627
+  Epoch 008 [ 280/721]  loss=0.1656  lr=2.96e-04  ema_tau=0.99627
+  Epoch 008 [ 300/721]  loss=0.1534  lr=2.96e-04  ema_tau=0.99627
+  Epoch 008 [ 320/721]  loss=0.1475  lr=2.96e-04  ema_tau=0.99627
+  Epoch 008 [ 340/721]  loss=0.1504  lr=2.96e-04  ema_tau=0.99628
+  Epoch 008 [ 360/721]  loss=0.1896  lr=2.96e-04  ema_tau=0.99628
+  Epoch 008 [ 380/721]  loss=0.1368  lr=2.95e-04  ema_tau=0.99628
+  Epoch 008 [ 400/721]  loss=0.1726  lr=2.95e-04  ema_tau=0.99628
+  Epoch 008 [ 420/721]  loss=0.1757  lr=2.95e-04  ema_tau=0.99628
+  Epoch 008 [ 440/721]  loss=0.2247  lr=2.95e-04  ema_tau=0.99629
+  Epoch 008 [ 460/721]  loss=0.1466  lr=2.95e-04  ema_tau=0.99629
+  Epoch 008 [ 480/721]  loss=0.1433  lr=2.95e-04  ema_tau=0.99629
+  Epoch 008 [ 500/721]  loss=0.2054  lr=2.95e-04  ema_tau=0.99629
+  Epoch 008 [ 520/721]  loss=0.1556  lr=2.95e-04  ema_tau=0.99629
+  Epoch 008 [ 540/721]  loss=0.1623  lr=2.95e-04  ema_tau=0.99629
+  Epoch 008 [ 560/721]  loss=0.2132  lr=2.95e-04  ema_tau=0.99630
+  Epoch 008 [ 580/721]  loss=0.1422  lr=2.95e-04  ema_tau=0.99630
+  Epoch 008 [ 600/721]  loss=0.1194  lr=2.95e-04  ema_tau=0.99630
+  Epoch 008 [ 620/721]  loss=0.1737  lr=2.95e-04  ema_tau=0.99630
+  Epoch 008 [ 640/721]  loss=0.1455  lr=2.95e-04  ema_tau=0.99630
+  Epoch 008 [ 660/721]  loss=0.1318  lr=2.94e-04  ema_tau=0.99631
+  Epoch 008 [ 680/721]  loss=0.1502  lr=2.94e-04  ema_tau=0.99631
+  Epoch 008 [ 700/721]  loss=0.1850  lr=2.94e-04  ema_tau=0.99631
+  Epoch 008 [ 720/721]  loss=0.1496  lr=2.94e-04  ema_tau=0.99631
+
+Epoch 008 done | avg_loss=0.1611 | time=291.8s
+  Val loss: 0.1306
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+
+  Epoch 009 [   0/721]  loss=0.1705  lr=2.94e-04  ema_tau=0.99631
+  Epoch 009 [  20/721]  loss=0.1452  lr=2.94e-04  ema_tau=0.99631
+  Epoch 009 [  40/721]  loss=0.1606  lr=2.94e-04  ema_tau=0.99632
+  Epoch 009 [  60/721]  loss=0.1682  lr=2.94e-04  ema_tau=0.99632
+  Epoch 009 [  80/721]  loss=0.1421  lr=2.94e-04  ema_tau=0.99632
+  Epoch 009 [ 100/721]  loss=0.2021  lr=2.94e-04  ema_tau=0.99632
+  Epoch 009 [ 120/721]  loss=0.1717  lr=2.94e-04  ema_tau=0.99632
+  Epoch 009 [ 140/721]  loss=0.1546  lr=2.94e-04  ema_tau=0.99632
+  Epoch 009 [ 160/721]  loss=0.1545  lr=2.94e-04  ema_tau=0.99633
+  Epoch 009 [ 180/721]  loss=0.1786  lr=2.93e-04  ema_tau=0.99633
+  Epoch 009 [ 200/721]  loss=0.1300  lr=2.93e-04  ema_tau=0.99633
+  Epoch 009 [ 220/721]  loss=0.1433  lr=2.93e-04  ema_tau=0.99633
+  Epoch 009 [ 240/721]  loss=0.1701  lr=2.93e-04  ema_tau=0.99633
+  Epoch 009 [ 260/721]  loss=0.1873  lr=2.93e-04  ema_tau=0.99634
+  Epoch 009 [ 280/721]  loss=0.1635  lr=2.93e-04  ema_tau=0.99634
+  Epoch 009 [ 300/721]  loss=0.1071  lr=2.93e-04  ema_tau=0.99634
+  Epoch 009 [ 320/721]  loss=0.1466  lr=2.93e-04  ema_tau=0.99634
+  Epoch 009 [ 340/721]  loss=0.1457  lr=2.93e-04  ema_tau=0.99634
+  Epoch 009 [ 360/721]  loss=0.1744  lr=2.93e-04  ema_tau=0.99635
+  Epoch 009 [ 380/721]  loss=0.1900  lr=2.93e-04  ema_tau=0.99635
+  Epoch 009 [ 400/721]  loss=0.1590  lr=2.93e-04  ema_tau=0.99635
+  Epoch 009 [ 420/721]  loss=0.1754  lr=2.92e-04  ema_tau=0.99635
+  Epoch 009 [ 440/721]  loss=0.1780  lr=2.92e-04  ema_tau=0.99635
+  Epoch 009 [ 460/721]  loss=0.1609  lr=2.92e-04  ema_tau=0.99636
+  Epoch 009 [ 480/721]  loss=0.1504  lr=2.92e-04  ema_tau=0.99636
+  Epoch 009 [ 500/721]  loss=0.1562  lr=2.92e-04  ema_tau=0.99636
+  Epoch 009 [ 520/721]  loss=0.1433  lr=2.92e-04  ema_tau=0.99636
+  Epoch 009 [ 540/721]  loss=0.1719  lr=2.92e-04  ema_tau=0.99636
+  Epoch 009 [ 560/721]  loss=0.1732  lr=2.92e-04  ema_tau=0.99637
+  Epoch 009 [ 580/721]  loss=0.2043  lr=2.92e-04  ema_tau=0.99637
+  Epoch 009 [ 600/721]  loss=0.1261  lr=2.92e-04  ema_tau=0.99637
+  Epoch 009 [ 620/721]  loss=0.1594  lr=2.91e-04  ema_tau=0.99637
+  Epoch 009 [ 640/721]  loss=0.1992  lr=2.91e-04  ema_tau=0.99637
+  Epoch 009 [ 660/721]  loss=0.1587  lr=2.91e-04  ema_tau=0.99638
+  Epoch 009 [ 680/721]  loss=0.1211  lr=2.91e-04  ema_tau=0.99638
+  Epoch 009 [ 700/721]  loss=0.1539  lr=2.91e-04  ema_tau=0.99638
+  Epoch 009 [ 720/721]  loss=0.1923  lr=2.91e-04  ema_tau=0.99638
+
+Epoch 009 done | avg_loss=0.1531 | time=291.3s
+  Val loss: 0.1351
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+
+  Epoch 010 [   0/721]  loss=0.1545  lr=2.91e-04  ema_tau=0.99638
+  Epoch 010 [  20/721]  loss=0.1728  lr=2.91e-04  ema_tau=0.99638
+  Epoch 010 [  40/721]  loss=0.1730  lr=2.91e-04  ema_tau=0.99639
+  Epoch 010 [  60/721]  loss=0.1255  lr=2.91e-04  ema_tau=0.99639
+  Epoch 010 [  80/721]  loss=0.1601  lr=2.91e-04  ema_tau=0.99639
+  Epoch 010 [ 100/721]  loss=0.1313  lr=2.90e-04  ema_tau=0.99639
+  Epoch 010 [ 120/721]  loss=0.1654  lr=2.90e-04  ema_tau=0.99639
+  Epoch 010 [ 140/721]  loss=0.1543  lr=2.90e-04  ema_tau=0.99640
+  Epoch 010 [ 160/721]  loss=0.1345  lr=2.90e-04  ema_tau=0.99640
+  Epoch 010 [ 180/721]  loss=0.1541  lr=2.90e-04  ema_tau=0.99640
+  Epoch 010 [ 200/721]  loss=0.1321  lr=2.90e-04  ema_tau=0.99640
+  Epoch 010 [ 220/721]  loss=0.1869  lr=2.90e-04  ema_tau=0.99640
+  Epoch 010 [ 240/721]  loss=0.1599  lr=2.90e-04  ema_tau=0.99641
+  Epoch 010 [ 260/721]  loss=0.1199  lr=2.90e-04  ema_tau=0.99641
+  Epoch 010 [ 280/721]  loss=0.1614  lr=2.90e-04  ema_tau=0.99641
+  Epoch 010 [ 300/721]  loss=0.1635  lr=2.89e-04  ema_tau=0.99641
+  Epoch 010 [ 320/721]  loss=0.1226  lr=2.89e-04  ema_tau=0.99642
+  Epoch 010 [ 340/721]  loss=0.1320  lr=2.89e-04  ema_tau=0.99642
+  Epoch 010 [ 360/721]  loss=0.1409  lr=2.89e-04  ema_tau=0.99642
+  Epoch 010 [ 380/721]  loss=0.1535  lr=2.89e-04  ema_tau=0.99642
+  Epoch 010 [ 400/721]  loss=0.1330  lr=2.89e-04  ema_tau=0.99642
+  Epoch 010 [ 420/721]  loss=0.1111  lr=2.89e-04  ema_tau=0.99643
+  Epoch 010 [ 440/721]  loss=0.1496  lr=2.89e-04  ema_tau=0.99643
+  Epoch 010 [ 460/721]  loss=0.1245  lr=2.89e-04  ema_tau=0.99643
+  Epoch 010 [ 480/721]  loss=0.1453  lr=2.88e-04  ema_tau=0.99643
+  Epoch 010 [ 500/721]  loss=0.1165  lr=2.88e-04  ema_tau=0.99643
+  Epoch 010 [ 520/721]  loss=0.1269  lr=2.88e-04  ema_tau=0.99644
+  Epoch 010 [ 540/721]  loss=0.1501  lr=2.88e-04  ema_tau=0.99644
+  Epoch 010 [ 560/721]  loss=0.1618  lr=2.88e-04  ema_tau=0.99644
+  Epoch 010 [ 580/721]  loss=0.1423  lr=2.88e-04  ema_tau=0.99644
+  Epoch 010 [ 600/721]  loss=0.1156  lr=2.88e-04  ema_tau=0.99645
+  Epoch 010 [ 620/721]  loss=0.1637  lr=2.88e-04  ema_tau=0.99645
+  Epoch 010 [ 640/721]  loss=0.1819  lr=2.88e-04  ema_tau=0.99645
+  Epoch 010 [ 660/721]  loss=0.1557  lr=2.87e-04  ema_tau=0.99645
+  Epoch 010 [ 680/721]  loss=0.1527  lr=2.87e-04  ema_tau=0.99645
+  Epoch 010 [ 700/721]  loss=0.1788  lr=2.87e-04  ema_tau=0.99646
+  Epoch 010 [ 720/721]  loss=0.1577  lr=2.87e-04  ema_tau=0.99646
+
+Epoch 010 done | avg_loss=0.1500 | time=291.6s
+  Collapse check — embed_std=0.0419  mean_cos_sim=0.1231
+  Val loss: 0.1360
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/epoch_0010.pt
+
+  Epoch 011 [   0/721]  loss=0.1322  lr=2.87e-04  ema_tau=0.99646
+  Epoch 011 [  20/721]  loss=0.1122  lr=2.87e-04  ema_tau=0.99646
+  Epoch 011 [  40/721]  loss=0.1310  lr=2.87e-04  ema_tau=0.99646
+  Epoch 011 [  60/721]  loss=0.1796  lr=2.87e-04  ema_tau=0.99647
+  Epoch 011 [  80/721]  loss=0.1325  lr=2.87e-04  ema_tau=0.99647
+  Epoch 011 [ 100/721]  loss=0.1186  lr=2.86e-04  ema_tau=0.99647
+  Epoch 011 [ 120/721]  loss=0.1527  lr=2.86e-04  ema_tau=0.99647
+  Epoch 011 [ 140/721]  loss=0.1544  lr=2.86e-04  ema_tau=0.99647
+  Epoch 011 [ 160/721]  loss=0.1089  lr=2.86e-04  ema_tau=0.99648
+  Epoch 011 [ 180/721]  loss=0.1461  lr=2.86e-04  ema_tau=0.99648
+  Epoch 011 [ 200/721]  loss=0.1632  lr=2.86e-04  ema_tau=0.99648
+  Epoch 011 [ 220/721]  loss=0.1513  lr=2.86e-04  ema_tau=0.99648
+  Epoch 011 [ 240/721]  loss=0.1345  lr=2.86e-04  ema_tau=0.99649
+  Epoch 011 [ 260/721]  loss=0.1573  lr=2.86e-04  ema_tau=0.99649
+  Epoch 011 [ 280/721]  loss=0.1314  lr=2.85e-04  ema_tau=0.99649
+  Epoch 011 [ 300/721]  loss=0.1452  lr=2.85e-04  ema_tau=0.99649
+  Epoch 011 [ 320/721]  loss=0.1543  lr=2.85e-04  ema_tau=0.99650
+  Epoch 011 [ 340/721]  loss=0.1414  lr=2.85e-04  ema_tau=0.99650
+  Epoch 011 [ 360/721]  loss=0.1780  lr=2.85e-04  ema_tau=0.99650
+  Epoch 011 [ 380/721]  loss=0.1553  lr=2.85e-04  ema_tau=0.99650
+  Epoch 011 [ 400/721]  loss=0.1040  lr=2.85e-04  ema_tau=0.99650
+  Epoch 011 [ 420/721]  loss=0.1368  lr=2.84e-04  ema_tau=0.99651
+  Epoch 011 [ 440/721]  loss=0.1485  lr=2.84e-04  ema_tau=0.99651
+  Epoch 011 [ 460/721]  loss=0.1515  lr=2.84e-04  ema_tau=0.99651
+  Epoch 011 [ 480/721]  loss=0.1171  lr=2.84e-04  ema_tau=0.99651
+  Epoch 011 [ 500/721]  loss=0.1276  lr=2.84e-04  ema_tau=0.99652
+  Epoch 011 [ 520/721]  loss=0.1441  lr=2.84e-04  ema_tau=0.99652
+  Epoch 011 [ 540/721]  loss=0.1574  lr=2.84e-04  ema_tau=0.99652
+  Epoch 011 [ 560/721]  loss=0.1631  lr=2.84e-04  ema_tau=0.99652
+  Epoch 011 [ 580/721]  loss=0.1854  lr=2.83e-04  ema_tau=0.99653
+  Epoch 011 [ 600/721]  loss=0.1634  lr=2.83e-04  ema_tau=0.99653
+  Epoch 011 [ 620/721]  loss=0.1050  lr=2.83e-04  ema_tau=0.99653
+  Epoch 011 [ 640/721]  loss=0.1543  lr=2.83e-04  ema_tau=0.99653
+  Epoch 011 [ 660/721]  loss=0.1445  lr=2.83e-04  ema_tau=0.99653
+  Epoch 011 [ 680/721]  loss=0.1476  lr=2.83e-04  ema_tau=0.99654
+  Epoch 011 [ 700/721]  loss=0.1364  lr=2.83e-04  ema_tau=0.99654
+  Epoch 011 [ 720/721]  loss=0.1164  lr=2.83e-04  ema_tau=0.99654
+
+Epoch 011 done | avg_loss=0.1508 | time=292.7s
+  Val loss: 0.1302
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+
+  Epoch 012 [   0/721]  loss=0.1665  lr=2.83e-04  ema_tau=0.99654
+  Epoch 012 [  20/721]  loss=0.1590  lr=2.82e-04  ema_tau=0.99654
+  Epoch 012 [  40/721]  loss=0.1259  lr=2.82e-04  ema_tau=0.99655
+  Epoch 012 [  60/721]  loss=0.1692  lr=2.82e-04  ema_tau=0.99655
+  Epoch 012 [  80/721]  loss=0.1569  lr=2.82e-04  ema_tau=0.99655
+  Epoch 012 [ 100/721]  loss=0.1329  lr=2.82e-04  ema_tau=0.99655
+  Epoch 012 [ 120/721]  loss=0.1611  lr=2.82e-04  ema_tau=0.99656
+  Epoch 012 [ 140/721]  loss=0.1705  lr=2.82e-04  ema_tau=0.99656
+  Epoch 012 [ 160/721]  loss=0.2081  lr=2.81e-04  ema_tau=0.99656
+  Epoch 012 [ 180/721]  loss=0.1282  lr=2.81e-04  ema_tau=0.99656
+  Epoch 012 [ 200/721]  loss=0.1245  lr=2.81e-04  ema_tau=0.99657
+  Epoch 012 [ 220/721]  loss=0.1710  lr=2.81e-04  ema_tau=0.99657
+  Epoch 012 [ 240/721]  loss=0.1524  lr=2.81e-04  ema_tau=0.99657
+  Epoch 012 [ 260/721]  loss=0.1300  lr=2.81e-04  ema_tau=0.99657
+  Epoch 012 [ 280/721]  loss=0.1169  lr=2.81e-04  ema_tau=0.99658
+  Epoch 012 [ 300/721]  loss=0.1089  lr=2.80e-04  ema_tau=0.99658
+  Epoch 012 [ 320/721]  loss=0.1419  lr=2.80e-04  ema_tau=0.99658
+  Epoch 012 [ 340/721]  loss=0.1539  lr=2.80e-04  ema_tau=0.99658
+  Epoch 012 [ 360/721]  loss=0.1342  lr=2.80e-04  ema_tau=0.99659
+  Epoch 012 [ 380/721]  loss=0.1442  lr=2.80e-04  ema_tau=0.99659
+  Epoch 012 [ 400/721]  loss=0.1919  lr=2.80e-04  ema_tau=0.99659
+  Epoch 012 [ 420/721]  loss=0.1604  lr=2.80e-04  ema_tau=0.99659
+  Epoch 012 [ 440/721]  loss=0.1263  lr=2.79e-04  ema_tau=0.99660
+  Epoch 012 [ 460/721]  loss=0.1620  lr=2.79e-04  ema_tau=0.99660
+  Epoch 012 [ 480/721]  loss=0.1621  lr=2.79e-04  ema_tau=0.99660
+  Epoch 012 [ 500/721]  loss=0.1647  lr=2.79e-04  ema_tau=0.99660
+  Epoch 012 [ 520/721]  loss=0.1577  lr=2.79e-04  ema_tau=0.99661
+  Epoch 012 [ 540/721]  loss=0.1341  lr=2.79e-04  ema_tau=0.99661
+  Epoch 012 [ 560/721]  loss=0.1431  lr=2.79e-04  ema_tau=0.99661
+  Epoch 012 [ 580/721]  loss=0.1692  lr=2.78e-04  ema_tau=0.99661
+  Epoch 012 [ 600/721]  loss=0.1475  lr=2.78e-04  ema_tau=0.99662
+  Epoch 012 [ 620/721]  loss=0.1758  lr=2.78e-04  ema_tau=0.99662
+  Epoch 012 [ 640/721]  loss=0.1863  lr=2.78e-04  ema_tau=0.99662
+  Epoch 012 [ 660/721]  loss=0.1202  lr=2.78e-04  ema_tau=0.99662
+  Epoch 012 [ 680/721]  loss=0.1832  lr=2.78e-04  ema_tau=0.99663
+  Epoch 012 [ 700/721]  loss=0.1292  lr=2.77e-04  ema_tau=0.99663
+  Epoch 012 [ 720/721]  loss=0.1544  lr=2.77e-04  ema_tau=0.99663
+
+Epoch 012 done | avg_loss=0.1503 | time=292.8s
+  Val loss: 0.1405
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+
+  Epoch 013 [   0/721]  loss=0.1396  lr=2.77e-04  ema_tau=0.99663
+  Epoch 013 [  20/721]  loss=0.1426  lr=2.77e-04  ema_tau=0.99663
+  Epoch 013 [  40/721]  loss=0.1622  lr=2.77e-04  ema_tau=0.99664
+  Epoch 013 [  60/721]  loss=0.1612  lr=2.77e-04  ema_tau=0.99664
+  Epoch 013 [  80/721]  loss=0.1835  lr=2.77e-04  ema_tau=0.99664
+  Epoch 013 [ 100/721]  loss=0.1397  lr=2.77e-04  ema_tau=0.99664
+  Epoch 013 [ 120/721]  loss=0.1491  lr=2.76e-04  ema_tau=0.99665
+  Epoch 013 [ 140/721]  loss=0.1789  lr=2.76e-04  ema_tau=0.99665
+  Epoch 013 [ 160/721]  loss=0.1431  lr=2.76e-04  ema_tau=0.99665
+  Epoch 013 [ 180/721]  loss=0.1606  lr=2.76e-04  ema_tau=0.99665
+  Epoch 013 [ 200/721]  loss=0.1550  lr=2.76e-04  ema_tau=0.99666
+  Epoch 013 [ 220/721]  loss=0.1438  lr=2.76e-04  ema_tau=0.99666
+  Epoch 013 [ 240/721]  loss=0.1673  lr=2.75e-04  ema_tau=0.99666
+  Epoch 013 [ 260/721]  loss=0.1355  lr=2.75e-04  ema_tau=0.99666
+  Epoch 013 [ 280/721]  loss=0.1486  lr=2.75e-04  ema_tau=0.99667
+  Epoch 013 [ 300/721]  loss=0.1505  lr=2.75e-04  ema_tau=0.99667
+  Epoch 013 [ 320/721]  loss=0.1364  lr=2.75e-04  ema_tau=0.99667
+  Epoch 013 [ 340/721]  loss=0.1810  lr=2.75e-04  ema_tau=0.99667
+  Epoch 013 [ 360/721]  loss=0.1593  lr=2.74e-04  ema_tau=0.99668
+  Epoch 013 [ 380/721]  loss=0.1357  lr=2.74e-04  ema_tau=0.99668
+  Epoch 013 [ 400/721]  loss=0.1472  lr=2.74e-04  ema_tau=0.99668
+  Epoch 013 [ 420/721]  loss=0.1074  lr=2.74e-04  ema_tau=0.99669
+  Epoch 013 [ 440/721]  loss=0.1178  lr=2.74e-04  ema_tau=0.99669
+  Epoch 013 [ 460/721]  loss=0.1664  lr=2.74e-04  ema_tau=0.99669
+  Epoch 013 [ 480/721]  loss=0.1634  lr=2.73e-04  ema_tau=0.99669
+  Epoch 013 [ 500/721]  loss=0.1430  lr=2.73e-04  ema_tau=0.99670
+  Epoch 013 [ 520/721]  loss=0.1427  lr=2.73e-04  ema_tau=0.99670
+  Epoch 013 [ 540/721]  loss=0.1261  lr=2.73e-04  ema_tau=0.99670
+  Epoch 013 [ 560/721]  loss=0.1278  lr=2.73e-04  ema_tau=0.99670
+  Epoch 013 [ 580/721]  loss=0.1317  lr=2.73e-04  ema_tau=0.99671
+  Epoch 013 [ 600/721]  loss=0.1072  lr=2.72e-04  ema_tau=0.99671
+  Epoch 013 [ 620/721]  loss=0.1618  lr=2.72e-04  ema_tau=0.99671
+  Epoch 013 [ 640/721]  loss=0.1462  lr=2.72e-04  ema_tau=0.99671
+  Epoch 013 [ 660/721]  loss=0.1538  lr=2.72e-04  ema_tau=0.99672
+  Epoch 013 [ 680/721]  loss=0.1649  lr=2.72e-04  ema_tau=0.99672
+  Epoch 013 [ 700/721]  loss=0.1636  lr=2.72e-04  ema_tau=0.99672
+  Epoch 013 [ 720/721]  loss=0.1329  lr=2.71e-04  ema_tau=0.99673
+
+Epoch 013 done | avg_loss=0.1463 | time=293.6s
+  Val loss: 0.1330
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+
+  Epoch 014 [   0/721]  loss=0.1389  lr=2.71e-04  ema_tau=0.99673
+  Epoch 014 [  20/721]  loss=0.1189  lr=2.71e-04  ema_tau=0.99673
+  Epoch 014 [  40/721]  loss=0.1592  lr=2.71e-04  ema_tau=0.99673
+  Epoch 014 [  60/721]  loss=0.1416  lr=2.71e-04  ema_tau=0.99673
+  Epoch 014 [  80/721]  loss=0.1280  lr=2.71e-04  ema_tau=0.99674
+  Epoch 014 [ 100/721]  loss=0.1763  lr=2.71e-04  ema_tau=0.99674
+  Epoch 014 [ 120/721]  loss=0.1490  lr=2.70e-04  ema_tau=0.99674
+  Epoch 014 [ 140/721]  loss=0.1410  lr=2.70e-04  ema_tau=0.99674
+  Epoch 014 [ 160/721]  loss=0.1332  lr=2.70e-04  ema_tau=0.99675
+  Epoch 014 [ 180/721]  loss=0.1192  lr=2.70e-04  ema_tau=0.99675
+  Epoch 014 [ 200/721]  loss=0.1495  lr=2.70e-04  ema_tau=0.99675
+  Epoch 014 [ 220/721]  loss=0.1581  lr=2.70e-04  ema_tau=0.99675
+  Epoch 014 [ 240/721]  loss=0.1342  lr=2.69e-04  ema_tau=0.99676
+  Epoch 014 [ 260/721]  loss=0.1492  lr=2.69e-04  ema_tau=0.99676
+  Epoch 014 [ 280/721]  loss=0.1459  lr=2.69e-04  ema_tau=0.99676
+  Epoch 014 [ 300/721]  loss=0.1314  lr=2.69e-04  ema_tau=0.99677
+  Epoch 014 [ 320/721]  loss=0.1386  lr=2.69e-04  ema_tau=0.99677
+  Epoch 014 [ 340/721]  loss=0.1318  lr=2.68e-04  ema_tau=0.99677
+  Epoch 014 [ 360/721]  loss=0.1484  lr=2.68e-04  ema_tau=0.99677
+  Epoch 014 [ 380/721]  loss=0.1573  lr=2.68e-04  ema_tau=0.99678
+  Epoch 014 [ 400/721]  loss=0.1170  lr=2.68e-04  ema_tau=0.99678
+  Epoch 014 [ 420/721]  loss=0.1593  lr=2.68e-04  ema_tau=0.99678
+  Epoch 014 [ 440/721]  loss=0.1025  lr=2.68e-04  ema_tau=0.99679
+  Epoch 014 [ 460/721]  loss=0.1481  lr=2.67e-04  ema_tau=0.99679
+  Epoch 014 [ 480/721]  loss=0.1532  lr=2.67e-04  ema_tau=0.99679
+  Epoch 014 [ 500/721]  loss=0.1244  lr=2.67e-04  ema_tau=0.99679
+  Epoch 014 [ 520/721]  loss=0.1354  lr=2.67e-04  ema_tau=0.99680
+  Epoch 014 [ 540/721]  loss=0.1432  lr=2.67e-04  ema_tau=0.99680
+  Epoch 014 [ 560/721]  loss=0.1361  lr=2.67e-04  ema_tau=0.99680
+  Epoch 014 [ 580/721]  loss=0.1112  lr=2.66e-04  ema_tau=0.99680
+  Epoch 014 [ 600/721]  loss=0.1637  lr=2.66e-04  ema_tau=0.99681
+  Epoch 014 [ 620/721]  loss=0.1308  lr=2.66e-04  ema_tau=0.99681
+  Epoch 014 [ 640/721]  loss=0.1752  lr=2.66e-04  ema_tau=0.99681
+  Epoch 014 [ 660/721]  loss=0.1636  lr=2.66e-04  ema_tau=0.99682
+  Epoch 014 [ 680/721]  loss=0.1186  lr=2.65e-04  ema_tau=0.99682
+  Epoch 014 [ 700/721]  loss=0.1465  lr=2.65e-04  ema_tau=0.99682
+  Epoch 014 [ 720/721]  loss=0.1373  lr=2.65e-04  ema_tau=0.99682
+
+Epoch 014 done | avg_loss=0.1407 | time=294.0s
+  Val loss: 0.1301
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+
+  Epoch 015 [   0/721]  loss=0.1232  lr=2.65e-04  ema_tau=0.99682
+  Epoch 015 [  20/721]  loss=0.1553  lr=2.65e-04  ema_tau=0.99683
+  Epoch 015 [  40/721]  loss=0.1267  lr=2.65e-04  ema_tau=0.99683
+  Epoch 015 [  60/721]  loss=0.1417  lr=2.64e-04  ema_tau=0.99683
+  Epoch 015 [  80/721]  loss=0.1188  lr=2.64e-04  ema_tau=0.99684
+  Epoch 015 [ 100/721]  loss=0.1792  lr=2.64e-04  ema_tau=0.99684
+  Epoch 015 [ 120/721]  loss=0.1481  lr=2.64e-04  ema_tau=0.99684
+  Epoch 015 [ 140/721]  loss=0.1467  lr=2.64e-04  ema_tau=0.99684
+  Epoch 015 [ 160/721]  loss=0.1325  lr=2.64e-04  ema_tau=0.99685
+  Epoch 015 [ 180/721]  loss=0.1276  lr=2.63e-04  ema_tau=0.99685
+  Epoch 015 [ 200/721]  loss=0.1649  lr=2.63e-04  ema_tau=0.99685
+  Epoch 015 [ 220/721]  loss=0.1599  lr=2.63e-04  ema_tau=0.99686
+  Epoch 015 [ 240/721]  loss=0.1637  lr=2.63e-04  ema_tau=0.99686
+  Epoch 015 [ 260/721]  loss=0.1531  lr=2.63e-04  ema_tau=0.99686
+  Epoch 015 [ 280/721]  loss=0.1440  lr=2.62e-04  ema_tau=0.99686
+  Epoch 015 [ 300/721]  loss=0.1617  lr=2.62e-04  ema_tau=0.99687
+  Epoch 015 [ 320/721]  loss=0.1348  lr=2.62e-04  ema_tau=0.99687
+  Epoch 015 [ 340/721]  loss=0.1389  lr=2.62e-04  ema_tau=0.99687
+  Epoch 015 [ 360/721]  loss=0.1357  lr=2.62e-04  ema_tau=0.99688
+  Epoch 015 [ 380/721]  loss=0.1301  lr=2.61e-04  ema_tau=0.99688
+  Epoch 015 [ 400/721]  loss=0.1412  lr=2.61e-04  ema_tau=0.99688
+  Epoch 015 [ 420/721]  loss=0.1255  lr=2.61e-04  ema_tau=0.99688
+  Epoch 015 [ 440/721]  loss=0.1476  lr=2.61e-04  ema_tau=0.99689
+  Epoch 015 [ 460/721]  loss=0.1301  lr=2.61e-04  ema_tau=0.99689
+  Epoch 015 [ 480/721]  loss=0.1185  lr=2.60e-04  ema_tau=0.99689
+  Epoch 015 [ 500/721]  loss=0.1328  lr=2.60e-04  ema_tau=0.99690
+  Epoch 015 [ 520/721]  loss=0.1270  lr=2.60e-04  ema_tau=0.99690
+  Epoch 015 [ 540/721]  loss=0.1477  lr=2.60e-04  ema_tau=0.99690
+  Epoch 015 [ 560/721]  loss=0.1235  lr=2.60e-04  ema_tau=0.99690
+  Epoch 015 [ 580/721]  loss=0.1232  lr=2.59e-04  ema_tau=0.99691
+  Epoch 015 [ 600/721]  loss=0.1341  lr=2.59e-04  ema_tau=0.99691
+  Epoch 015 [ 620/721]  loss=0.1421  lr=2.59e-04  ema_tau=0.99691
+  Epoch 015 [ 640/721]  loss=0.1413  lr=2.59e-04  ema_tau=0.99692
+  Epoch 015 [ 660/721]  loss=0.1456  lr=2.59e-04  ema_tau=0.99692
+  Epoch 015 [ 680/721]  loss=0.1340  lr=2.58e-04  ema_tau=0.99692
+  Epoch 015 [ 700/721]  loss=0.1361  lr=2.58e-04  ema_tau=0.99693
+  Epoch 015 [ 720/721]  loss=0.1426  lr=2.58e-04  ema_tau=0.99693
+
+Epoch 015 done | avg_loss=0.1364 | time=291.8s
+  Collapse check — embed_std=0.0421  mean_cos_sim=0.2462
+  Val loss: 0.1270
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 016 [   0/721]  loss=0.1214  lr=2.58e-04  ema_tau=0.99693
+  Epoch 016 [  20/721]  loss=0.1223  lr=2.58e-04  ema_tau=0.99693
+  Epoch 016 [  40/721]  loss=0.1109  lr=2.58e-04  ema_tau=0.99693
+  Epoch 016 [  60/721]  loss=0.1331  lr=2.57e-04  ema_tau=0.99694
+  Epoch 016 [  80/721]  loss=0.1468  lr=2.57e-04  ema_tau=0.99694
+  Epoch 016 [ 100/721]  loss=0.1410  lr=2.57e-04  ema_tau=0.99694
+  Epoch 016 [ 120/721]  loss=0.1383  lr=2.57e-04  ema_tau=0.99695
+  Epoch 016 [ 140/721]  loss=0.1086  lr=2.57e-04  ema_tau=0.99695
+  Epoch 016 [ 160/721]  loss=0.1373  lr=2.56e-04  ema_tau=0.99695
+  Epoch 016 [ 180/721]  loss=0.1473  lr=2.56e-04  ema_tau=0.99695
+  Epoch 016 [ 200/721]  loss=0.1228  lr=2.56e-04  ema_tau=0.99696
+  Epoch 016 [ 220/721]  loss=0.1479  lr=2.56e-04  ema_tau=0.99696
+  Epoch 016 [ 240/721]  loss=0.1064  lr=2.56e-04  ema_tau=0.99696
+  Epoch 016 [ 260/721]  loss=0.1507  lr=2.55e-04  ema_tau=0.99697
+  Epoch 016 [ 280/721]  loss=0.1330  lr=2.55e-04  ema_tau=0.99697
+  Epoch 016 [ 300/721]  loss=0.1201  lr=2.55e-04  ema_tau=0.99697
+  Epoch 016 [ 320/721]  loss=0.1227  lr=2.55e-04  ema_tau=0.99698
+  Epoch 016 [ 340/721]  loss=0.1303  lr=2.55e-04  ema_tau=0.99698
+  Epoch 016 [ 360/721]  loss=0.1089  lr=2.54e-04  ema_tau=0.99698
+  Epoch 016 [ 380/721]  loss=0.1355  lr=2.54e-04  ema_tau=0.99698
+  Epoch 016 [ 400/721]  loss=0.1453  lr=2.54e-04  ema_tau=0.99699
+  Epoch 016 [ 420/721]  loss=0.1203  lr=2.54e-04  ema_tau=0.99699
+  Epoch 016 [ 440/721]  loss=0.1172  lr=2.54e-04  ema_tau=0.99699
+  Epoch 016 [ 460/721]  loss=0.1353  lr=2.53e-04  ema_tau=0.99700
+  Epoch 016 [ 480/721]  loss=0.1163  lr=2.53e-04  ema_tau=0.99700
+  Epoch 016 [ 500/721]  loss=0.1259  lr=2.53e-04  ema_tau=0.99700
+  Epoch 016 [ 520/721]  loss=0.1395  lr=2.53e-04  ema_tau=0.99701
+  Epoch 016 [ 540/721]  loss=0.1185  lr=2.52e-04  ema_tau=0.99701
+  Epoch 016 [ 560/721]  loss=0.1130  lr=2.52e-04  ema_tau=0.99701
+  Epoch 016 [ 580/721]  loss=0.1012  lr=2.52e-04  ema_tau=0.99702
+  Epoch 016 [ 600/721]  loss=0.1211  lr=2.52e-04  ema_tau=0.99702
+  Epoch 016 [ 620/721]  loss=0.0942  lr=2.52e-04  ema_tau=0.99702
+  Epoch 016 [ 640/721]  loss=0.1321  lr=2.51e-04  ema_tau=0.99702
+  Epoch 016 [ 660/721]  loss=0.1337  lr=2.51e-04  ema_tau=0.99703
+  Epoch 016 [ 680/721]  loss=0.1358  lr=2.51e-04  ema_tau=0.99703
+  Epoch 016 [ 700/721]  loss=0.1435  lr=2.51e-04  ema_tau=0.99703
+  Epoch 016 [ 720/721]  loss=0.1481  lr=2.51e-04  ema_tau=0.99704
+
+Epoch 016 done | avg_loss=0.1310 | time=293.2s
+  Val loss: 0.1251
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 017 [   0/721]  loss=0.1322  lr=2.51e-04  ema_tau=0.99704
+  Epoch 017 [  20/721]  loss=0.1008  lr=2.50e-04  ema_tau=0.99704
+  Epoch 017 [  40/721]  loss=0.1457  lr=2.50e-04  ema_tau=0.99704
+  Epoch 017 [  60/721]  loss=0.1250  lr=2.50e-04  ema_tau=0.99705
+  Epoch 017 [  80/721]  loss=0.1274  lr=2.50e-04  ema_tau=0.99705
+  Epoch 017 [ 100/721]  loss=0.1206  lr=2.49e-04  ema_tau=0.99705
+  Epoch 017 [ 120/721]  loss=0.1184  lr=2.49e-04  ema_tau=0.99705
+  Epoch 017 [ 140/721]  loss=0.1139  lr=2.49e-04  ema_tau=0.99706
+  Epoch 017 [ 160/721]  loss=0.1207  lr=2.49e-04  ema_tau=0.99706
+  Epoch 017 [ 180/721]  loss=0.1127  lr=2.49e-04  ema_tau=0.99706
+  Epoch 017 [ 200/721]  loss=0.1342  lr=2.48e-04  ema_tau=0.99707
+  Epoch 017 [ 220/721]  loss=0.1459  lr=2.48e-04  ema_tau=0.99707
+  Epoch 017 [ 240/721]  loss=0.1355  lr=2.48e-04  ema_tau=0.99707
+  Epoch 017 [ 260/721]  loss=0.1415  lr=2.48e-04  ema_tau=0.99708
+  Epoch 017 [ 280/721]  loss=0.1128  lr=2.47e-04  ema_tau=0.99708
+  Epoch 017 [ 300/721]  loss=0.1387  lr=2.47e-04  ema_tau=0.99708
+  Epoch 017 [ 320/721]  loss=0.1134  lr=2.47e-04  ema_tau=0.99709
+  Epoch 017 [ 340/721]  loss=0.1296  lr=2.47e-04  ema_tau=0.99709
+  Epoch 017 [ 360/721]  loss=0.1386  lr=2.47e-04  ema_tau=0.99709
+  Epoch 017 [ 380/721]  loss=0.1293  lr=2.46e-04  ema_tau=0.99710
+  Epoch 017 [ 400/721]  loss=0.1654  lr=2.46e-04  ema_tau=0.99710
+  Epoch 017 [ 420/721]  loss=0.1220  lr=2.46e-04  ema_tau=0.99710
+  Epoch 017 [ 440/721]  loss=0.1128  lr=2.46e-04  ema_tau=0.99710
+  Epoch 017 [ 460/721]  loss=0.1413  lr=2.45e-04  ema_tau=0.99711
+  Epoch 017 [ 480/721]  loss=0.0896  lr=2.45e-04  ema_tau=0.99711
+  Epoch 017 [ 500/721]  loss=0.1309  lr=2.45e-04  ema_tau=0.99711
+  Epoch 017 [ 520/721]  loss=0.1213  lr=2.45e-04  ema_tau=0.99712
+  Epoch 017 [ 540/721]  loss=0.1236  lr=2.45e-04  ema_tau=0.99712
+  Epoch 017 [ 560/721]  loss=0.1315  lr=2.44e-04  ema_tau=0.99712
+  Epoch 017 [ 580/721]  loss=0.1370  lr=2.44e-04  ema_tau=0.99713
+  Epoch 017 [ 600/721]  loss=0.1276  lr=2.44e-04  ema_tau=0.99713
+  Epoch 017 [ 620/721]  loss=0.1235  lr=2.44e-04  ema_tau=0.99713
+  Epoch 017 [ 640/721]  loss=0.1087  lr=2.43e-04  ema_tau=0.99714
+  Epoch 017 [ 660/721]  loss=0.1332  lr=2.43e-04  ema_tau=0.99714
+  Epoch 017 [ 680/721]  loss=0.1303  lr=2.43e-04  ema_tau=0.99714
+  Epoch 017 [ 700/721]  loss=0.1162  lr=2.43e-04  ema_tau=0.99715
+  Epoch 017 [ 720/721]  loss=0.1449  lr=2.43e-04  ema_tau=0.99715
+
+Epoch 017 done | avg_loss=0.1256 | time=292.6s
+  Val loss: 0.1172
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 018 [   0/721]  loss=0.1414  lr=2.43e-04  ema_tau=0.99715
+  Epoch 018 [  20/721]  loss=0.1041  lr=2.42e-04  ema_tau=0.99715
+  Epoch 018 [  40/721]  loss=0.0933  lr=2.42e-04  ema_tau=0.99715
+  Epoch 018 [  60/721]  loss=0.1222  lr=2.42e-04  ema_tau=0.99716
+  Epoch 018 [  80/721]  loss=0.1250  lr=2.42e-04  ema_tau=0.99716
+  Epoch 018 [ 100/721]  loss=0.1319  lr=2.41e-04  ema_tau=0.99716
+  Epoch 018 [ 120/721]  loss=0.1119  lr=2.41e-04  ema_tau=0.99717
+  Epoch 018 [ 140/721]  loss=0.1237  lr=2.41e-04  ema_tau=0.99717
+  Epoch 018 [ 160/721]  loss=0.0985  lr=2.41e-04  ema_tau=0.99717
+  Epoch 018 [ 180/721]  loss=0.1456  lr=2.40e-04  ema_tau=0.99718
+  Epoch 018 [ 200/721]  loss=0.1224  lr=2.40e-04  ema_tau=0.99718
+  Epoch 018 [ 220/721]  loss=0.0944  lr=2.40e-04  ema_tau=0.99718
+  Epoch 018 [ 240/721]  loss=0.1444  lr=2.40e-04  ema_tau=0.99719
+  Epoch 018 [ 260/721]  loss=0.1093  lr=2.40e-04  ema_tau=0.99719
+  Epoch 018 [ 280/721]  loss=0.1227  lr=2.39e-04  ema_tau=0.99719
+  Epoch 018 [ 300/721]  loss=0.1294  lr=2.39e-04  ema_tau=0.99720
+  Epoch 018 [ 320/721]  loss=0.1248  lr=2.39e-04  ema_tau=0.99720
+  Epoch 018 [ 340/721]  loss=0.1166  lr=2.39e-04  ema_tau=0.99720
+  Epoch 018 [ 360/721]  loss=0.1285  lr=2.38e-04  ema_tau=0.99721
+  Epoch 018 [ 380/721]  loss=0.1211  lr=2.38e-04  ema_tau=0.99721
+  Epoch 018 [ 400/721]  loss=0.1183  lr=2.38e-04  ema_tau=0.99721
+  Epoch 018 [ 420/721]  loss=0.1405  lr=2.38e-04  ema_tau=0.99722
+  Epoch 018 [ 440/721]  loss=0.1271  lr=2.37e-04  ema_tau=0.99722
+  Epoch 018 [ 460/721]  loss=0.1067  lr=2.37e-04  ema_tau=0.99722
+  Epoch 018 [ 480/721]  loss=0.1204  lr=2.37e-04  ema_tau=0.99722
+  Epoch 018 [ 500/721]  loss=0.1337  lr=2.37e-04  ema_tau=0.99723
+  Epoch 018 [ 520/721]  loss=0.1250  lr=2.36e-04  ema_tau=0.99723
+  Epoch 018 [ 540/721]  loss=0.1137  lr=2.36e-04  ema_tau=0.99723
+  Epoch 018 [ 560/721]  loss=0.1180  lr=2.36e-04  ema_tau=0.99724
+  Epoch 018 [ 580/721]  loss=0.1064  lr=2.36e-04  ema_tau=0.99724
+  Epoch 018 [ 600/721]  loss=0.1095  lr=2.36e-04  ema_tau=0.99724
+  Epoch 018 [ 620/721]  loss=0.1281  lr=2.35e-04  ema_tau=0.99725
+  Epoch 018 [ 640/721]  loss=0.1122  lr=2.35e-04  ema_tau=0.99725
+  Epoch 018 [ 660/721]  loss=0.1221  lr=2.35e-04  ema_tau=0.99725
+  Epoch 018 [ 680/721]  loss=0.1145  lr=2.35e-04  ema_tau=0.99726
+  Epoch 018 [ 700/721]  loss=0.1220  lr=2.34e-04  ema_tau=0.99726
+  Epoch 018 [ 720/721]  loss=0.1024  lr=2.34e-04  ema_tau=0.99726
+
+Epoch 018 done | avg_loss=0.1202 | time=292.7s
+  Val loss: 0.1131
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 019 [   0/721]  loss=0.1134  lr=2.34e-04  ema_tau=0.99726
+  Epoch 019 [  20/721]  loss=0.1302  lr=2.34e-04  ema_tau=0.99727
+  Epoch 019 [  40/721]  loss=0.1314  lr=2.34e-04  ema_tau=0.99727
+  Epoch 019 [  60/721]  loss=0.1224  lr=2.33e-04  ema_tau=0.99727
+  Epoch 019 [  80/721]  loss=0.1222  lr=2.33e-04  ema_tau=0.99728
+  Epoch 019 [ 100/721]  loss=0.1180  lr=2.33e-04  ema_tau=0.99728
+  Epoch 019 [ 120/721]  loss=0.1248  lr=2.33e-04  ema_tau=0.99728
+  Epoch 019 [ 140/721]  loss=0.1095  lr=2.32e-04  ema_tau=0.99729
+  Epoch 019 [ 160/721]  loss=0.1133  lr=2.32e-04  ema_tau=0.99729
+  Epoch 019 [ 180/721]  loss=0.1384  lr=2.32e-04  ema_tau=0.99729
+  Epoch 019 [ 200/721]  loss=0.1319  lr=2.32e-04  ema_tau=0.99730
+  Epoch 019 [ 220/721]  loss=0.1370  lr=2.31e-04  ema_tau=0.99730
+  Epoch 019 [ 240/721]  loss=0.1311  lr=2.31e-04  ema_tau=0.99730
+  Epoch 019 [ 260/721]  loss=0.1277  lr=2.31e-04  ema_tau=0.99731
+  Epoch 019 [ 280/721]  loss=0.1361  lr=2.31e-04  ema_tau=0.99731
+  Epoch 019 [ 300/721]  loss=0.1379  lr=2.30e-04  ema_tau=0.99731
+  Epoch 019 [ 320/721]  loss=0.1073  lr=2.30e-04  ema_tau=0.99732
+  Epoch 019 [ 340/721]  loss=0.1203  lr=2.30e-04  ema_tau=0.99732
+  Epoch 019 [ 360/721]  loss=0.1249  lr=2.30e-04  ema_tau=0.99732
+  Epoch 019 [ 380/721]  loss=0.1281  lr=2.29e-04  ema_tau=0.99733
+  Epoch 019 [ 400/721]  loss=0.1085  lr=2.29e-04  ema_tau=0.99733
+  Epoch 019 [ 420/721]  loss=0.0976  lr=2.29e-04  ema_tau=0.99733
+  Epoch 019 [ 440/721]  loss=0.1126  lr=2.29e-04  ema_tau=0.99734
+  Epoch 019 [ 460/721]  loss=0.1346  lr=2.28e-04  ema_tau=0.99734
+  Epoch 019 [ 480/721]  loss=0.1246  lr=2.28e-04  ema_tau=0.99734
+  Epoch 019 [ 500/721]  loss=0.1129  lr=2.28e-04  ema_tau=0.99735
+  Epoch 019 [ 520/721]  loss=0.1242  lr=2.28e-04  ema_tau=0.99735
+  Epoch 019 [ 540/721]  loss=0.1301  lr=2.28e-04  ema_tau=0.99735
+  Epoch 019 [ 560/721]  loss=0.1151  lr=2.27e-04  ema_tau=0.99736
+  Epoch 019 [ 580/721]  loss=0.1232  lr=2.27e-04  ema_tau=0.99736
+  Epoch 019 [ 600/721]  loss=0.1151  lr=2.27e-04  ema_tau=0.99736
+  Epoch 019 [ 620/721]  loss=0.1325  lr=2.27e-04  ema_tau=0.99737
+  Epoch 019 [ 640/721]  loss=0.1238  lr=2.26e-04  ema_tau=0.99737
+  Epoch 019 [ 660/721]  loss=0.1237  lr=2.26e-04  ema_tau=0.99737
+  Epoch 019 [ 680/721]  loss=0.1328  lr=2.26e-04  ema_tau=0.99738
+  Epoch 019 [ 700/721]  loss=0.0980  lr=2.26e-04  ema_tau=0.99738
+  Epoch 019 [ 720/721]  loss=0.1008  lr=2.25e-04  ema_tau=0.99738
+
+Epoch 019 done | avg_loss=0.1178 | time=291.5s
+  Val loss: 0.1109
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 020 [   0/721]  loss=0.1006  lr=2.25e-04  ema_tau=0.99738
+  Epoch 020 [  20/721]  loss=0.1178  lr=2.25e-04  ema_tau=0.99739
+  Epoch 020 [  40/721]  loss=0.1210  lr=2.25e-04  ema_tau=0.99739
+  Epoch 020 [  60/721]  loss=0.0946  lr=2.24e-04  ema_tau=0.99739
+  Epoch 020 [  80/721]  loss=0.1004  lr=2.24e-04  ema_tau=0.99740
+  Epoch 020 [ 100/721]  loss=0.1271  lr=2.24e-04  ema_tau=0.99740
+  Epoch 020 [ 120/721]  loss=0.1100  lr=2.24e-04  ema_tau=0.99740
+  Epoch 020 [ 140/721]  loss=0.1026  lr=2.23e-04  ema_tau=0.99741
+  Epoch 020 [ 160/721]  loss=0.1148  lr=2.23e-04  ema_tau=0.99741
+  Epoch 020 [ 180/721]  loss=0.1166  lr=2.23e-04  ema_tau=0.99741
+  Epoch 020 [ 200/721]  loss=0.1099  lr=2.23e-04  ema_tau=0.99742
+  Epoch 020 [ 220/721]  loss=0.1124  lr=2.22e-04  ema_tau=0.99742
+  Epoch 020 [ 240/721]  loss=0.1157  lr=2.22e-04  ema_tau=0.99742
+  Epoch 020 [ 260/721]  loss=0.1107  lr=2.22e-04  ema_tau=0.99743
+  Epoch 020 [ 280/721]  loss=0.1044  lr=2.22e-04  ema_tau=0.99743
+  Epoch 020 [ 300/721]  loss=0.1135  lr=2.21e-04  ema_tau=0.99743
+  Epoch 020 [ 320/721]  loss=0.1330  lr=2.21e-04  ema_tau=0.99744
+  Epoch 020 [ 340/721]  loss=0.1107  lr=2.21e-04  ema_tau=0.99744
+  Epoch 020 [ 360/721]  loss=0.0964  lr=2.21e-04  ema_tau=0.99744
+  Epoch 020 [ 380/721]  loss=0.0926  lr=2.20e-04  ema_tau=0.99745
+  Epoch 020 [ 400/721]  loss=0.1020  lr=2.20e-04  ema_tau=0.99745
+  Epoch 020 [ 420/721]  loss=0.1098  lr=2.20e-04  ema_tau=0.99745
+  Epoch 020 [ 440/721]  loss=0.1117  lr=2.20e-04  ema_tau=0.99746
+  Epoch 020 [ 460/721]  loss=0.1149  lr=2.19e-04  ema_tau=0.99746
+  Epoch 020 [ 480/721]  loss=0.1031  lr=2.19e-04  ema_tau=0.99746
+  Epoch 020 [ 500/721]  loss=0.1132  lr=2.19e-04  ema_tau=0.99747
+  Epoch 020 [ 520/721]  loss=0.1111  lr=2.19e-04  ema_tau=0.99747
+  Epoch 020 [ 540/721]  loss=0.1135  lr=2.18e-04  ema_tau=0.99747
+  Epoch 020 [ 560/721]  loss=0.0983  lr=2.18e-04  ema_tau=0.99748
+  Epoch 020 [ 580/721]  loss=0.1329  lr=2.18e-04  ema_tau=0.99748
+  Epoch 020 [ 600/721]  loss=0.1107  lr=2.18e-04  ema_tau=0.99748
+  Epoch 020 [ 620/721]  loss=0.1135  lr=2.17e-04  ema_tau=0.99749
+  Epoch 020 [ 640/721]  loss=0.1116  lr=2.17e-04  ema_tau=0.99749
+  Epoch 020 [ 660/721]  loss=0.1017  lr=2.17e-04  ema_tau=0.99749
+  Epoch 020 [ 680/721]  loss=0.1217  lr=2.17e-04  ema_tau=0.99750
+  Epoch 020 [ 700/721]  loss=0.1022  lr=2.16e-04  ema_tau=0.99750
+  Epoch 020 [ 720/721]  loss=0.1129  lr=2.16e-04  ema_tau=0.99750
+
+Epoch 020 done | avg_loss=0.1128 | time=291.3s
+  Collapse check — embed_std=0.0410  mean_cos_sim=0.2781
+  Val loss: 0.1063
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/epoch_0020.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 021 [   0/721]  loss=0.1188  lr=2.16e-04  ema_tau=0.99750
+  Epoch 021 [  20/721]  loss=0.0996  lr=2.16e-04  ema_tau=0.99751
+  Epoch 021 [  40/721]  loss=0.1183  lr=2.16e-04  ema_tau=0.99751
+  Epoch 021 [  60/721]  loss=0.1088  lr=2.15e-04  ema_tau=0.99751
+  Epoch 021 [  80/721]  loss=0.1106  lr=2.15e-04  ema_tau=0.99752
+  Epoch 021 [ 100/721]  loss=0.1016  lr=2.15e-04  ema_tau=0.99752
+  Epoch 021 [ 120/721]  loss=0.0945  lr=2.14e-04  ema_tau=0.99752
+  Epoch 021 [ 140/721]  loss=0.1088  lr=2.14e-04  ema_tau=0.99753
+  Epoch 021 [ 160/721]  loss=0.0819  lr=2.14e-04  ema_tau=0.99753
+  Epoch 021 [ 180/721]  loss=0.1038  lr=2.14e-04  ema_tau=0.99753
+  Epoch 021 [ 200/721]  loss=0.1149  lr=2.13e-04  ema_tau=0.99754
+  Epoch 021 [ 220/721]  loss=0.1047  lr=2.13e-04  ema_tau=0.99754
+  Epoch 021 [ 240/721]  loss=0.1088  lr=2.13e-04  ema_tau=0.99754
+  Epoch 021 [ 260/721]  loss=0.0913  lr=2.13e-04  ema_tau=0.99755
+  Epoch 021 [ 280/721]  loss=0.1254  lr=2.12e-04  ema_tau=0.99755
+  Epoch 021 [ 300/721]  loss=0.0994  lr=2.12e-04  ema_tau=0.99755
+  Epoch 021 [ 320/721]  loss=0.0769  lr=2.12e-04  ema_tau=0.99756
+  Epoch 021 [ 340/721]  loss=0.1076  lr=2.12e-04  ema_tau=0.99756
+  Epoch 021 [ 360/721]  loss=0.1201  lr=2.11e-04  ema_tau=0.99756
+  Epoch 021 [ 380/721]  loss=0.1089  lr=2.11e-04  ema_tau=0.99757
+  Epoch 021 [ 400/721]  loss=0.1147  lr=2.11e-04  ema_tau=0.99757
+  Epoch 021 [ 420/721]  loss=0.1097  lr=2.11e-04  ema_tau=0.99757
+  Epoch 021 [ 440/721]  loss=0.0944  lr=2.10e-04  ema_tau=0.99758
+  Epoch 021 [ 460/721]  loss=0.1075  lr=2.10e-04  ema_tau=0.99758
+  Epoch 021 [ 480/721]  loss=0.1036  lr=2.10e-04  ema_tau=0.99758
+  Epoch 021 [ 500/721]  loss=0.1087  lr=2.09e-04  ema_tau=0.99759
+  Epoch 021 [ 520/721]  loss=0.1138  lr=2.09e-04  ema_tau=0.99759
+  Epoch 021 [ 540/721]  loss=0.1066  lr=2.09e-04  ema_tau=0.99759
+  Epoch 021 [ 560/721]  loss=0.1142  lr=2.09e-04  ema_tau=0.99760
+  Epoch 021 [ 580/721]  loss=0.1060  lr=2.08e-04  ema_tau=0.99760
+  Epoch 021 [ 600/721]  loss=0.0887  lr=2.08e-04  ema_tau=0.99760
+  Epoch 021 [ 620/721]  loss=0.1165  lr=2.08e-04  ema_tau=0.99761
+  Epoch 021 [ 640/721]  loss=0.1099  lr=2.08e-04  ema_tau=0.99761
+  Epoch 021 [ 660/721]  loss=0.0939  lr=2.07e-04  ema_tau=0.99761
+  Epoch 021 [ 680/721]  loss=0.1153  lr=2.07e-04  ema_tau=0.99762
+  Epoch 021 [ 700/721]  loss=0.1066  lr=2.07e-04  ema_tau=0.99762
+  Epoch 021 [ 720/721]  loss=0.1126  lr=2.07e-04  ema_tau=0.99763
+
+Epoch 021 done | avg_loss=0.1071 | time=293.4s
+  Val loss: 0.0969
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 022 [   0/721]  loss=0.1200  lr=2.07e-04  ema_tau=0.99763
+  Epoch 022 [  20/721]  loss=0.1200  lr=2.06e-04  ema_tau=0.99763
+  Epoch 022 [  40/721]  loss=0.1000  lr=2.06e-04  ema_tau=0.99763
+  Epoch 022 [  60/721]  loss=0.1151  lr=2.06e-04  ema_tau=0.99764
+  Epoch 022 [  80/721]  loss=0.1202  lr=2.05e-04  ema_tau=0.99764
+  Epoch 022 [ 100/721]  loss=0.1094  lr=2.05e-04  ema_tau=0.99764
+  Epoch 022 [ 120/721]  loss=0.1064  lr=2.05e-04  ema_tau=0.99765
+  Epoch 022 [ 140/721]  loss=0.0974  lr=2.05e-04  ema_tau=0.99765
+  Epoch 022 [ 160/721]  loss=0.0991  lr=2.04e-04  ema_tau=0.99765
+  Epoch 022 [ 180/721]  loss=0.0994  lr=2.04e-04  ema_tau=0.99766
+  Epoch 022 [ 200/721]  loss=0.0996  lr=2.04e-04  ema_tau=0.99766
+  Epoch 022 [ 220/721]  loss=0.1013  lr=2.04e-04  ema_tau=0.99766
+  Epoch 022 [ 240/721]  loss=0.1142  lr=2.03e-04  ema_tau=0.99767
+  Epoch 022 [ 260/721]  loss=0.1176  lr=2.03e-04  ema_tau=0.99767
+  Epoch 022 [ 280/721]  loss=0.0897  lr=2.03e-04  ema_tau=0.99767
+  Epoch 022 [ 300/721]  loss=0.0982  lr=2.02e-04  ema_tau=0.99768
+  Epoch 022 [ 320/721]  loss=0.1061  lr=2.02e-04  ema_tau=0.99768
+  Epoch 022 [ 340/721]  loss=0.1070  lr=2.02e-04  ema_tau=0.99768
+  Epoch 022 [ 360/721]  loss=0.0968  lr=2.02e-04  ema_tau=0.99769
+  Epoch 022 [ 380/721]  loss=0.0935  lr=2.01e-04  ema_tau=0.99769
+  Epoch 022 [ 400/721]  loss=0.0779  lr=2.01e-04  ema_tau=0.99769
+  Epoch 022 [ 420/721]  loss=0.1023  lr=2.01e-04  ema_tau=0.99770
+  Epoch 022 [ 440/721]  loss=0.0928  lr=2.01e-04  ema_tau=0.99770
+  Epoch 022 [ 460/721]  loss=0.1073  lr=2.00e-04  ema_tau=0.99770
+  Epoch 022 [ 480/721]  loss=0.0852  lr=2.00e-04  ema_tau=0.99771
+  Epoch 022 [ 500/721]  loss=0.1117  lr=2.00e-04  ema_tau=0.99771
+  Epoch 022 [ 520/721]  loss=0.1027  lr=1.99e-04  ema_tau=0.99771
+  Epoch 022 [ 540/721]  loss=0.0893  lr=1.99e-04  ema_tau=0.99772
+  Epoch 022 [ 560/721]  loss=0.0948  lr=1.99e-04  ema_tau=0.99772
+  Epoch 022 [ 580/721]  loss=0.0898  lr=1.99e-04  ema_tau=0.99772
+  Epoch 022 [ 600/721]  loss=0.1139  lr=1.98e-04  ema_tau=0.99773
+  Epoch 022 [ 620/721]  loss=0.0924  lr=1.98e-04  ema_tau=0.99773
+  Epoch 022 [ 640/721]  loss=0.0990  lr=1.98e-04  ema_tau=0.99774
+  Epoch 022 [ 660/721]  loss=0.0918  lr=1.98e-04  ema_tau=0.99774
+  Epoch 022 [ 680/721]  loss=0.0962  lr=1.97e-04  ema_tau=0.99774
+  Epoch 022 [ 700/721]  loss=0.1001  lr=1.97e-04  ema_tau=0.99775
+  Epoch 022 [ 720/721]  loss=0.1028  lr=1.97e-04  ema_tau=0.99775
+
+Epoch 022 done | avg_loss=0.1008 | time=292.3s
+  Val loss: 0.0931
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 023 [   0/721]  loss=0.1033  lr=1.97e-04  ema_tau=0.99775
+  Epoch 023 [  20/721]  loss=0.0962  lr=1.96e-04  ema_tau=0.99775
+  Epoch 023 [  40/721]  loss=0.0907  lr=1.96e-04  ema_tau=0.99776
+  Epoch 023 [  60/721]  loss=0.0952  lr=1.96e-04  ema_tau=0.99776
+  Epoch 023 [  80/721]  loss=0.1033  lr=1.96e-04  ema_tau=0.99776
+  Epoch 023 [ 100/721]  loss=0.0929  lr=1.95e-04  ema_tau=0.99777
+  Epoch 023 [ 120/721]  loss=0.0903  lr=1.95e-04  ema_tau=0.99777
+  Epoch 023 [ 140/721]  loss=0.0767  lr=1.95e-04  ema_tau=0.99777
+  Epoch 023 [ 160/721]  loss=0.0905  lr=1.94e-04  ema_tau=0.99778
+  Epoch 023 [ 180/721]  loss=0.0820  lr=1.94e-04  ema_tau=0.99778
+  Epoch 023 [ 200/721]  loss=0.0933  lr=1.94e-04  ema_tau=0.99778
+  Epoch 023 [ 220/721]  loss=0.0917  lr=1.94e-04  ema_tau=0.99779
+  Epoch 023 [ 240/721]  loss=0.0879  lr=1.93e-04  ema_tau=0.99779
+  Epoch 023 [ 260/721]  loss=0.0919  lr=1.93e-04  ema_tau=0.99779
+  Epoch 023 [ 280/721]  loss=0.0975  lr=1.93e-04  ema_tau=0.99780
+  Epoch 023 [ 300/721]  loss=0.0975  lr=1.93e-04  ema_tau=0.99780
+  Epoch 023 [ 320/721]  loss=0.0926  lr=1.92e-04  ema_tau=0.99780
+  Epoch 023 [ 340/721]  loss=0.0889  lr=1.92e-04  ema_tau=0.99781
+  Epoch 023 [ 360/721]  loss=0.0833  lr=1.92e-04  ema_tau=0.99781
+  Epoch 023 [ 380/721]  loss=0.0897  lr=1.91e-04  ema_tau=0.99782
+  Epoch 023 [ 400/721]  loss=0.0810  lr=1.91e-04  ema_tau=0.99782
+  Epoch 023 [ 420/721]  loss=0.0879  lr=1.91e-04  ema_tau=0.99782
+  Epoch 023 [ 440/721]  loss=0.0773  lr=1.91e-04  ema_tau=0.99783
+  Epoch 023 [ 460/721]  loss=0.0918  lr=1.90e-04  ema_tau=0.99783
+  Epoch 023 [ 480/721]  loss=0.0884  lr=1.90e-04  ema_tau=0.99783
+  Epoch 023 [ 500/721]  loss=0.1031  lr=1.90e-04  ema_tau=0.99784
+  Epoch 023 [ 520/721]  loss=0.0997  lr=1.89e-04  ema_tau=0.99784
+  Epoch 023 [ 540/721]  loss=0.0911  lr=1.89e-04  ema_tau=0.99784
+  Epoch 023 [ 560/721]  loss=0.0914  lr=1.89e-04  ema_tau=0.99785
+  Epoch 023 [ 580/721]  loss=0.1216  lr=1.89e-04  ema_tau=0.99785
+  Epoch 023 [ 600/721]  loss=0.0825  lr=1.88e-04  ema_tau=0.99785
+  Epoch 023 [ 620/721]  loss=0.0956  lr=1.88e-04  ema_tau=0.99786
+  Epoch 023 [ 640/721]  loss=0.0839  lr=1.88e-04  ema_tau=0.99786
+  Epoch 023 [ 660/721]  loss=0.0701  lr=1.88e-04  ema_tau=0.99786
+  Epoch 023 [ 680/721]  loss=0.1017  lr=1.87e-04  ema_tau=0.99787
+  Epoch 023 [ 700/721]  loss=0.1012  lr=1.87e-04  ema_tau=0.99787
+  Epoch 023 [ 720/721]  loss=0.1023  lr=1.87e-04  ema_tau=0.99787
+
+Epoch 023 done | avg_loss=0.0939 | time=295.2s
+  Val loss: 0.0842
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 024 [   0/721]  loss=0.0954  lr=1.87e-04  ema_tau=0.99787
+  Epoch 024 [  20/721]  loss=0.0879  lr=1.86e-04  ema_tau=0.99788
+  Epoch 024 [  40/721]  loss=0.0899  lr=1.86e-04  ema_tau=0.99788
+  Epoch 024 [  60/721]  loss=0.0881  lr=1.86e-04  ema_tau=0.99788
+  Epoch 024 [  80/721]  loss=0.0858  lr=1.86e-04  ema_tau=0.99789
+  Epoch 024 [ 100/721]  loss=0.0976  lr=1.85e-04  ema_tau=0.99789
+  Epoch 024 [ 120/721]  loss=0.0853  lr=1.85e-04  ema_tau=0.99790
+  Epoch 024 [ 140/721]  loss=0.0821  lr=1.85e-04  ema_tau=0.99790
+  Epoch 024 [ 160/721]  loss=0.0879  lr=1.84e-04  ema_tau=0.99790
+  Epoch 024 [ 180/721]  loss=0.0956  lr=1.84e-04  ema_tau=0.99791
+  Epoch 024 [ 200/721]  loss=0.0998  lr=1.84e-04  ema_tau=0.99791
+  Epoch 024 [ 220/721]  loss=0.0966  lr=1.84e-04  ema_tau=0.99791
+  Epoch 024 [ 240/721]  loss=0.0836  lr=1.83e-04  ema_tau=0.99792
+  Epoch 024 [ 260/721]  loss=0.0884  lr=1.83e-04  ema_tau=0.99792
+  Epoch 024 [ 280/721]  loss=0.0677  lr=1.83e-04  ema_tau=0.99792
+  Epoch 024 [ 300/721]  loss=0.0871  lr=1.82e-04  ema_tau=0.99793
+  Epoch 024 [ 320/721]  loss=0.0959  lr=1.82e-04  ema_tau=0.99793
+  Epoch 024 [ 340/721]  loss=0.0808  lr=1.82e-04  ema_tau=0.99793
+  Epoch 024 [ 360/721]  loss=0.0829  lr=1.82e-04  ema_tau=0.99794
+  Epoch 024 [ 380/721]  loss=0.0952  lr=1.81e-04  ema_tau=0.99794
+  Epoch 024 [ 400/721]  loss=0.0927  lr=1.81e-04  ema_tau=0.99794
+  Epoch 024 [ 420/721]  loss=0.0872  lr=1.81e-04  ema_tau=0.99795
+  Epoch 024 [ 440/721]  loss=0.0761  lr=1.80e-04  ema_tau=0.99795
+  Epoch 024 [ 460/721]  loss=0.0815  lr=1.80e-04  ema_tau=0.99795
+  Epoch 024 [ 480/721]  loss=0.0962  lr=1.80e-04  ema_tau=0.99796
+  Epoch 024 [ 500/721]  loss=0.0872  lr=1.80e-04  ema_tau=0.99796
+  Epoch 024 [ 520/721]  loss=0.0677  lr=1.79e-04  ema_tau=0.99796
+  Epoch 024 [ 540/721]  loss=0.0829  lr=1.79e-04  ema_tau=0.99797
+  Epoch 024 [ 560/721]  loss=0.0728  lr=1.79e-04  ema_tau=0.99797
+  Epoch 024 [ 580/721]  loss=0.0811  lr=1.78e-04  ema_tau=0.99798
+  Epoch 024 [ 600/721]  loss=0.0907  lr=1.78e-04  ema_tau=0.99798
+  Epoch 024 [ 620/721]  loss=0.0855  lr=1.78e-04  ema_tau=0.99798
+  Epoch 024 [ 640/721]  loss=0.0952  lr=1.78e-04  ema_tau=0.99799
+  Epoch 024 [ 660/721]  loss=0.1065  lr=1.77e-04  ema_tau=0.99799
+  Epoch 024 [ 680/721]  loss=0.0914  lr=1.77e-04  ema_tau=0.99799
+  Epoch 024 [ 700/721]  loss=0.0917  lr=1.77e-04  ema_tau=0.99800
+  Epoch 024 [ 720/721]  loss=0.0883  lr=1.76e-04  ema_tau=0.99800
+
+Epoch 024 done | avg_loss=0.0876 | time=292.0s
+  Val loss: 0.0816
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 025 [   0/721]  loss=0.1055  lr=1.76e-04  ema_tau=0.99800
+  Epoch 025 [  20/721]  loss=0.0797  lr=1.76e-04  ema_tau=0.99800
+  Epoch 025 [  40/721]  loss=0.0920  lr=1.76e-04  ema_tau=0.99801
+  Epoch 025 [  60/721]  loss=0.0854  lr=1.76e-04  ema_tau=0.99801
+  Epoch 025 [  80/721]  loss=0.0866  lr=1.75e-04  ema_tau=0.99801
+  Epoch 025 [ 100/721]  loss=0.0877  lr=1.75e-04  ema_tau=0.99802
+  Epoch 025 [ 120/721]  loss=0.1033  lr=1.75e-04  ema_tau=0.99802
+  Epoch 025 [ 140/721]  loss=0.0910  lr=1.74e-04  ema_tau=0.99802
+  Epoch 025 [ 160/721]  loss=0.0864  lr=1.74e-04  ema_tau=0.99803
+  Epoch 025 [ 180/721]  loss=0.0796  lr=1.74e-04  ema_tau=0.99803
+  Epoch 025 [ 200/721]  loss=0.0774  lr=1.74e-04  ema_tau=0.99803
+  Epoch 025 [ 220/721]  loss=0.0777  lr=1.73e-04  ema_tau=0.99804
+  Epoch 025 [ 240/721]  loss=0.0801  lr=1.73e-04  ema_tau=0.99804
+  Epoch 025 [ 260/721]  loss=0.0928  lr=1.73e-04  ema_tau=0.99805
+  Epoch 025 [ 280/721]  loss=0.0889  lr=1.72e-04  ema_tau=0.99805
+  Epoch 025 [ 300/721]  loss=0.0764  lr=1.72e-04  ema_tau=0.99805
+  Epoch 025 [ 320/721]  loss=0.0899  lr=1.72e-04  ema_tau=0.99806
+  Epoch 025 [ 340/721]  loss=0.0748  lr=1.72e-04  ema_tau=0.99806
+  Epoch 025 [ 360/721]  loss=0.0919  lr=1.71e-04  ema_tau=0.99806
+  Epoch 025 [ 380/721]  loss=0.0879  lr=1.71e-04  ema_tau=0.99807
+  Epoch 025 [ 400/721]  loss=0.0923  lr=1.71e-04  ema_tau=0.99807
+  Epoch 025 [ 420/721]  loss=0.0709  lr=1.70e-04  ema_tau=0.99807
+  Epoch 025 [ 440/721]  loss=0.0913  lr=1.70e-04  ema_tau=0.99808
+  Epoch 025 [ 460/721]  loss=0.0921  lr=1.70e-04  ema_tau=0.99808
+  Epoch 025 [ 480/721]  loss=0.1092  lr=1.70e-04  ema_tau=0.99808
+  Epoch 025 [ 500/721]  loss=0.0825  lr=1.69e-04  ema_tau=0.99809
+  Epoch 025 [ 520/721]  loss=0.0851  lr=1.69e-04  ema_tau=0.99809
+  Epoch 025 [ 540/721]  loss=0.0880  lr=1.69e-04  ema_tau=0.99809
+  Epoch 025 [ 560/721]  loss=0.0807  lr=1.68e-04  ema_tau=0.99810
+  Epoch 025 [ 580/721]  loss=0.0839  lr=1.68e-04  ema_tau=0.99810
+  Epoch 025 [ 600/721]  loss=0.0728  lr=1.68e-04  ema_tau=0.99810
+  Epoch 025 [ 620/721]  loss=0.0855  lr=1.68e-04  ema_tau=0.99811
+  Epoch 025 [ 640/721]  loss=0.0735  lr=1.67e-04  ema_tau=0.99811
+  Epoch 025 [ 660/721]  loss=0.0679  lr=1.67e-04  ema_tau=0.99811
+  Epoch 025 [ 680/721]  loss=0.0792  lr=1.67e-04  ema_tau=0.99812
+  Epoch 025 [ 700/721]  loss=0.0819  lr=1.66e-04  ema_tau=0.99812
+  Epoch 025 [ 720/721]  loss=0.0740  lr=1.66e-04  ema_tau=0.99813
+
+Epoch 025 done | avg_loss=0.0830 | time=295.3s
+  Collapse check — embed_std=0.0404  mean_cos_sim=0.3252
+  Val loss: 0.0734
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 026 [   0/721]  loss=0.0762  lr=1.66e-04  ema_tau=0.99813
+  Epoch 026 [  20/721]  loss=0.0729  lr=1.66e-04  ema_tau=0.99813
+  Epoch 026 [  40/721]  loss=0.0771  lr=1.66e-04  ema_tau=0.99813
+  Epoch 026 [  60/721]  loss=0.0768  lr=1.65e-04  ema_tau=0.99814
+  Epoch 026 [  80/721]  loss=0.1112  lr=1.65e-04  ema_tau=0.99814
+  Epoch 026 [ 100/721]  loss=0.0644  lr=1.65e-04  ema_tau=0.99814
+  Epoch 026 [ 120/721]  loss=0.0843  lr=1.64e-04  ema_tau=0.99815
+  Epoch 026 [ 140/721]  loss=0.0803  lr=1.64e-04  ema_tau=0.99815
+  Epoch 026 [ 160/721]  loss=0.0761  lr=1.64e-04  ema_tau=0.99815
+  Epoch 026 [ 180/721]  loss=0.0787  lr=1.64e-04  ema_tau=0.99816
+  Epoch 026 [ 200/721]  loss=0.0599  lr=1.63e-04  ema_tau=0.99816
+  Epoch 026 [ 220/721]  loss=0.0725  lr=1.63e-04  ema_tau=0.99816
+  Epoch 026 [ 240/721]  loss=0.0731  lr=1.63e-04  ema_tau=0.99817
+  Epoch 026 [ 260/721]  loss=0.0816  lr=1.62e-04  ema_tau=0.99817
+  Epoch 026 [ 280/721]  loss=0.0948  lr=1.62e-04  ema_tau=0.99817
+  Epoch 026 [ 300/721]  loss=0.0824  lr=1.62e-04  ema_tau=0.99818
+  Epoch 026 [ 320/721]  loss=0.0836  lr=1.62e-04  ema_tau=0.99818
+  Epoch 026 [ 340/721]  loss=0.0846  lr=1.61e-04  ema_tau=0.99818
+  Epoch 026 [ 360/721]  loss=0.0919  lr=1.61e-04  ema_tau=0.99819
+  Epoch 026 [ 380/721]  loss=0.0883  lr=1.61e-04  ema_tau=0.99819
+  Epoch 026 [ 400/721]  loss=0.0778  lr=1.60e-04  ema_tau=0.99820
+  Epoch 026 [ 420/721]  loss=0.0955  lr=1.60e-04  ema_tau=0.99820
+  Epoch 026 [ 440/721]  loss=0.0879  lr=1.60e-04  ema_tau=0.99820
+  Epoch 026 [ 460/721]  loss=0.0881  lr=1.59e-04  ema_tau=0.99821
+  Epoch 026 [ 480/721]  loss=0.0765  lr=1.59e-04  ema_tau=0.99821
+  Epoch 026 [ 500/721]  loss=0.0859  lr=1.59e-04  ema_tau=0.99821
+  Epoch 026 [ 520/721]  loss=0.0652  lr=1.59e-04  ema_tau=0.99822
+  Epoch 026 [ 540/721]  loss=0.0631  lr=1.58e-04  ema_tau=0.99822
+  Epoch 026 [ 560/721]  loss=0.0755  lr=1.58e-04  ema_tau=0.99822
+  Epoch 026 [ 580/721]  loss=0.0894  lr=1.58e-04  ema_tau=0.99823
+  Epoch 026 [ 600/721]  loss=0.0661  lr=1.57e-04  ema_tau=0.99823
+  Epoch 026 [ 620/721]  loss=0.0778  lr=1.57e-04  ema_tau=0.99823
+  Epoch 026 [ 640/721]  loss=0.0753  lr=1.57e-04  ema_tau=0.99824
+  Epoch 026 [ 660/721]  loss=0.0691  lr=1.57e-04  ema_tau=0.99824
+  Epoch 026 [ 680/721]  loss=0.0781  lr=1.56e-04  ema_tau=0.99824
+  Epoch 026 [ 700/721]  loss=0.0741  lr=1.56e-04  ema_tau=0.99825
+  Epoch 026 [ 720/721]  loss=0.0629  lr=1.56e-04  ema_tau=0.99825
+
+Epoch 026 done | avg_loss=0.0786 | time=295.6s
+  Val loss: 0.0718
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 027 [   0/721]  loss=0.0823  lr=1.56e-04  ema_tau=0.99825
+  Epoch 027 [  20/721]  loss=0.0772  lr=1.55e-04  ema_tau=0.99825
+  Epoch 027 [  40/721]  loss=0.0626  lr=1.55e-04  ema_tau=0.99826
+  Epoch 027 [  60/721]  loss=0.0651  lr=1.55e-04  ema_tau=0.99826
+  Epoch 027 [  80/721]  loss=0.0713  lr=1.55e-04  ema_tau=0.99826
+  Epoch 027 [ 100/721]  loss=0.0812  lr=1.54e-04  ema_tau=0.99827
+  Epoch 027 [ 120/721]  loss=0.0920  lr=1.54e-04  ema_tau=0.99827
+  Epoch 027 [ 140/721]  loss=0.0702  lr=1.54e-04  ema_tau=0.99827
+  Epoch 027 [ 160/721]  loss=0.0657  lr=1.53e-04  ema_tau=0.99828
+  Epoch 027 [ 180/721]  loss=0.0746  lr=1.53e-04  ema_tau=0.99828
+  Epoch 027 [ 200/721]  loss=0.0779  lr=1.53e-04  ema_tau=0.99829
+  Epoch 027 [ 220/721]  loss=0.0788  lr=1.53e-04  ema_tau=0.99829
+  Epoch 027 [ 240/721]  loss=0.0786  lr=1.52e-04  ema_tau=0.99829
+  Epoch 027 [ 260/721]  loss=0.0649  lr=1.52e-04  ema_tau=0.99830
+  Epoch 027 [ 280/721]  loss=0.0735  lr=1.52e-04  ema_tau=0.99830
+  Epoch 027 [ 300/721]  loss=0.0667  lr=1.51e-04  ema_tau=0.99830
+  Epoch 027 [ 320/721]  loss=0.0701  lr=1.51e-04  ema_tau=0.99831
+  Epoch 027 [ 340/721]  loss=0.0854  lr=1.51e-04  ema_tau=0.99831
+  Epoch 027 [ 360/721]  loss=0.0806  lr=1.51e-04  ema_tau=0.99831
+  Epoch 027 [ 380/721]  loss=0.0664  lr=1.50e-04  ema_tau=0.99832
+  Epoch 027 [ 400/721]  loss=0.0632  lr=1.50e-04  ema_tau=0.99832
+  Epoch 027 [ 420/721]  loss=0.0719  lr=1.50e-04  ema_tau=0.99832
+  Epoch 027 [ 440/721]  loss=0.0680  lr=1.49e-04  ema_tau=0.99833
+  Epoch 027 [ 460/721]  loss=0.0861  lr=1.49e-04  ema_tau=0.99833
+  Epoch 027 [ 480/721]  loss=0.0885  lr=1.49e-04  ema_tau=0.99833
+  Epoch 027 [ 500/721]  loss=0.0757  lr=1.48e-04  ema_tau=0.99834
+  Epoch 027 [ 520/721]  loss=0.0717  lr=1.48e-04  ema_tau=0.99834
+  Epoch 027 [ 540/721]  loss=0.0837  lr=1.48e-04  ema_tau=0.99834
+  Epoch 027 [ 560/721]  loss=0.0715  lr=1.48e-04  ema_tau=0.99835
+  Epoch 027 [ 580/721]  loss=0.0796  lr=1.47e-04  ema_tau=0.99835
+  Epoch 027 [ 600/721]  loss=0.0669  lr=1.47e-04  ema_tau=0.99835
+  Epoch 027 [ 620/721]  loss=0.0687  lr=1.47e-04  ema_tau=0.99836
+  Epoch 027 [ 640/721]  loss=0.0731  lr=1.46e-04  ema_tau=0.99836
+  Epoch 027 [ 660/721]  loss=0.0761  lr=1.46e-04  ema_tau=0.99836
+  Epoch 027 [ 680/721]  loss=0.0697  lr=1.46e-04  ema_tau=0.99837
+  Epoch 027 [ 700/721]  loss=0.0686  lr=1.46e-04  ema_tau=0.99837
+  Epoch 027 [ 720/721]  loss=0.0811  lr=1.45e-04  ema_tau=0.99837
+
+Epoch 027 done | avg_loss=0.0749 | time=296.2s
+  Val loss: 0.0684
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 028 [   0/721]  loss=0.0732  lr=1.45e-04  ema_tau=0.99837
+  Epoch 028 [  20/721]  loss=0.0731  lr=1.45e-04  ema_tau=0.99838
+  Epoch 028 [  40/721]  loss=0.0720  lr=1.45e-04  ema_tau=0.99838
+  Epoch 028 [  60/721]  loss=0.0724  lr=1.44e-04  ema_tau=0.99839
+  Epoch 028 [  80/721]  loss=0.0679  lr=1.44e-04  ema_tau=0.99839
+  Epoch 028 [ 100/721]  loss=0.0773  lr=1.44e-04  ema_tau=0.99839
+  Epoch 028 [ 120/721]  loss=0.0753  lr=1.44e-04  ema_tau=0.99840
+  Epoch 028 [ 140/721]  loss=0.0605  lr=1.43e-04  ema_tau=0.99840
+  Epoch 028 [ 160/721]  loss=0.0769  lr=1.43e-04  ema_tau=0.99840
+  Epoch 028 [ 180/721]  loss=0.0670  lr=1.43e-04  ema_tau=0.99841
+  Epoch 028 [ 200/721]  loss=0.0666  lr=1.42e-04  ema_tau=0.99841
+  Epoch 028 [ 220/721]  loss=0.0621  lr=1.42e-04  ema_tau=0.99841
+  Epoch 028 [ 240/721]  loss=0.0711  lr=1.42e-04  ema_tau=0.99842
+  Epoch 028 [ 260/721]  loss=0.0632  lr=1.42e-04  ema_tau=0.99842
+  Epoch 028 [ 280/721]  loss=0.0646  lr=1.41e-04  ema_tau=0.99842
+  Epoch 028 [ 300/721]  loss=0.0671  lr=1.41e-04  ema_tau=0.99843
+  Epoch 028 [ 320/721]  loss=0.0730  lr=1.41e-04  ema_tau=0.99843
+  Epoch 028 [ 340/721]  loss=0.0676  lr=1.40e-04  ema_tau=0.99843
+  Epoch 028 [ 360/721]  loss=0.0802  lr=1.40e-04  ema_tau=0.99844
+  Epoch 028 [ 380/721]  loss=0.0725  lr=1.40e-04  ema_tau=0.99844
+  Epoch 028 [ 400/721]  loss=0.0801  lr=1.40e-04  ema_tau=0.99844
+  Epoch 028 [ 420/721]  loss=0.0636  lr=1.39e-04  ema_tau=0.99845
+  Epoch 028 [ 440/721]  loss=0.0605  lr=1.39e-04  ema_tau=0.99845
+  Epoch 028 [ 460/721]  loss=0.0681  lr=1.39e-04  ema_tau=0.99845
+  Epoch 028 [ 480/721]  loss=0.0779  lr=1.38e-04  ema_tau=0.99846
+  Epoch 028 [ 500/721]  loss=0.0801  lr=1.38e-04  ema_tau=0.99846
+  Epoch 028 [ 520/721]  loss=0.0738  lr=1.38e-04  ema_tau=0.99846
+  Epoch 028 [ 540/721]  loss=0.0782  lr=1.37e-04  ema_tau=0.99847
+  Epoch 028 [ 560/721]  loss=0.0683  lr=1.37e-04  ema_tau=0.99847
+  Epoch 028 [ 580/721]  loss=0.0536  lr=1.37e-04  ema_tau=0.99847
+  Epoch 028 [ 600/721]  loss=0.0709  lr=1.37e-04  ema_tau=0.99848
+  Epoch 028 [ 620/721]  loss=0.0762  lr=1.36e-04  ema_tau=0.99848
+  Epoch 028 [ 640/721]  loss=0.0729  lr=1.36e-04  ema_tau=0.99848
+  Epoch 028 [ 660/721]  loss=0.0700  lr=1.36e-04  ema_tau=0.99849
+  Epoch 028 [ 680/721]  loss=0.0765  lr=1.35e-04  ema_tau=0.99849
+  Epoch 028 [ 700/721]  loss=0.0687  lr=1.35e-04  ema_tau=0.99849
+  Epoch 028 [ 720/721]  loss=0.0694  lr=1.35e-04  ema_tau=0.99850
+
+Epoch 028 done | avg_loss=0.0719 | time=294.6s
+  Val loss: 0.0658
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 029 [   0/721]  loss=0.0607  lr=1.35e-04  ema_tau=0.99850
+  Epoch 029 [  20/721]  loss=0.0780  lr=1.35e-04  ema_tau=0.99850
+  Epoch 029 [  40/721]  loss=0.0783  lr=1.34e-04  ema_tau=0.99850
+  Epoch 029 [  60/721]  loss=0.0721  lr=1.34e-04  ema_tau=0.99851
+  Epoch 029 [  80/721]  loss=0.0754  lr=1.34e-04  ema_tau=0.99851
+  Epoch 029 [ 100/721]  loss=0.0700  lr=1.33e-04  ema_tau=0.99851
+  Epoch 029 [ 120/721]  loss=0.0772  lr=1.33e-04  ema_tau=0.99852
+  Epoch 029 [ 140/721]  loss=0.0746  lr=1.33e-04  ema_tau=0.99852
+  Epoch 029 [ 160/721]  loss=0.0673  lr=1.33e-04  ema_tau=0.99852
+  Epoch 029 [ 180/721]  loss=0.0646  lr=1.32e-04  ema_tau=0.99853
+  Epoch 029 [ 200/721]  loss=0.0658  lr=1.32e-04  ema_tau=0.99853
+  Epoch 029 [ 220/721]  loss=0.0693  lr=1.32e-04  ema_tau=0.99853
+  Epoch 029 [ 240/721]  loss=0.0708  lr=1.31e-04  ema_tau=0.99854
+  Epoch 029 [ 260/721]  loss=0.0633  lr=1.31e-04  ema_tau=0.99854
+  Epoch 029 [ 280/721]  loss=0.0709  lr=1.31e-04  ema_tau=0.99854
+  Epoch 029 [ 300/721]  loss=0.0635  lr=1.31e-04  ema_tau=0.99855
+  Epoch 029 [ 320/721]  loss=0.0697  lr=1.30e-04  ema_tau=0.99855
+  Epoch 029 [ 340/721]  loss=0.0549  lr=1.30e-04  ema_tau=0.99855
+  Epoch 029 [ 360/721]  loss=0.0685  lr=1.30e-04  ema_tau=0.99856
+  Epoch 029 [ 380/721]  loss=0.0557  lr=1.29e-04  ema_tau=0.99856
+  Epoch 029 [ 400/721]  loss=0.0754  lr=1.29e-04  ema_tau=0.99856
+  Epoch 029 [ 420/721]  loss=0.0623  lr=1.29e-04  ema_tau=0.99857
+  Epoch 029 [ 440/721]  loss=0.0657  lr=1.29e-04  ema_tau=0.99857
+  Epoch 029 [ 460/721]  loss=0.0787  lr=1.28e-04  ema_tau=0.99857
+  Epoch 029 [ 480/721]  loss=0.0789  lr=1.28e-04  ema_tau=0.99858
+  Epoch 029 [ 500/721]  loss=0.0576  lr=1.28e-04  ema_tau=0.99858
+  Epoch 029 [ 520/721]  loss=0.0642  lr=1.27e-04  ema_tau=0.99858
+  Epoch 029 [ 540/721]  loss=0.0795  lr=1.27e-04  ema_tau=0.99859
+  Epoch 029 [ 560/721]  loss=0.0668  lr=1.27e-04  ema_tau=0.99859
+  Epoch 029 [ 580/721]  loss=0.0691  lr=1.27e-04  ema_tau=0.99859
+  Epoch 029 [ 600/721]  loss=0.0610  lr=1.26e-04  ema_tau=0.99860
+  Epoch 029 [ 620/721]  loss=0.0694  lr=1.26e-04  ema_tau=0.99860
+  Epoch 029 [ 640/721]  loss=0.0651  lr=1.26e-04  ema_tau=0.99860
+  Epoch 029 [ 660/721]  loss=0.0709  lr=1.25e-04  ema_tau=0.99861
+  Epoch 029 [ 680/721]  loss=0.0768  lr=1.25e-04  ema_tau=0.99861
+  Epoch 029 [ 700/721]  loss=0.0649  lr=1.25e-04  ema_tau=0.99861
+  Epoch 029 [ 720/721]  loss=0.0796  lr=1.25e-04  ema_tau=0.99862
+
+Epoch 029 done | avg_loss=0.0695 | time=294.9s
+  Val loss: 0.0623
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 030 [   0/721]  loss=0.0734  lr=1.25e-04  ema_tau=0.99862
+  Epoch 030 [  20/721]  loss=0.0769  lr=1.24e-04  ema_tau=0.99862
+  Epoch 030 [  40/721]  loss=0.0624  lr=1.24e-04  ema_tau=0.99862
+  Epoch 030 [  60/721]  loss=0.0845  lr=1.24e-04  ema_tau=0.99863
+  Epoch 030 [  80/721]  loss=0.0691  lr=1.23e-04  ema_tau=0.99863
+  Epoch 030 [ 100/721]  loss=0.0567  lr=1.23e-04  ema_tau=0.99863
+  Epoch 030 [ 120/721]  loss=0.0663  lr=1.23e-04  ema_tau=0.99864
+  Epoch 030 [ 140/721]  loss=0.0709  lr=1.23e-04  ema_tau=0.99864
+  Epoch 030 [ 160/721]  loss=0.0674  lr=1.22e-04  ema_tau=0.99864
+  Epoch 030 [ 180/721]  loss=0.0863  lr=1.22e-04  ema_tau=0.99865
+  Epoch 030 [ 200/721]  loss=0.0795  lr=1.22e-04  ema_tau=0.99865
+  Epoch 030 [ 220/721]  loss=0.0618  lr=1.21e-04  ema_tau=0.99865
+  Epoch 030 [ 240/721]  loss=0.0647  lr=1.21e-04  ema_tau=0.99866
+  Epoch 030 [ 260/721]  loss=0.0648  lr=1.21e-04  ema_tau=0.99866
+  Epoch 030 [ 280/721]  loss=0.0678  lr=1.21e-04  ema_tau=0.99866
+  Epoch 030 [ 300/721]  loss=0.0844  lr=1.20e-04  ema_tau=0.99867
+  Epoch 030 [ 320/721]  loss=0.0705  lr=1.20e-04  ema_tau=0.99867
+  Epoch 030 [ 340/721]  loss=0.0705  lr=1.20e-04  ema_tau=0.99867
+  Epoch 030 [ 360/721]  loss=0.0668  lr=1.19e-04  ema_tau=0.99868
+  Epoch 030 [ 380/721]  loss=0.0764  lr=1.19e-04  ema_tau=0.99868
+  Epoch 030 [ 400/721]  loss=0.0621  lr=1.19e-04  ema_tau=0.99868
+  Epoch 030 [ 420/721]  loss=0.0737  lr=1.19e-04  ema_tau=0.99869
+  Epoch 030 [ 440/721]  loss=0.0683  lr=1.18e-04  ema_tau=0.99869
+  Epoch 030 [ 460/721]  loss=0.0509  lr=1.18e-04  ema_tau=0.99869
+  Epoch 030 [ 480/721]  loss=0.0735  lr=1.18e-04  ema_tau=0.99870
+  Epoch 030 [ 500/721]  loss=0.0671  lr=1.17e-04  ema_tau=0.99870
+  Epoch 030 [ 520/721]  loss=0.0734  lr=1.17e-04  ema_tau=0.99870
+  Epoch 030 [ 540/721]  loss=0.0608  lr=1.17e-04  ema_tau=0.99871
+  Epoch 030 [ 560/721]  loss=0.0645  lr=1.17e-04  ema_tau=0.99871
+  Epoch 030 [ 580/721]  loss=0.0652  lr=1.16e-04  ema_tau=0.99871
+  Epoch 030 [ 600/721]  loss=0.0698  lr=1.16e-04  ema_tau=0.99872
+  Epoch 030 [ 620/721]  loss=0.0801  lr=1.16e-04  ema_tau=0.99872
+  Epoch 030 [ 640/721]  loss=0.0672  lr=1.15e-04  ema_tau=0.99872
+  Epoch 030 [ 660/721]  loss=0.0518  lr=1.15e-04  ema_tau=0.99873
+  Epoch 030 [ 680/721]  loss=0.0675  lr=1.15e-04  ema_tau=0.99873
+  Epoch 030 [ 700/721]  loss=0.0605  lr=1.15e-04  ema_tau=0.99873
+  Epoch 030 [ 720/721]  loss=0.0714  lr=1.14e-04  ema_tau=0.99874
+
+Epoch 030 done | avg_loss=0.0669 | time=295.5s
+  Collapse check — embed_std=0.0390  mean_cos_sim=0.3794
+  Val loss: 0.0588
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/epoch_0030.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 031 [   0/721]  loss=0.0664  lr=1.14e-04  ema_tau=0.99874
+  Epoch 031 [  20/721]  loss=0.0681  lr=1.14e-04  ema_tau=0.99874
+  Epoch 031 [  40/721]  loss=0.0617  lr=1.14e-04  ema_tau=0.99874
+  Epoch 031 [  60/721]  loss=0.0723  lr=1.13e-04  ema_tau=0.99875
+  Epoch 031 [  80/721]  loss=0.0738  lr=1.13e-04  ema_tau=0.99875
+  Epoch 031 [ 100/721]  loss=0.0706  lr=1.13e-04  ema_tau=0.99875
+  Epoch 031 [ 120/721]  loss=0.0744  lr=1.13e-04  ema_tau=0.99876
+  Epoch 031 [ 140/721]  loss=0.0674  lr=1.12e-04  ema_tau=0.99876
+  Epoch 031 [ 160/721]  loss=0.0609  lr=1.12e-04  ema_tau=0.99876
+  Epoch 031 [ 180/721]  loss=0.0697  lr=1.12e-04  ema_tau=0.99877
+  Epoch 031 [ 200/721]  loss=0.0552  lr=1.12e-04  ema_tau=0.99877
+  Epoch 031 [ 220/721]  loss=0.0652  lr=1.11e-04  ema_tau=0.99877
+  Epoch 031 [ 240/721]  loss=0.0648  lr=1.11e-04  ema_tau=0.99877
+  Epoch 031 [ 260/721]  loss=0.0767  lr=1.11e-04  ema_tau=0.99878
+  Epoch 031 [ 280/721]  loss=0.0722  lr=1.10e-04  ema_tau=0.99878
+  Epoch 031 [ 300/721]  loss=0.0568  lr=1.10e-04  ema_tau=0.99878
+  Epoch 031 [ 320/721]  loss=0.0589  lr=1.10e-04  ema_tau=0.99879
+  Epoch 031 [ 340/721]  loss=0.0646  lr=1.10e-04  ema_tau=0.99879
+  Epoch 031 [ 360/721]  loss=0.0633  lr=1.09e-04  ema_tau=0.99879
+  Epoch 031 [ 380/721]  loss=0.0561  lr=1.09e-04  ema_tau=0.99880
+  Epoch 031 [ 400/721]  loss=0.0865  lr=1.09e-04  ema_tau=0.99880
+  Epoch 031 [ 420/721]  loss=0.0656  lr=1.08e-04  ema_tau=0.99880
+  Epoch 031 [ 440/721]  loss=0.0624  lr=1.08e-04  ema_tau=0.99881
+  Epoch 031 [ 460/721]  loss=0.0706  lr=1.08e-04  ema_tau=0.99881
+  Epoch 031 [ 480/721]  loss=0.0721  lr=1.08e-04  ema_tau=0.99881
+  Epoch 031 [ 500/721]  loss=0.0649  lr=1.07e-04  ema_tau=0.99882
+  Epoch 031 [ 520/721]  loss=0.0574  lr=1.07e-04  ema_tau=0.99882
+  Epoch 031 [ 540/721]  loss=0.0694  lr=1.07e-04  ema_tau=0.99882
+  Epoch 031 [ 560/721]  loss=0.0536  lr=1.07e-04  ema_tau=0.99883
+  Epoch 031 [ 580/721]  loss=0.0724  lr=1.06e-04  ema_tau=0.99883
+  Epoch 031 [ 600/721]  loss=0.0595  lr=1.06e-04  ema_tau=0.99883
+  Epoch 031 [ 620/721]  loss=0.0643  lr=1.06e-04  ema_tau=0.99884
+  Epoch 031 [ 640/721]  loss=0.0572  lr=1.05e-04  ema_tau=0.99884
+  Epoch 031 [ 660/721]  loss=0.0835  lr=1.05e-04  ema_tau=0.99884
+  Epoch 031 [ 680/721]  loss=0.0651  lr=1.05e-04  ema_tau=0.99885
+  Epoch 031 [ 700/721]  loss=0.0709  lr=1.05e-04  ema_tau=0.99885
+  Epoch 031 [ 720/721]  loss=0.0666  lr=1.04e-04  ema_tau=0.99885
+
+Epoch 031 done | avg_loss=0.0645 | time=295.7s
+  Val loss: 0.0580
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 032 [   0/721]  loss=0.0519  lr=1.04e-04  ema_tau=0.99885
+  Epoch 032 [  20/721]  loss=0.0675  lr=1.04e-04  ema_tau=0.99885
+  Epoch 032 [  40/721]  loss=0.0726  lr=1.04e-04  ema_tau=0.99886
+  Epoch 032 [  60/721]  loss=0.0642  lr=1.03e-04  ema_tau=0.99886
+  Epoch 032 [  80/721]  loss=0.0692  lr=1.03e-04  ema_tau=0.99886
+  Epoch 032 [ 100/721]  loss=0.0555  lr=1.03e-04  ema_tau=0.99887
+  Epoch 032 [ 120/721]  loss=0.0659  lr=1.03e-04  ema_tau=0.99887
+  Epoch 032 [ 140/721]  loss=0.0678  lr=1.02e-04  ema_tau=0.99887
+  Epoch 032 [ 160/721]  loss=0.0539  lr=1.02e-04  ema_tau=0.99888
+  Epoch 032 [ 180/721]  loss=0.0645  lr=1.02e-04  ema_tau=0.99888
+  Epoch 032 [ 200/721]  loss=0.0663  lr=1.02e-04  ema_tau=0.99888
+  Epoch 032 [ 220/721]  loss=0.0488  lr=1.01e-04  ema_tau=0.99889
+  Epoch 032 [ 240/721]  loss=0.0727  lr=1.01e-04  ema_tau=0.99889
+  Epoch 032 [ 260/721]  loss=0.0717  lr=1.01e-04  ema_tau=0.99889
+  Epoch 032 [ 280/721]  loss=0.0623  lr=1.00e-04  ema_tau=0.99890
+  Epoch 032 [ 300/721]  loss=0.0695  lr=1.00e-04  ema_tau=0.99890
+  Epoch 032 [ 320/721]  loss=0.0541  lr=9.99e-05  ema_tau=0.99890
+  Epoch 032 [ 340/721]  loss=0.0583  lr=9.96e-05  ema_tau=0.99890
+  Epoch 032 [ 360/721]  loss=0.0538  lr=9.94e-05  ema_tau=0.99891
+  Epoch 032 [ 380/721]  loss=0.0547  lr=9.91e-05  ema_tau=0.99891
+  Epoch 032 [ 400/721]  loss=0.0484  lr=9.88e-05  ema_tau=0.99891
+  Epoch 032 [ 420/721]  loss=0.0646  lr=9.86e-05  ema_tau=0.99892
+  Epoch 032 [ 440/721]  loss=0.0574  lr=9.83e-05  ema_tau=0.99892
+  Epoch 032 [ 460/721]  loss=0.0642  lr=9.80e-05  ema_tau=0.99892
+  Epoch 032 [ 480/721]  loss=0.0482  lr=9.77e-05  ema_tau=0.99893
+  Epoch 032 [ 500/721]  loss=0.0669  lr=9.75e-05  ema_tau=0.99893
+  Epoch 032 [ 520/721]  loss=0.0792  lr=9.72e-05  ema_tau=0.99893
+  Epoch 032 [ 540/721]  loss=0.0835  lr=9.69e-05  ema_tau=0.99894
+  Epoch 032 [ 560/721]  loss=0.0678  lr=9.67e-05  ema_tau=0.99894
+  Epoch 032 [ 580/721]  loss=0.0540  lr=9.64e-05  ema_tau=0.99894
+  Epoch 032 [ 600/721]  loss=0.0591  lr=9.61e-05  ema_tau=0.99894
+  Epoch 032 [ 620/721]  loss=0.0598  lr=9.59e-05  ema_tau=0.99895
+  Epoch 032 [ 640/721]  loss=0.0576  lr=9.56e-05  ema_tau=0.99895
+  Epoch 032 [ 660/721]  loss=0.0577  lr=9.53e-05  ema_tau=0.99895
+  Epoch 032 [ 680/721]  loss=0.0484  lr=9.50e-05  ema_tau=0.99896
+  Epoch 032 [ 700/721]  loss=0.0612  lr=9.48e-05  ema_tau=0.99896
+  Epoch 032 [ 720/721]  loss=0.0527  lr=9.45e-05  ema_tau=0.99896
+
+Epoch 032 done | avg_loss=0.0623 | time=295.7s
+  Val loss: 0.0564
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 033 [   0/721]  loss=0.0524  lr=9.45e-05  ema_tau=0.99896
+  Epoch 033 [  20/721]  loss=0.0633  lr=9.42e-05  ema_tau=0.99897
+  Epoch 033 [  40/721]  loss=0.0534  lr=9.40e-05  ema_tau=0.99897
+  Epoch 033 [  60/721]  loss=0.0675  lr=9.37e-05  ema_tau=0.99897
+  Epoch 033 [  80/721]  loss=0.0534  lr=9.34e-05  ema_tau=0.99898
+  Epoch 033 [ 100/721]  loss=0.0541  lr=9.32e-05  ema_tau=0.99898
+  Epoch 033 [ 120/721]  loss=0.0620  lr=9.29e-05  ema_tau=0.99898
+  Epoch 033 [ 140/721]  loss=0.0581  lr=9.26e-05  ema_tau=0.99898
+  Epoch 033 [ 160/721]  loss=0.0445  lr=9.24e-05  ema_tau=0.99899
+  Epoch 033 [ 180/721]  loss=0.0684  lr=9.21e-05  ema_tau=0.99899
+  Epoch 033 [ 200/721]  loss=0.0610  lr=9.18e-05  ema_tau=0.99899
+  Epoch 033 [ 220/721]  loss=0.0638  lr=9.16e-05  ema_tau=0.99900
+  Epoch 033 [ 240/721]  loss=0.0533  lr=9.13e-05  ema_tau=0.99900
+  Epoch 033 [ 260/721]  loss=0.0633  lr=9.10e-05  ema_tau=0.99900
+  Epoch 033 [ 280/721]  loss=0.0670  lr=9.08e-05  ema_tau=0.99901
+  Epoch 033 [ 300/721]  loss=0.0670  lr=9.05e-05  ema_tau=0.99901
+  Epoch 033 [ 320/721]  loss=0.0556  lr=9.02e-05  ema_tau=0.99901
+  Epoch 033 [ 340/721]  loss=0.0599  lr=9.00e-05  ema_tau=0.99902
+  Epoch 033 [ 360/721]  loss=0.0459  lr=8.97e-05  ema_tau=0.99902
+  Epoch 033 [ 380/721]  loss=0.0676  lr=8.94e-05  ema_tau=0.99902
+  Epoch 033 [ 400/721]  loss=0.0603  lr=8.92e-05  ema_tau=0.99902
+  Epoch 033 [ 420/721]  loss=0.0538  lr=8.89e-05  ema_tau=0.99903
+  Epoch 033 [ 440/721]  loss=0.0593  lr=8.86e-05  ema_tau=0.99903
+  Epoch 033 [ 460/721]  loss=0.0683  lr=8.84e-05  ema_tau=0.99903
+  Epoch 033 [ 480/721]  loss=0.0728  lr=8.81e-05  ema_tau=0.99904
+  Epoch 033 [ 500/721]  loss=0.0616  lr=8.79e-05  ema_tau=0.99904
+  Epoch 033 [ 520/721]  loss=0.0704  lr=8.76e-05  ema_tau=0.99904
+  Epoch 033 [ 540/721]  loss=0.0573  lr=8.73e-05  ema_tau=0.99904
+  Epoch 033 [ 560/721]  loss=0.0592  lr=8.71e-05  ema_tau=0.99905
+  Epoch 033 [ 580/721]  loss=0.0692  lr=8.68e-05  ema_tau=0.99905
+  Epoch 033 [ 600/721]  loss=0.0747  lr=8.65e-05  ema_tau=0.99905
+  Epoch 033 [ 620/721]  loss=0.0649  lr=8.63e-05  ema_tau=0.99906
+  Epoch 033 [ 640/721]  loss=0.0709  lr=8.60e-05  ema_tau=0.99906
+  Epoch 033 [ 660/721]  loss=0.0751  lr=8.58e-05  ema_tau=0.99906
+  Epoch 033 [ 680/721]  loss=0.0570  lr=8.55e-05  ema_tau=0.99907
+  Epoch 033 [ 700/721]  loss=0.0647  lr=8.52e-05  ema_tau=0.99907
+  Epoch 033 [ 720/721]  loss=0.0655  lr=8.50e-05  ema_tau=0.99907
+
+Epoch 033 done | avg_loss=0.0603 | time=294.2s
+  Val loss: 0.0525
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 034 [   0/721]  loss=0.0658  lr=8.50e-05  ema_tau=0.99907
+  Epoch 034 [  20/721]  loss=0.0571  lr=8.47e-05  ema_tau=0.99907
+  Epoch 034 [  40/721]  loss=0.0554  lr=8.44e-05  ema_tau=0.99908
+  Epoch 034 [  60/721]  loss=0.0553  lr=8.42e-05  ema_tau=0.99908
+  Epoch 034 [  80/721]  loss=0.0585  lr=8.39e-05  ema_tau=0.99908
+  Epoch 034 [ 100/721]  loss=0.0468  lr=8.37e-05  ema_tau=0.99909
+  Epoch 034 [ 120/721]  loss=0.0678  lr=8.34e-05  ema_tau=0.99909
+  Epoch 034 [ 140/721]  loss=0.0576  lr=8.31e-05  ema_tau=0.99909
+  Epoch 034 [ 160/721]  loss=0.0603  lr=8.29e-05  ema_tau=0.99910
+  Epoch 034 [ 180/721]  loss=0.0559  lr=8.26e-05  ema_tau=0.99910
+  Epoch 034 [ 200/721]  loss=0.0661  lr=8.24e-05  ema_tau=0.99910
+  Epoch 034 [ 220/721]  loss=0.0675  lr=8.21e-05  ema_tau=0.99910
+  Epoch 034 [ 240/721]  loss=0.0613  lr=8.19e-05  ema_tau=0.99911
+  Epoch 034 [ 260/721]  loss=0.0631  lr=8.16e-05  ema_tau=0.99911
+  Epoch 034 [ 280/721]  loss=0.0588  lr=8.13e-05  ema_tau=0.99911
+  Epoch 034 [ 300/721]  loss=0.0635  lr=8.11e-05  ema_tau=0.99912
+  Epoch 034 [ 320/721]  loss=0.0579  lr=8.08e-05  ema_tau=0.99912
+  Epoch 034 [ 340/721]  loss=0.0533  lr=8.06e-05  ema_tau=0.99912
+  Epoch 034 [ 360/721]  loss=0.0536  lr=8.03e-05  ema_tau=0.99912
+  Epoch 034 [ 380/721]  loss=0.0576  lr=8.01e-05  ema_tau=0.99913
+  Epoch 034 [ 400/721]  loss=0.0574  lr=7.98e-05  ema_tau=0.99913
+  Epoch 034 [ 420/721]  loss=0.0537  lr=7.96e-05  ema_tau=0.99913
+  Epoch 034 [ 440/721]  loss=0.0563  lr=7.93e-05  ema_tau=0.99914
+  Epoch 034 [ 460/721]  loss=0.0593  lr=7.90e-05  ema_tau=0.99914
+  Epoch 034 [ 480/721]  loss=0.0565  lr=7.88e-05  ema_tau=0.99914
+  Epoch 034 [ 500/721]  loss=0.0639  lr=7.85e-05  ema_tau=0.99914
+  Epoch 034 [ 520/721]  loss=0.0472  lr=7.83e-05  ema_tau=0.99915
+  Epoch 034 [ 540/721]  loss=0.0588  lr=7.80e-05  ema_tau=0.99915
+  Epoch 034 [ 560/721]  loss=0.0692  lr=7.78e-05  ema_tau=0.99915
+  Epoch 034 [ 580/721]  loss=0.0512  lr=7.75e-05  ema_tau=0.99916
+  Epoch 034 [ 600/721]  loss=0.0570  lr=7.73e-05  ema_tau=0.99916
+  Epoch 034 [ 620/721]  loss=0.0644  lr=7.70e-05  ema_tau=0.99916
+  Epoch 034 [ 640/721]  loss=0.0610  lr=7.68e-05  ema_tau=0.99916
+  Epoch 034 [ 660/721]  loss=0.0549  lr=7.65e-05  ema_tau=0.99917
+  Epoch 034 [ 680/721]  loss=0.0610  lr=7.63e-05  ema_tau=0.99917
+  Epoch 034 [ 700/721]  loss=0.0591  lr=7.60e-05  ema_tau=0.99917
+  Epoch 034 [ 720/721]  loss=0.0569  lr=7.58e-05  ema_tau=0.99918
+
+Epoch 034 done | avg_loss=0.0584 | time=296.5s
+  Val loss: 0.0507
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 035 [   0/721]  loss=0.0647  lr=7.58e-05  ema_tau=0.99918
+  Epoch 035 [  20/721]  loss=0.0539  lr=7.55e-05  ema_tau=0.99918
+  Epoch 035 [  40/721]  loss=0.0484  lr=7.52e-05  ema_tau=0.99918
+  Epoch 035 [  60/721]  loss=0.0635  lr=7.50e-05  ema_tau=0.99918
+  Epoch 035 [  80/721]  loss=0.0513  lr=7.47e-05  ema_tau=0.99919
+  Epoch 035 [ 100/721]  loss=0.0657  lr=7.45e-05  ema_tau=0.99919
+  Epoch 035 [ 120/721]  loss=0.0616  lr=7.43e-05  ema_tau=0.99919
+  Epoch 035 [ 140/721]  loss=0.0525  lr=7.40e-05  ema_tau=0.99920
+  Epoch 035 [ 160/721]  loss=0.0547  lr=7.38e-05  ema_tau=0.99920
+  Epoch 035 [ 180/721]  loss=0.0560  lr=7.35e-05  ema_tau=0.99920
+  Epoch 035 [ 200/721]  loss=0.0558  lr=7.33e-05  ema_tau=0.99920
+  Epoch 035 [ 220/721]  loss=0.0497  lr=7.30e-05  ema_tau=0.99921
+  Epoch 035 [ 240/721]  loss=0.0565  lr=7.28e-05  ema_tau=0.99921
+  Epoch 035 [ 260/721]  loss=0.0679  lr=7.25e-05  ema_tau=0.99921
+  Epoch 035 [ 280/721]  loss=0.0522  lr=7.23e-05  ema_tau=0.99921
+  Epoch 035 [ 300/721]  loss=0.0521  lr=7.20e-05  ema_tau=0.99922
+  Epoch 035 [ 320/721]  loss=0.0558  lr=7.18e-05  ema_tau=0.99922
+  Epoch 035 [ 340/721]  loss=0.0560  lr=7.15e-05  ema_tau=0.99922
+  Epoch 035 [ 360/721]  loss=0.0451  lr=7.13e-05  ema_tau=0.99923
+  Epoch 035 [ 380/721]  loss=0.0560  lr=7.10e-05  ema_tau=0.99923
+  Epoch 035 [ 400/721]  loss=0.0618  lr=7.08e-05  ema_tau=0.99923
+  Epoch 035 [ 420/721]  loss=0.0502  lr=7.05e-05  ema_tau=0.99923
+  Epoch 035 [ 440/721]  loss=0.0564  lr=7.03e-05  ema_tau=0.99924
+  Epoch 035 [ 460/721]  loss=0.0398  lr=7.01e-05  ema_tau=0.99924
+  Epoch 035 [ 480/721]  loss=0.0570  lr=6.98e-05  ema_tau=0.99924
+  Epoch 035 [ 500/721]  loss=0.0662  lr=6.96e-05  ema_tau=0.99924
+  Epoch 035 [ 520/721]  loss=0.0662  lr=6.93e-05  ema_tau=0.99925
+  Epoch 035 [ 540/721]  loss=0.0563  lr=6.91e-05  ema_tau=0.99925
+  Epoch 035 [ 560/721]  loss=0.0645  lr=6.88e-05  ema_tau=0.99925
+  Epoch 035 [ 580/721]  loss=0.0567  lr=6.86e-05  ema_tau=0.99926
+  Epoch 035 [ 600/721]  loss=0.0602  lr=6.84e-05  ema_tau=0.99926
+  Epoch 035 [ 620/721]  loss=0.0553  lr=6.81e-05  ema_tau=0.99926
+  Epoch 035 [ 640/721]  loss=0.0566  lr=6.79e-05  ema_tau=0.99926
+  Epoch 035 [ 660/721]  loss=0.0548  lr=6.76e-05  ema_tau=0.99927
+  Epoch 035 [ 680/721]  loss=0.0480  lr=6.74e-05  ema_tau=0.99927
+  Epoch 035 [ 700/721]  loss=0.0620  lr=6.72e-05  ema_tau=0.99927
+  Epoch 035 [ 720/721]  loss=0.0585  lr=6.69e-05  ema_tau=0.99927
+
+Epoch 035 done | avg_loss=0.0571 | time=297.4s
+  Collapse check — embed_std=0.0376  mean_cos_sim=0.3976
+  Val loss: 0.0500
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 036 [   0/721]  loss=0.0557  lr=6.69e-05  ema_tau=0.99927
+  Epoch 036 [  20/721]  loss=0.0603  lr=6.67e-05  ema_tau=0.99928
+  Epoch 036 [  40/721]  loss=0.0499  lr=6.64e-05  ema_tau=0.99928
+  Epoch 036 [  60/721]  loss=0.0473  lr=6.62e-05  ema_tau=0.99928
+  Epoch 036 [  80/721]  loss=0.0563  lr=6.59e-05  ema_tau=0.99929
+  Epoch 036 [ 100/721]  loss=0.0510  lr=6.57e-05  ema_tau=0.99929
+  Epoch 036 [ 120/721]  loss=0.0498  lr=6.55e-05  ema_tau=0.99929
+  Epoch 036 [ 140/721]  loss=0.0567  lr=6.52e-05  ema_tau=0.99929
+  Epoch 036 [ 160/721]  loss=0.0540  lr=6.50e-05  ema_tau=0.99930
+  Epoch 036 [ 180/721]  loss=0.0572  lr=6.48e-05  ema_tau=0.99930
+  Epoch 036 [ 200/721]  loss=0.0508  lr=6.45e-05  ema_tau=0.99930
+  Epoch 036 [ 220/721]  loss=0.0561  lr=6.43e-05  ema_tau=0.99930
+  Epoch 036 [ 240/721]  loss=0.0469  lr=6.40e-05  ema_tau=0.99931
+  Epoch 036 [ 260/721]  loss=0.0654  lr=6.38e-05  ema_tau=0.99931
+  Epoch 036 [ 280/721]  loss=0.0591  lr=6.36e-05  ema_tau=0.99931
+  Epoch 036 [ 300/721]  loss=0.0606  lr=6.33e-05  ema_tau=0.99931
+  Epoch 036 [ 320/721]  loss=0.0604  lr=6.31e-05  ema_tau=0.99932
+  Epoch 036 [ 340/721]  loss=0.0552  lr=6.29e-05  ema_tau=0.99932
+  Epoch 036 [ 360/721]  loss=0.0488  lr=6.26e-05  ema_tau=0.99932
+  Epoch 036 [ 380/721]  loss=0.0450  lr=6.24e-05  ema_tau=0.99933
+  Epoch 036 [ 400/721]  loss=0.0500  lr=6.22e-05  ema_tau=0.99933
+  Epoch 036 [ 420/721]  loss=0.0635  lr=6.19e-05  ema_tau=0.99933
+  Epoch 036 [ 440/721]  loss=0.0570  lr=6.17e-05  ema_tau=0.99933
+  Epoch 036 [ 460/721]  loss=0.0614  lr=6.15e-05  ema_tau=0.99934
+  Epoch 036 [ 480/721]  loss=0.0576  lr=6.12e-05  ema_tau=0.99934
+  Epoch 036 [ 500/721]  loss=0.0490  lr=6.10e-05  ema_tau=0.99934
+  Epoch 036 [ 520/721]  loss=0.0567  lr=6.08e-05  ema_tau=0.99934
+  Epoch 036 [ 540/721]  loss=0.0533  lr=6.05e-05  ema_tau=0.99935
+  Epoch 036 [ 560/721]  loss=0.0509  lr=6.03e-05  ema_tau=0.99935
+  Epoch 036 [ 580/721]  loss=0.0559  lr=6.01e-05  ema_tau=0.99935
+  Epoch 036 [ 600/721]  loss=0.0614  lr=5.98e-05  ema_tau=0.99935
+  Epoch 036 [ 620/721]  loss=0.0526  lr=5.96e-05  ema_tau=0.99936
+  Epoch 036 [ 640/721]  loss=0.0563  lr=5.94e-05  ema_tau=0.99936
+  Epoch 036 [ 660/721]  loss=0.0578  lr=5.92e-05  ema_tau=0.99936
+  Epoch 036 [ 680/721]  loss=0.0588  lr=5.89e-05  ema_tau=0.99936
+  Epoch 036 [ 700/721]  loss=0.0581  lr=5.87e-05  ema_tau=0.99937
+  Epoch 036 [ 720/721]  loss=0.0571  lr=5.85e-05  ema_tau=0.99937
+
+Epoch 036 done | avg_loss=0.0556 | time=293.0s
+  Val loss: 0.0483
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 037 [   0/721]  loss=0.0553  lr=5.85e-05  ema_tau=0.99937
+  Epoch 037 [  20/721]  loss=0.0523  lr=5.82e-05  ema_tau=0.99937
+  Epoch 037 [  40/721]  loss=0.0504  lr=5.80e-05  ema_tau=0.99937
+  Epoch 037 [  60/721]  loss=0.0620  lr=5.78e-05  ema_tau=0.99938
+  Epoch 037 [  80/721]  loss=0.0486  lr=5.75e-05  ema_tau=0.99938
+  Epoch 037 [ 100/721]  loss=0.0564  lr=5.73e-05  ema_tau=0.99938
+  Epoch 037 [ 120/721]  loss=0.0540  lr=5.71e-05  ema_tau=0.99938
+  Epoch 037 [ 140/721]  loss=0.0554  lr=5.69e-05  ema_tau=0.99939
+  Epoch 037 [ 160/721]  loss=0.0552  lr=5.66e-05  ema_tau=0.99939
+  Epoch 037 [ 180/721]  loss=0.0536  lr=5.64e-05  ema_tau=0.99939
+  Epoch 037 [ 200/721]  loss=0.0462  lr=5.62e-05  ema_tau=0.99939
+  Epoch 037 [ 220/721]  loss=0.0589  lr=5.60e-05  ema_tau=0.99940
+  Epoch 037 [ 240/721]  loss=0.0540  lr=5.57e-05  ema_tau=0.99940
+  Epoch 037 [ 260/721]  loss=0.0566  lr=5.55e-05  ema_tau=0.99940
+  Epoch 037 [ 280/721]  loss=0.0533  lr=5.53e-05  ema_tau=0.99940
+  Epoch 037 [ 300/721]  loss=0.0642  lr=5.51e-05  ema_tau=0.99941
+  Epoch 037 [ 320/721]  loss=0.0561  lr=5.49e-05  ema_tau=0.99941
+  Epoch 037 [ 340/721]  loss=0.0564  lr=5.46e-05  ema_tau=0.99941
+  Epoch 037 [ 360/721]  loss=0.0512  lr=5.44e-05  ema_tau=0.99941
+  Epoch 037 [ 380/721]  loss=0.0619  lr=5.42e-05  ema_tau=0.99942
+  Epoch 037 [ 400/721]  loss=0.0467  lr=5.40e-05  ema_tau=0.99942
+  Epoch 037 [ 420/721]  loss=0.0558  lr=5.37e-05  ema_tau=0.99942
+  Epoch 037 [ 440/721]  loss=0.0607  lr=5.35e-05  ema_tau=0.99942
+  Epoch 037 [ 460/721]  loss=0.0599  lr=5.33e-05  ema_tau=0.99943
+  Epoch 037 [ 480/721]  loss=0.0665  lr=5.31e-05  ema_tau=0.99943
+  Epoch 037 [ 500/721]  loss=0.0650  lr=5.29e-05  ema_tau=0.99943
+  Epoch 037 [ 520/721]  loss=0.0564  lr=5.26e-05  ema_tau=0.99943
+  Epoch 037 [ 540/721]  loss=0.0624  lr=5.24e-05  ema_tau=0.99944
+  Epoch 037 [ 560/721]  loss=0.0506  lr=5.22e-05  ema_tau=0.99944
+  Epoch 037 [ 580/721]  loss=0.0496  lr=5.20e-05  ema_tau=0.99944
+  Epoch 037 [ 600/721]  loss=0.0495  lr=5.18e-05  ema_tau=0.99944
+  Epoch 037 [ 620/721]  loss=0.0663  lr=5.16e-05  ema_tau=0.99945
+  Epoch 037 [ 640/721]  loss=0.0531  lr=5.13e-05  ema_tau=0.99945
+  Epoch 037 [ 660/721]  loss=0.0437  lr=5.11e-05  ema_tau=0.99945
+  Epoch 037 [ 680/721]  loss=0.0382  lr=5.09e-05  ema_tau=0.99945
+  Epoch 037 [ 700/721]  loss=0.0605  lr=5.07e-05  ema_tau=0.99946
+  Epoch 037 [ 720/721]  loss=0.0550  lr=5.05e-05  ema_tau=0.99946
+
+Epoch 037 done | avg_loss=0.0547 | time=293.4s
+  Val loss: 0.0476
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 038 [   0/721]  loss=0.0502  lr=5.05e-05  ema_tau=0.99946
+  Epoch 038 [  20/721]  loss=0.0582  lr=5.03e-05  ema_tau=0.99946
+  Epoch 038 [  40/721]  loss=0.0510  lr=5.00e-05  ema_tau=0.99946
+  Epoch 038 [  60/721]  loss=0.0561  lr=4.98e-05  ema_tau=0.99947
+  Epoch 038 [  80/721]  loss=0.0559  lr=4.96e-05  ema_tau=0.99947
+  Epoch 038 [ 100/721]  loss=0.0435  lr=4.94e-05  ema_tau=0.99947
+  Epoch 038 [ 120/721]  loss=0.0495  lr=4.92e-05  ema_tau=0.99947
+  Epoch 038 [ 140/721]  loss=0.0569  lr=4.90e-05  ema_tau=0.99947
+  Epoch 038 [ 160/721]  loss=0.0530  lr=4.88e-05  ema_tau=0.99948
+  Epoch 038 [ 180/721]  loss=0.0529  lr=4.85e-05  ema_tau=0.99948
+  Epoch 038 [ 200/721]  loss=0.0568  lr=4.83e-05  ema_tau=0.99948
+  Epoch 038 [ 220/721]  loss=0.0580  lr=4.81e-05  ema_tau=0.99948
+  Epoch 038 [ 240/721]  loss=0.0724  lr=4.79e-05  ema_tau=0.99949
+  Epoch 038 [ 260/721]  loss=0.0502  lr=4.77e-05  ema_tau=0.99949
+  Epoch 038 [ 280/721]  loss=0.0553  lr=4.75e-05  ema_tau=0.99949
+  Epoch 038 [ 300/721]  loss=0.0576  lr=4.73e-05  ema_tau=0.99949
+  Epoch 038 [ 320/721]  loss=0.0455  lr=4.71e-05  ema_tau=0.99950
+  Epoch 038 [ 340/721]  loss=0.0508  lr=4.69e-05  ema_tau=0.99950
+  Epoch 038 [ 360/721]  loss=0.0625  lr=4.67e-05  ema_tau=0.99950
+  Epoch 038 [ 380/721]  loss=0.0513  lr=4.64e-05  ema_tau=0.99950
+  Epoch 038 [ 400/721]  loss=0.0532  lr=4.62e-05  ema_tau=0.99950
+  Epoch 038 [ 420/721]  loss=0.0602  lr=4.60e-05  ema_tau=0.99951
+  Epoch 038 [ 440/721]  loss=0.0548  lr=4.58e-05  ema_tau=0.99951
+  Epoch 038 [ 460/721]  loss=0.0456  lr=4.56e-05  ema_tau=0.99951
+  Epoch 038 [ 480/721]  loss=0.0500  lr=4.54e-05  ema_tau=0.99951
+  Epoch 038 [ 500/721]  loss=0.0454  lr=4.52e-05  ema_tau=0.99952
+  Epoch 038 [ 520/721]  loss=0.0631  lr=4.50e-05  ema_tau=0.99952
+  Epoch 038 [ 540/721]  loss=0.0453  lr=4.48e-05  ema_tau=0.99952
+  Epoch 038 [ 560/721]  loss=0.0493  lr=4.46e-05  ema_tau=0.99952
+  Epoch 038 [ 580/721]  loss=0.0550  lr=4.44e-05  ema_tau=0.99953
+  Epoch 038 [ 600/721]  loss=0.0457  lr=4.42e-05  ema_tau=0.99953
+  Epoch 038 [ 620/721]  loss=0.0439  lr=4.40e-05  ema_tau=0.99953
+  Epoch 038 [ 640/721]  loss=0.0534  lr=4.38e-05  ema_tau=0.99953
+  Epoch 038 [ 660/721]  loss=0.0603  lr=4.36e-05  ema_tau=0.99953
+  Epoch 038 [ 680/721]  loss=0.0591  lr=4.34e-05  ema_tau=0.99954
+  Epoch 038 [ 700/721]  loss=0.0435  lr=4.32e-05  ema_tau=0.99954
+  Epoch 038 [ 720/721]  loss=0.0492  lr=4.30e-05  ema_tau=0.99954
+
+Epoch 038 done | avg_loss=0.0534 | time=292.2s
+  Val loss: 0.0475
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 039 [   0/721]  loss=0.0554  lr=4.30e-05  ema_tau=0.99954
+  Epoch 039 [  20/721]  loss=0.0573  lr=4.28e-05  ema_tau=0.99954
+  Epoch 039 [  40/721]  loss=0.0524  lr=4.26e-05  ema_tau=0.99955
+  Epoch 039 [  60/721]  loss=0.0480  lr=4.24e-05  ema_tau=0.99955
+  Epoch 039 [  80/721]  loss=0.0459  lr=4.22e-05  ema_tau=0.99955
+  Epoch 039 [ 100/721]  loss=0.0566  lr=4.20e-05  ema_tau=0.99955
+  Epoch 039 [ 120/721]  loss=0.0488  lr=4.18e-05  ema_tau=0.99955
+  Epoch 039 [ 140/721]  loss=0.0478  lr=4.16e-05  ema_tau=0.99956
+  Epoch 039 [ 160/721]  loss=0.0607  lr=4.14e-05  ema_tau=0.99956
+  Epoch 039 [ 180/721]  loss=0.0413  lr=4.12e-05  ema_tau=0.99956
+  Epoch 039 [ 200/721]  loss=0.0552  lr=4.10e-05  ema_tau=0.99956
+  Epoch 039 [ 220/721]  loss=0.0412  lr=4.08e-05  ema_tau=0.99957
+  Epoch 039 [ 240/721]  loss=0.0458  lr=4.06e-05  ema_tau=0.99957
+  Epoch 039 [ 260/721]  loss=0.0517  lr=4.04e-05  ema_tau=0.99957
+  Epoch 039 [ 280/721]  loss=0.0513  lr=4.02e-05  ema_tau=0.99957
+  Epoch 039 [ 300/721]  loss=0.0690  lr=4.00e-05  ema_tau=0.99957
+  Epoch 039 [ 320/721]  loss=0.0509  lr=3.98e-05  ema_tau=0.99958
+  Epoch 039 [ 340/721]  loss=0.0499  lr=3.96e-05  ema_tau=0.99958
+  Epoch 039 [ 360/721]  loss=0.0544  lr=3.94e-05  ema_tau=0.99958
+  Epoch 039 [ 380/721]  loss=0.0395  lr=3.92e-05  ema_tau=0.99958
+  Epoch 039 [ 400/721]  loss=0.0494  lr=3.90e-05  ema_tau=0.99958
+  Epoch 039 [ 420/721]  loss=0.0467  lr=3.88e-05  ema_tau=0.99959
+  Epoch 039 [ 440/721]  loss=0.0559  lr=3.86e-05  ema_tau=0.99959
+  Epoch 039 [ 460/721]  loss=0.0504  lr=3.84e-05  ema_tau=0.99959
+  Epoch 039 [ 480/721]  loss=0.0565  lr=3.82e-05  ema_tau=0.99959
+  Epoch 039 [ 500/721]  loss=0.0536  lr=3.81e-05  ema_tau=0.99960
+  Epoch 039 [ 520/721]  loss=0.0500  lr=3.79e-05  ema_tau=0.99960
+  Epoch 039 [ 540/721]  loss=0.0531  lr=3.77e-05  ema_tau=0.99960
+  Epoch 039 [ 560/721]  loss=0.0575  lr=3.75e-05  ema_tau=0.99960
+  Epoch 039 [ 580/721]  loss=0.0484  lr=3.73e-05  ema_tau=0.99960
+  Epoch 039 [ 600/721]  loss=0.0507  lr=3.71e-05  ema_tau=0.99961
+  Epoch 039 [ 620/721]  loss=0.0583  lr=3.69e-05  ema_tau=0.99961
+  Epoch 039 [ 640/721]  loss=0.0600  lr=3.67e-05  ema_tau=0.99961
+  Epoch 039 [ 660/721]  loss=0.0513  lr=3.65e-05  ema_tau=0.99961
+  Epoch 039 [ 680/721]  loss=0.0468  lr=3.64e-05  ema_tau=0.99961
+  Epoch 039 [ 700/721]  loss=0.0481  lr=3.62e-05  ema_tau=0.99962
+  Epoch 039 [ 720/721]  loss=0.0559  lr=3.60e-05  ema_tau=0.99962
+
+Epoch 039 done | avg_loss=0.0526 | time=292.3s
+  Val loss: 0.0459
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 040 [   0/721]  loss=0.0462  lr=3.60e-05  ema_tau=0.99962
+  Epoch 040 [  20/721]  loss=0.0517  lr=3.58e-05  ema_tau=0.99962
+  Epoch 040 [  40/721]  loss=0.0497  lr=3.56e-05  ema_tau=0.99962
+  Epoch 040 [  60/721]  loss=0.0484  lr=3.54e-05  ema_tau=0.99962
+  Epoch 040 [  80/721]  loss=0.0508  lr=3.52e-05  ema_tau=0.99963
+  Epoch 040 [ 100/721]  loss=0.0400  lr=3.51e-05  ema_tau=0.99963
+  Epoch 040 [ 120/721]  loss=0.0615  lr=3.49e-05  ema_tau=0.99963
+  Epoch 040 [ 140/721]  loss=0.0620  lr=3.47e-05  ema_tau=0.99963
+  Epoch 040 [ 160/721]  loss=0.0512  lr=3.45e-05  ema_tau=0.99963
+  Epoch 040 [ 180/721]  loss=0.0555  lr=3.43e-05  ema_tau=0.99964
+  Epoch 040 [ 200/721]  loss=0.0467  lr=3.41e-05  ema_tau=0.99964
+  Epoch 040 [ 220/721]  loss=0.0582  lr=3.40e-05  ema_tau=0.99964
+  Epoch 040 [ 240/721]  loss=0.0487  lr=3.38e-05  ema_tau=0.99964
+  Epoch 040 [ 260/721]  loss=0.0600  lr=3.36e-05  ema_tau=0.99964
+  Epoch 040 [ 280/721]  loss=0.0427  lr=3.34e-05  ema_tau=0.99965
+  Epoch 040 [ 300/721]  loss=0.0467  lr=3.32e-05  ema_tau=0.99965
+  Epoch 040 [ 320/721]  loss=0.0422  lr=3.31e-05  ema_tau=0.99965
+  Epoch 040 [ 340/721]  loss=0.0528  lr=3.29e-05  ema_tau=0.99965
+  Epoch 040 [ 360/721]  loss=0.0572  lr=3.27e-05  ema_tau=0.99965
+  Epoch 040 [ 380/721]  loss=0.0594  lr=3.25e-05  ema_tau=0.99966
+  Epoch 040 [ 400/721]  loss=0.0518  lr=3.23e-05  ema_tau=0.99966
+  Epoch 040 [ 420/721]  loss=0.0479  lr=3.22e-05  ema_tau=0.99966
+  Epoch 040 [ 440/721]  loss=0.0410  lr=3.20e-05  ema_tau=0.99966
+  Epoch 040 [ 460/721]  loss=0.0556  lr=3.18e-05  ema_tau=0.99966
+  Epoch 040 [ 480/721]  loss=0.0525  lr=3.16e-05  ema_tau=0.99967
+  Epoch 040 [ 500/721]  loss=0.0458  lr=3.15e-05  ema_tau=0.99967
+  Epoch 040 [ 520/721]  loss=0.0445  lr=3.13e-05  ema_tau=0.99967
+  Epoch 040 [ 540/721]  loss=0.0457  lr=3.11e-05  ema_tau=0.99967
+  Epoch 040 [ 560/721]  loss=0.0512  lr=3.09e-05  ema_tau=0.99967
+  Epoch 040 [ 580/721]  loss=0.0415  lr=3.08e-05  ema_tau=0.99968
+  Epoch 040 [ 600/721]  loss=0.0528  lr=3.06e-05  ema_tau=0.99968
+  Epoch 040 [ 620/721]  loss=0.0467  lr=3.04e-05  ema_tau=0.99968
+  Epoch 040 [ 640/721]  loss=0.0441  lr=3.02e-05  ema_tau=0.99968
+  Epoch 040 [ 660/721]  loss=0.0531  lr=3.01e-05  ema_tau=0.99968
+  Epoch 040 [ 680/721]  loss=0.0528  lr=2.99e-05  ema_tau=0.99968
+  Epoch 040 [ 700/721]  loss=0.0458  lr=2.97e-05  ema_tau=0.99969
+  Epoch 040 [ 720/721]  loss=0.0466  lr=2.96e-05  ema_tau=0.99969
+
+Epoch 040 done | avg_loss=0.0516 | time=293.0s
+  Collapse check — embed_std=0.0364  mean_cos_sim=0.4082
+  Val loss: 0.0459
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/epoch_0040.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 041 [   0/721]  loss=0.0540  lr=2.96e-05  ema_tau=0.99969
+  Epoch 041 [  20/721]  loss=0.0549  lr=2.94e-05  ema_tau=0.99969
+  Epoch 041 [  40/721]  loss=0.0593  lr=2.92e-05  ema_tau=0.99969
+  Epoch 041 [  60/721]  loss=0.0590  lr=2.90e-05  ema_tau=0.99969
+  Epoch 041 [  80/721]  loss=0.0497  lr=2.89e-05  ema_tau=0.99970
+  Epoch 041 [ 100/721]  loss=0.0491  lr=2.87e-05  ema_tau=0.99970
+  Epoch 041 [ 120/721]  loss=0.0516  lr=2.85e-05  ema_tau=0.99970
+  Epoch 041 [ 140/721]  loss=0.0578  lr=2.84e-05  ema_tau=0.99970
+  Epoch 041 [ 160/721]  loss=0.0567  lr=2.82e-05  ema_tau=0.99970
+  Epoch 041 [ 180/721]  loss=0.0527  lr=2.80e-05  ema_tau=0.99971
+  Epoch 041 [ 200/721]  loss=0.0475  lr=2.79e-05  ema_tau=0.99971
+  Epoch 041 [ 220/721]  loss=0.0546  lr=2.77e-05  ema_tau=0.99971
+  Epoch 041 [ 240/721]  loss=0.0412  lr=2.75e-05  ema_tau=0.99971
+  Epoch 041 [ 260/721]  loss=0.0548  lr=2.74e-05  ema_tau=0.99971
+  Epoch 041 [ 280/721]  loss=0.0596  lr=2.72e-05  ema_tau=0.99971
+  Epoch 041 [ 300/721]  loss=0.0469  lr=2.71e-05  ema_tau=0.99972
+  Epoch 041 [ 320/721]  loss=0.0513  lr=2.69e-05  ema_tau=0.99972
+  Epoch 041 [ 340/721]  loss=0.0468  lr=2.67e-05  ema_tau=0.99972
+  Epoch 041 [ 360/721]  loss=0.0509  lr=2.66e-05  ema_tau=0.99972
+  Epoch 041 [ 380/721]  loss=0.0421  lr=2.64e-05  ema_tau=0.99972
+  Epoch 041 [ 400/721]  loss=0.0488  lr=2.62e-05  ema_tau=0.99972
+  Epoch 041 [ 420/721]  loss=0.0562  lr=2.61e-05  ema_tau=0.99973
+  Epoch 041 [ 440/721]  loss=0.0505  lr=2.59e-05  ema_tau=0.99973
+  Epoch 041 [ 460/721]  loss=0.0544  lr=2.58e-05  ema_tau=0.99973
+  Epoch 041 [ 480/721]  loss=0.0447  lr=2.56e-05  ema_tau=0.99973
+  Epoch 041 [ 500/721]  loss=0.0502  lr=2.54e-05  ema_tau=0.99973
+  Epoch 041 [ 520/721]  loss=0.0429  lr=2.53e-05  ema_tau=0.99974
+  Epoch 041 [ 540/721]  loss=0.0402  lr=2.51e-05  ema_tau=0.99974
+  Epoch 041 [ 560/721]  loss=0.0555  lr=2.50e-05  ema_tau=0.99974
+  Epoch 041 [ 580/721]  loss=0.0541  lr=2.48e-05  ema_tau=0.99974
+  Epoch 041 [ 600/721]  loss=0.0422  lr=2.47e-05  ema_tau=0.99974
+  Epoch 041 [ 620/721]  loss=0.0449  lr=2.45e-05  ema_tau=0.99974
+  Epoch 041 [ 640/721]  loss=0.0598  lr=2.43e-05  ema_tau=0.99975
+  Epoch 041 [ 660/721]  loss=0.0549  lr=2.42e-05  ema_tau=0.99975
+  Epoch 041 [ 680/721]  loss=0.0533  lr=2.40e-05  ema_tau=0.99975
+  Epoch 041 [ 700/721]  loss=0.0415  lr=2.39e-05  ema_tau=0.99975
+  Epoch 041 [ 720/721]  loss=0.0460  lr=2.37e-05  ema_tau=0.99975
+
+Epoch 041 done | avg_loss=0.0508 | time=295.2s
+  Val loss: 0.0446
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 042 [   0/721]  loss=0.0637  lr=2.37e-05  ema_tau=0.99975
+  Epoch 042 [  20/721]  loss=0.0476  lr=2.36e-05  ema_tau=0.99975
+  Epoch 042 [  40/721]  loss=0.0465  lr=2.34e-05  ema_tau=0.99976
+  Epoch 042 [  60/721]  loss=0.0439  lr=2.33e-05  ema_tau=0.99976
+  Epoch 042 [  80/721]  loss=0.0528  lr=2.31e-05  ema_tau=0.99976
+  Epoch 042 [ 100/721]  loss=0.0407  lr=2.30e-05  ema_tau=0.99976
+  Epoch 042 [ 120/721]  loss=0.0539  lr=2.28e-05  ema_tau=0.99976
+  Epoch 042 [ 140/721]  loss=0.0529  lr=2.27e-05  ema_tau=0.99976
+  Epoch 042 [ 160/721]  loss=0.0484  lr=2.25e-05  ema_tau=0.99977
+  Epoch 042 [ 180/721]  loss=0.0431  lr=2.24e-05  ema_tau=0.99977
+  Epoch 042 [ 200/721]  loss=0.0457  lr=2.22e-05  ema_tau=0.99977
+  Epoch 042 [ 220/721]  loss=0.0512  lr=2.21e-05  ema_tau=0.99977
+  Epoch 042 [ 240/721]  loss=0.0483  lr=2.19e-05  ema_tau=0.99977
+  Epoch 042 [ 260/721]  loss=0.0505  lr=2.18e-05  ema_tau=0.99977
+  Epoch 042 [ 280/721]  loss=0.0476  lr=2.16e-05  ema_tau=0.99978
+  Epoch 042 [ 300/721]  loss=0.0472  lr=2.15e-05  ema_tau=0.99978
+  Epoch 042 [ 320/721]  loss=0.0477  lr=2.13e-05  ema_tau=0.99978
+  Epoch 042 [ 340/721]  loss=0.0435  lr=2.12e-05  ema_tau=0.99978
+  Epoch 042 [ 360/721]  loss=0.0468  lr=2.10e-05  ema_tau=0.99978
+  Epoch 042 [ 380/721]  loss=0.0425  lr=2.09e-05  ema_tau=0.99978
+  Epoch 042 [ 400/721]  loss=0.0535  lr=2.07e-05  ema_tau=0.99979
+  Epoch 042 [ 420/721]  loss=0.0535  lr=2.06e-05  ema_tau=0.99979
+  Epoch 042 [ 440/721]  loss=0.0475  lr=2.05e-05  ema_tau=0.99979
+  Epoch 042 [ 460/721]  loss=0.0522  lr=2.03e-05  ema_tau=0.99979
+  Epoch 042 [ 480/721]  loss=0.0482  lr=2.02e-05  ema_tau=0.99979
+  Epoch 042 [ 500/721]  loss=0.0593  lr=2.00e-05  ema_tau=0.99979
+  Epoch 042 [ 520/721]  loss=0.0521  lr=1.99e-05  ema_tau=0.99979
+  Epoch 042 [ 540/721]  loss=0.0480  lr=1.97e-05  ema_tau=0.99980
+  Epoch 042 [ 560/721]  loss=0.0450  lr=1.96e-05  ema_tau=0.99980
+  Epoch 042 [ 580/721]  loss=0.0473  lr=1.95e-05  ema_tau=0.99980
+  Epoch 042 [ 600/721]  loss=0.0413  lr=1.93e-05  ema_tau=0.99980
+  Epoch 042 [ 620/721]  loss=0.0450  lr=1.92e-05  ema_tau=0.99980
+  Epoch 042 [ 640/721]  loss=0.0464  lr=1.91e-05  ema_tau=0.99980
+  Epoch 042 [ 660/721]  loss=0.0536  lr=1.89e-05  ema_tau=0.99981
+  Epoch 042 [ 680/721]  loss=0.0488  lr=1.88e-05  ema_tau=0.99981
+  Epoch 042 [ 700/721]  loss=0.0441  lr=1.86e-05  ema_tau=0.99981
+  Epoch 042 [ 720/721]  loss=0.0470  lr=1.85e-05  ema_tau=0.99981
+
+Epoch 042 done | avg_loss=0.0498 | time=294.1s
+  Val loss: 0.0436
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 043 [   0/721]  loss=0.0522  lr=1.85e-05  ema_tau=0.99981
+  Epoch 043 [  20/721]  loss=0.0527  lr=1.84e-05  ema_tau=0.99981
+  Epoch 043 [  40/721]  loss=0.0513  lr=1.82e-05  ema_tau=0.99981
+  Epoch 043 [  60/721]  loss=0.0608  lr=1.81e-05  ema_tau=0.99981
+  Epoch 043 [  80/721]  loss=0.0536  lr=1.80e-05  ema_tau=0.99982
+  Epoch 043 [ 100/721]  loss=0.0413  lr=1.78e-05  ema_tau=0.99982
+  Epoch 043 [ 120/721]  loss=0.0496  lr=1.77e-05  ema_tau=0.99982
+  Epoch 043 [ 140/721]  loss=0.0612  lr=1.76e-05  ema_tau=0.99982
+  Epoch 043 [ 160/721]  loss=0.0500  lr=1.74e-05  ema_tau=0.99982
+  Epoch 043 [ 180/721]  loss=0.0448  lr=1.73e-05  ema_tau=0.99982
+  Epoch 043 [ 200/721]  loss=0.0448  lr=1.72e-05  ema_tau=0.99982
+  Epoch 043 [ 220/721]  loss=0.0436  lr=1.70e-05  ema_tau=0.99983
+  Epoch 043 [ 240/721]  loss=0.0557  lr=1.69e-05  ema_tau=0.99983
+  Epoch 043 [ 260/721]  loss=0.0462  lr=1.68e-05  ema_tau=0.99983
+  Epoch 043 [ 280/721]  loss=0.0504  lr=1.66e-05  ema_tau=0.99983
+  Epoch 043 [ 300/721]  loss=0.0545  lr=1.65e-05  ema_tau=0.99983
+  Epoch 043 [ 320/721]  loss=0.0580  lr=1.64e-05  ema_tau=0.99983
+  Epoch 043 [ 340/721]  loss=0.0445  lr=1.63e-05  ema_tau=0.99983
+  Epoch 043 [ 360/721]  loss=0.0518  lr=1.61e-05  ema_tau=0.99984
+  Epoch 043 [ 380/721]  loss=0.0467  lr=1.60e-05  ema_tau=0.99984
+  Epoch 043 [ 400/721]  loss=0.0535  lr=1.59e-05  ema_tau=0.99984
+  Epoch 043 [ 420/721]  loss=0.0463  lr=1.58e-05  ema_tau=0.99984
+  Epoch 043 [ 440/721]  loss=0.0491  lr=1.56e-05  ema_tau=0.99984
+  Epoch 043 [ 460/721]  loss=0.0497  lr=1.55e-05  ema_tau=0.99984
+  Epoch 043 [ 480/721]  loss=0.0408  lr=1.54e-05  ema_tau=0.99984
+  Epoch 043 [ 500/721]  loss=0.0537  lr=1.53e-05  ema_tau=0.99985
+  Epoch 043 [ 520/721]  loss=0.0554  lr=1.51e-05  ema_tau=0.99985
+  Epoch 043 [ 540/721]  loss=0.0614  lr=1.50e-05  ema_tau=0.99985
+  Epoch 043 [ 560/721]  loss=0.0498  lr=1.49e-05  ema_tau=0.99985
+  Epoch 043 [ 580/721]  loss=0.0483  lr=1.48e-05  ema_tau=0.99985
+  Epoch 043 [ 600/721]  loss=0.0441  lr=1.46e-05  ema_tau=0.99985
+  Epoch 043 [ 620/721]  loss=0.0517  lr=1.45e-05  ema_tau=0.99985
+  Epoch 043 [ 640/721]  loss=0.0391  lr=1.44e-05  ema_tau=0.99985
+  Epoch 043 [ 660/721]  loss=0.0447  lr=1.43e-05  ema_tau=0.99986
+  Epoch 043 [ 680/721]  loss=0.0491  lr=1.42e-05  ema_tau=0.99986
+  Epoch 043 [ 700/721]  loss=0.0455  lr=1.40e-05  ema_tau=0.99986
+  Epoch 043 [ 720/721]  loss=0.0445  lr=1.39e-05  ema_tau=0.99986
+
+Epoch 043 done | avg_loss=0.0494 | time=300.9s
+  Val loss: 0.0445
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+
+  Epoch 044 [   0/721]  loss=0.0549  lr=1.39e-05  ema_tau=0.99986
+  Epoch 044 [  20/721]  loss=0.0461  lr=1.38e-05  ema_tau=0.99986
+  Epoch 044 [  40/721]  loss=0.0378  lr=1.37e-05  ema_tau=0.99986
+  Epoch 044 [  60/721]  loss=0.0469  lr=1.36e-05  ema_tau=0.99986
+  Epoch 044 [  80/721]  loss=0.0500  lr=1.35e-05  ema_tau=0.99986
+  Epoch 044 [ 100/721]  loss=0.0516  lr=1.33e-05  ema_tau=0.99987
+  Epoch 044 [ 120/721]  loss=0.0510  lr=1.32e-05  ema_tau=0.99987
+  Epoch 044 [ 140/721]  loss=0.0478  lr=1.31e-05  ema_tau=0.99987
+  Epoch 044 [ 160/721]  loss=0.0584  lr=1.30e-05  ema_tau=0.99987
+  Epoch 044 [ 180/721]  loss=0.0509  lr=1.29e-05  ema_tau=0.99987
+  Epoch 044 [ 200/721]  loss=0.0522  lr=1.28e-05  ema_tau=0.99987
+  Epoch 044 [ 220/721]  loss=0.0436  lr=1.27e-05  ema_tau=0.99987
+  Epoch 044 [ 240/721]  loss=0.0461  lr=1.25e-05  ema_tau=0.99987
+  Epoch 044 [ 260/721]  loss=0.0498  lr=1.24e-05  ema_tau=0.99988
+  Epoch 044 [ 280/721]  loss=0.0541  lr=1.23e-05  ema_tau=0.99988
+  Epoch 044 [ 300/721]  loss=0.0518  lr=1.22e-05  ema_tau=0.99988
+  Epoch 044 [ 320/721]  loss=0.0489  lr=1.21e-05  ema_tau=0.99988
+  Epoch 044 [ 340/721]  loss=0.0541  lr=1.20e-05  ema_tau=0.99988
+  Epoch 044 [ 360/721]  loss=0.0537  lr=1.19e-05  ema_tau=0.99988
+  Epoch 044 [ 380/721]  loss=0.0516  lr=1.18e-05  ema_tau=0.99988
+  Epoch 044 [ 400/721]  loss=0.0430  lr=1.17e-05  ema_tau=0.99988
+  Epoch 044 [ 420/721]  loss=0.0467  lr=1.16e-05  ema_tau=0.99989
+  Epoch 044 [ 440/721]  loss=0.0584  lr=1.15e-05  ema_tau=0.99989
+  Epoch 044 [ 460/721]  loss=0.0473  lr=1.14e-05  ema_tau=0.99989
+  Epoch 044 [ 480/721]  loss=0.0474  lr=1.12e-05  ema_tau=0.99989
+  Epoch 044 [ 500/721]  loss=0.0479  lr=1.11e-05  ema_tau=0.99989
+  Epoch 044 [ 520/721]  loss=0.0531  lr=1.10e-05  ema_tau=0.99989
+  Epoch 044 [ 540/721]  loss=0.0430  lr=1.09e-05  ema_tau=0.99989
+  Epoch 044 [ 560/721]  loss=0.0467  lr=1.08e-05  ema_tau=0.99989
+  Epoch 044 [ 580/721]  loss=0.0411  lr=1.07e-05  ema_tau=0.99989
+  Epoch 044 [ 600/721]  loss=0.0525  lr=1.06e-05  ema_tau=0.99990
+  Epoch 044 [ 620/721]  loss=0.0509  lr=1.05e-05  ema_tau=0.99990
+  Epoch 044 [ 640/721]  loss=0.0498  lr=1.04e-05  ema_tau=0.99990
+  Epoch 044 [ 660/721]  loss=0.0536  lr=1.03e-05  ema_tau=0.99990
+  Epoch 044 [ 680/721]  loss=0.0557  lr=1.02e-05  ema_tau=0.99990
+  Epoch 044 [ 700/721]  loss=0.0508  lr=1.01e-05  ema_tau=0.99990
+  Epoch 044 [ 720/721]  loss=0.0564  lr=1.00e-05  ema_tau=0.99990
+
+Epoch 044 done | avg_loss=0.0490 | time=293.6s
+  Val loss: 0.0430
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 045 [   0/721]  loss=0.0567  lr=1.00e-05  ema_tau=0.99990
+  Epoch 045 [  20/721]  loss=0.0408  lr=9.92e-06  ema_tau=0.99990
+  Epoch 045 [  40/721]  loss=0.0513  lr=9.82e-06  ema_tau=0.99990
+  Epoch 045 [  60/721]  loss=0.0447  lr=9.72e-06  ema_tau=0.99991
+  Epoch 045 [  80/721]  loss=0.0475  lr=9.62e-06  ema_tau=0.99991
+  Epoch 045 [ 100/721]  loss=0.0464  lr=9.53e-06  ema_tau=0.99991
+  Epoch 045 [ 120/721]  loss=0.0389  lr=9.43e-06  ema_tau=0.99991
+  Epoch 045 [ 140/721]  loss=0.0591  lr=9.34e-06  ema_tau=0.99991
+  Epoch 045 [ 160/721]  loss=0.0536  lr=9.24e-06  ema_tau=0.99991
+  Epoch 045 [ 180/721]  loss=0.0436  lr=9.15e-06  ema_tau=0.99991
+  Epoch 045 [ 200/721]  loss=0.0334  lr=9.05e-06  ema_tau=0.99991
+  Epoch 045 [ 220/721]  loss=0.0547  lr=8.96e-06  ema_tau=0.99991
+  Epoch 045 [ 240/721]  loss=0.0404  lr=8.87e-06  ema_tau=0.99991
+  Epoch 045 [ 260/721]  loss=0.0433  lr=8.77e-06  ema_tau=0.99992
+  Epoch 045 [ 280/721]  loss=0.0526  lr=8.68e-06  ema_tau=0.99992
+  Epoch 045 [ 300/721]  loss=0.0492  lr=8.59e-06  ema_tau=0.99992
+  Epoch 045 [ 320/721]  loss=0.0460  lr=8.50e-06  ema_tau=0.99992
+  Epoch 045 [ 340/721]  loss=0.0541  lr=8.41e-06  ema_tau=0.99992
+  Epoch 045 [ 360/721]  loss=0.0431  lr=8.32e-06  ema_tau=0.99992
+  Epoch 045 [ 380/721]  loss=0.0500  lr=8.23e-06  ema_tau=0.99992
+  Epoch 045 [ 400/721]  loss=0.0515  lr=8.14e-06  ema_tau=0.99992
+  Epoch 045 [ 420/721]  loss=0.0557  lr=8.05e-06  ema_tau=0.99992
+  Epoch 045 [ 440/721]  loss=0.0449  lr=7.97e-06  ema_tau=0.99992
+  Epoch 045 [ 460/721]  loss=0.0474  lr=7.88e-06  ema_tau=0.99993
+  Epoch 045 [ 480/721]  loss=0.0487  lr=7.79e-06  ema_tau=0.99993
+  Epoch 045 [ 500/721]  loss=0.0452  lr=7.71e-06  ema_tau=0.99993
+  Epoch 045 [ 520/721]  loss=0.0426  lr=7.62e-06  ema_tau=0.99993
+  Epoch 045 [ 540/721]  loss=0.0511  lr=7.54e-06  ema_tau=0.99993
+  Epoch 045 [ 560/721]  loss=0.0396  lr=7.45e-06  ema_tau=0.99993
+  Epoch 045 [ 580/721]  loss=0.0478  lr=7.37e-06  ema_tau=0.99993
+  Epoch 045 [ 600/721]  loss=0.0491  lr=7.28e-06  ema_tau=0.99993
+  Epoch 045 [ 620/721]  loss=0.0450  lr=7.20e-06  ema_tau=0.99993
+  Epoch 045 [ 640/721]  loss=0.0598  lr=7.12e-06  ema_tau=0.99993
+  Epoch 045 [ 660/721]  loss=0.0457  lr=7.04e-06  ema_tau=0.99993
+  Epoch 045 [ 680/721]  loss=0.0585  lr=6.96e-06  ema_tau=0.99994
+  Epoch 045 [ 700/721]  loss=0.0570  lr=6.88e-06  ema_tau=0.99994
+  Epoch 045 [ 720/721]  loss=0.0399  lr=6.80e-06  ema_tau=0.99994
+
+Epoch 045 done | avg_loss=0.0490 | time=295.1s
+  Collapse check — embed_std=0.0356  mean_cos_sim=0.4423
+  Val loss: 0.0444
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+
+  Epoch 046 [   0/721]  loss=0.0540  lr=6.79e-06  ema_tau=0.99994
+  Epoch 046 [  20/721]  loss=0.0447  lr=6.71e-06  ema_tau=0.99994
+  Epoch 046 [  40/721]  loss=0.0685  lr=6.63e-06  ema_tau=0.99994
+  Epoch 046 [  60/721]  loss=0.0557  lr=6.55e-06  ema_tau=0.99994
+  Epoch 046 [  80/721]  loss=0.0497  lr=6.48e-06  ema_tau=0.99994
+  Epoch 046 [ 100/721]  loss=0.0450  lr=6.40e-06  ema_tau=0.99994
+  Epoch 046 [ 120/721]  loss=0.0551  lr=6.32e-06  ema_tau=0.99994
+  Epoch 046 [ 140/721]  loss=0.0451  lr=6.25e-06  ema_tau=0.99994
+  Epoch 046 [ 160/721]  loss=0.0476  lr=6.17e-06  ema_tau=0.99994
+  Epoch 046 [ 180/721]  loss=0.0410  lr=6.10e-06  ema_tau=0.99994
+  Epoch 046 [ 200/721]  loss=0.0478  lr=6.02e-06  ema_tau=0.99995
+  Epoch 046 [ 220/721]  loss=0.0501  lr=5.95e-06  ema_tau=0.99995
+  Epoch 046 [ 240/721]  loss=0.0461  lr=5.87e-06  ema_tau=0.99995
+  Epoch 046 [ 260/721]  loss=0.0442  lr=5.80e-06  ema_tau=0.99995
+  Epoch 046 [ 280/721]  loss=0.0606  lr=5.73e-06  ema_tau=0.99995
+  Epoch 046 [ 300/721]  loss=0.0451  lr=5.66e-06  ema_tau=0.99995
+  Epoch 046 [ 320/721]  loss=0.0430  lr=5.58e-06  ema_tau=0.99995
+  Epoch 046 [ 340/721]  loss=0.0507  lr=5.51e-06  ema_tau=0.99995
+  Epoch 046 [ 360/721]  loss=0.0511  lr=5.44e-06  ema_tau=0.99995
+  Epoch 046 [ 380/721]  loss=0.0518  lr=5.37e-06  ema_tau=0.99995
+  Epoch 046 [ 400/721]  loss=0.0429  lr=5.30e-06  ema_tau=0.99995
+  Epoch 046 [ 420/721]  loss=0.0461  lr=5.23e-06  ema_tau=0.99995
+  Epoch 046 [ 440/721]  loss=0.0448  lr=5.17e-06  ema_tau=0.99995
+  Epoch 046 [ 460/721]  loss=0.0385  lr=5.10e-06  ema_tau=0.99996
+  Epoch 046 [ 480/721]  loss=0.0548  lr=5.03e-06  ema_tau=0.99996
+  Epoch 046 [ 500/721]  loss=0.0535  lr=4.97e-06  ema_tau=0.99996
+  Epoch 046 [ 520/721]  loss=0.0412  lr=4.90e-06  ema_tau=0.99996
+  Epoch 046 [ 540/721]  loss=0.0444  lr=4.83e-06  ema_tau=0.99996
+  Epoch 046 [ 560/721]  loss=0.0494  lr=4.77e-06  ema_tau=0.99996
+  Epoch 046 [ 580/721]  loss=0.0520  lr=4.70e-06  ema_tau=0.99996
+  Epoch 046 [ 600/721]  loss=0.0569  lr=4.64e-06  ema_tau=0.99996
+  Epoch 046 [ 620/721]  loss=0.0447  lr=4.58e-06  ema_tau=0.99996
+  Epoch 046 [ 640/721]  loss=0.0562  lr=4.52e-06  ema_tau=0.99996
+  Epoch 046 [ 660/721]  loss=0.0665  lr=4.45e-06  ema_tau=0.99996
+  Epoch 046 [ 680/721]  loss=0.0578  lr=4.39e-06  ema_tau=0.99996
+  Epoch 046 [ 700/721]  loss=0.0601  lr=4.33e-06  ema_tau=0.99996
+  Epoch 046 [ 720/721]  loss=0.0487  lr=4.27e-06  ema_tau=0.99996
+
+Epoch 046 done | avg_loss=0.0483 | time=296.3s
+  Val loss: 0.0429
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 047 [   0/721]  loss=0.0445  lr=4.27e-06  ema_tau=0.99996
+  Epoch 047 [  20/721]  loss=0.0445  lr=4.21e-06  ema_tau=0.99997
+  Epoch 047 [  40/721]  loss=0.0531  lr=4.15e-06  ema_tau=0.99997
+  Epoch 047 [  60/721]  loss=0.0512  lr=4.09e-06  ema_tau=0.99997
+  Epoch 047 [  80/721]  loss=0.0540  lr=4.03e-06  ema_tau=0.99997
+  Epoch 047 [ 100/721]  loss=0.0612  lr=3.97e-06  ema_tau=0.99997
+  Epoch 047 [ 120/721]  loss=0.0479  lr=3.92e-06  ema_tau=0.99997
+  Epoch 047 [ 140/721]  loss=0.0462  lr=3.86e-06  ema_tau=0.99997
+  Epoch 047 [ 160/721]  loss=0.0480  lr=3.80e-06  ema_tau=0.99997
+  Epoch 047 [ 180/721]  loss=0.0485  lr=3.75e-06  ema_tau=0.99997
+  Epoch 047 [ 200/721]  loss=0.0506  lr=3.69e-06  ema_tau=0.99997
+  Epoch 047 [ 220/721]  loss=0.0475  lr=3.64e-06  ema_tau=0.99997
+  Epoch 047 [ 240/721]  loss=0.0586  lr=3.58e-06  ema_tau=0.99997
+  Epoch 047 [ 260/721]  loss=0.0389  lr=3.53e-06  ema_tau=0.99997
+  Epoch 047 [ 280/721]  loss=0.0474  lr=3.48e-06  ema_tau=0.99997
+  Epoch 047 [ 300/721]  loss=0.0473  lr=3.43e-06  ema_tau=0.99997
+  Epoch 047 [ 320/721]  loss=0.0636  lr=3.37e-06  ema_tau=0.99997
+  Epoch 047 [ 340/721]  loss=0.0540  lr=3.32e-06  ema_tau=0.99997
+  Epoch 047 [ 360/721]  loss=0.0441  lr=3.27e-06  ema_tau=0.99998
+  Epoch 047 [ 380/721]  loss=0.0433  lr=3.22e-06  ema_tau=0.99998
+  Epoch 047 [ 400/721]  loss=0.0445  lr=3.17e-06  ema_tau=0.99998
+  Epoch 047 [ 420/721]  loss=0.0504  lr=3.12e-06  ema_tau=0.99998
+  Epoch 047 [ 440/721]  loss=0.0455  lr=3.08e-06  ema_tau=0.99998
+  Epoch 047 [ 460/721]  loss=0.0407  lr=3.03e-06  ema_tau=0.99998
+  Epoch 047 [ 480/721]  loss=0.0395  lr=2.98e-06  ema_tau=0.99998
+  Epoch 047 [ 500/721]  loss=0.0417  lr=2.93e-06  ema_tau=0.99998
+  Epoch 047 [ 520/721]  loss=0.0569  lr=2.89e-06  ema_tau=0.99998
+  Epoch 047 [ 540/721]  loss=0.0379  lr=2.84e-06  ema_tau=0.99998
+  Epoch 047 [ 560/721]  loss=0.0496  lr=2.80e-06  ema_tau=0.99998
+  Epoch 047 [ 580/721]  loss=0.0410  lr=2.75e-06  ema_tau=0.99998
+  Epoch 047 [ 600/721]  loss=0.0506  lr=2.71e-06  ema_tau=0.99998
+  Epoch 047 [ 620/721]  loss=0.0433  lr=2.67e-06  ema_tau=0.99998
+  Epoch 047 [ 640/721]  loss=0.0355  lr=2.62e-06  ema_tau=0.99998
+  Epoch 047 [ 660/721]  loss=0.0478  lr=2.58e-06  ema_tau=0.99998
+  Epoch 047 [ 680/721]  loss=0.0458  lr=2.54e-06  ema_tau=0.99998
+  Epoch 047 [ 700/721]  loss=0.0561  lr=2.50e-06  ema_tau=0.99998
+  Epoch 047 [ 720/721]  loss=0.0448  lr=2.46e-06  ema_tau=0.99998
+
+Epoch 047 done | avg_loss=0.0484 | time=295.7s
+  Val loss: 0.0435
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+
+  Epoch 048 [   0/721]  loss=0.0502  lr=2.45e-06  ema_tau=0.99998
+  Epoch 048 [  20/721]  loss=0.0524  lr=2.41e-06  ema_tau=0.99998
+  Epoch 048 [  40/721]  loss=0.0470  lr=2.38e-06  ema_tau=0.99999
+  Epoch 048 [  60/721]  loss=0.0414  lr=2.34e-06  ema_tau=0.99999
+  Epoch 048 [  80/721]  loss=0.0445  lr=2.30e-06  ema_tau=0.99999
+  Epoch 048 [ 100/721]  loss=0.0509  lr=2.26e-06  ema_tau=0.99999
+  Epoch 048 [ 120/721]  loss=0.0579  lr=2.22e-06  ema_tau=0.99999
+  Epoch 048 [ 140/721]  loss=0.0436  lr=2.19e-06  ema_tau=0.99999
+  Epoch 048 [ 160/721]  loss=0.0576  lr=2.15e-06  ema_tau=0.99999
+  Epoch 048 [ 180/721]  loss=0.0460  lr=2.11e-06  ema_tau=0.99999
+  Epoch 048 [ 200/721]  loss=0.0481  lr=2.08e-06  ema_tau=0.99999
+  Epoch 048 [ 220/721]  loss=0.0534  lr=2.05e-06  ema_tau=0.99999
+  Epoch 048 [ 240/721]  loss=0.0447  lr=2.01e-06  ema_tau=0.99999
+  Epoch 048 [ 260/721]  loss=0.0438  lr=1.98e-06  ema_tau=0.99999
+  Epoch 048 [ 280/721]  loss=0.0465  lr=1.95e-06  ema_tau=0.99999
+  Epoch 048 [ 300/721]  loss=0.0454  lr=1.91e-06  ema_tau=0.99999
+  Epoch 048 [ 320/721]  loss=0.0425  lr=1.88e-06  ema_tau=0.99999
+  Epoch 048 [ 340/721]  loss=0.0527  lr=1.85e-06  ema_tau=0.99999
+  Epoch 048 [ 360/721]  loss=0.0473  lr=1.82e-06  ema_tau=0.99999
+  Epoch 048 [ 380/721]  loss=0.0470  lr=1.79e-06  ema_tau=0.99999
+  Epoch 048 [ 400/721]  loss=0.0473  lr=1.76e-06  ema_tau=0.99999
+  Epoch 048 [ 420/721]  loss=0.0498  lr=1.73e-06  ema_tau=0.99999
+  Epoch 048 [ 440/721]  loss=0.0458  lr=1.70e-06  ema_tau=0.99999
+  Epoch 048 [ 460/721]  loss=0.0502  lr=1.68e-06  ema_tau=0.99999
+  Epoch 048 [ 480/721]  loss=0.0510  lr=1.65e-06  ema_tau=0.99999
+  Epoch 048 [ 500/721]  loss=0.0412  lr=1.62e-06  ema_tau=0.99999
+  Epoch 048 [ 520/721]  loss=0.0520  lr=1.60e-06  ema_tau=0.99999
+  Epoch 048 [ 540/721]  loss=0.0530  lr=1.57e-06  ema_tau=0.99999
+  Epoch 048 [ 560/721]  loss=0.0454  lr=1.54e-06  ema_tau=0.99999
+  Epoch 048 [ 580/721]  loss=0.0588  lr=1.52e-06  ema_tau=0.99999
+  Epoch 048 [ 600/721]  loss=0.0468  lr=1.50e-06  ema_tau=0.99999
+  Epoch 048 [ 620/721]  loss=0.0526  lr=1.47e-06  ema_tau=0.99999
+  Epoch 048 [ 640/721]  loss=0.0496  lr=1.45e-06  ema_tau=1.00000
+  Epoch 048 [ 660/721]  loss=0.0488  lr=1.43e-06  ema_tau=1.00000
+  Epoch 048 [ 680/721]  loss=0.0476  lr=1.41e-06  ema_tau=1.00000
+  Epoch 048 [ 700/721]  loss=0.0533  lr=1.39e-06  ema_tau=1.00000
+  Epoch 048 [ 720/721]  loss=0.0482  lr=1.37e-06  ema_tau=1.00000
+
+Epoch 048 done | avg_loss=0.0485 | time=293.8s
+  Val loss: 0.0424
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+
+  Epoch 049 [   0/721]  loss=0.0496  lr=1.36e-06  ema_tau=1.00000
+  Epoch 049 [  20/721]  loss=0.0541  lr=1.34e-06  ema_tau=1.00000
+  Epoch 049 [  40/721]  loss=0.0376  lr=1.32e-06  ema_tau=1.00000
+  Epoch 049 [  60/721]  loss=0.0461  lr=1.31e-06  ema_tau=1.00000
+  Epoch 049 [  80/721]  loss=0.0474  lr=1.29e-06  ema_tau=1.00000
+  Epoch 049 [ 100/721]  loss=0.0541  lr=1.27e-06  ema_tau=1.00000
+  Epoch 049 [ 120/721]  loss=0.0439  lr=1.25e-06  ema_tau=1.00000
+  Epoch 049 [ 140/721]  loss=0.0422  lr=1.24e-06  ema_tau=1.00000
+  Epoch 049 [ 160/721]  loss=0.0402  lr=1.22e-06  ema_tau=1.00000
+  Epoch 049 [ 180/721]  loss=0.0471  lr=1.21e-06  ema_tau=1.00000
+  Epoch 049 [ 200/721]  loss=0.0521  lr=1.19e-06  ema_tau=1.00000
+  Epoch 049 [ 220/721]  loss=0.0447  lr=1.18e-06  ema_tau=1.00000
+  Epoch 049 [ 240/721]  loss=0.0514  lr=1.16e-06  ema_tau=1.00000
+  Epoch 049 [ 260/721]  loss=0.0448  lr=1.15e-06  ema_tau=1.00000
+  Epoch 049 [ 280/721]  loss=0.0492  lr=1.14e-06  ema_tau=1.00000
+  Epoch 049 [ 300/721]  loss=0.0525  lr=1.12e-06  ema_tau=1.00000
+  Epoch 049 [ 320/721]  loss=0.0458  lr=1.11e-06  ema_tau=1.00000
+  Epoch 049 [ 340/721]  loss=0.0408  lr=1.10e-06  ema_tau=1.00000
+  Epoch 049 [ 360/721]  loss=0.0427  lr=1.09e-06  ema_tau=1.00000
+  Epoch 049 [ 380/721]  loss=0.0463  lr=1.08e-06  ema_tau=1.00000
+  Epoch 049 [ 400/721]  loss=0.0412  lr=1.07e-06  ema_tau=1.00000
+  Epoch 049 [ 420/721]  loss=0.0450  lr=1.06e-06  ema_tau=1.00000
+  Epoch 049 [ 440/721]  loss=0.0401  lr=1.06e-06  ema_tau=1.00000
+  Epoch 049 [ 460/721]  loss=0.0574  lr=1.05e-06  ema_tau=1.00000
+  Epoch 049 [ 480/721]  loss=0.0444  lr=1.04e-06  ema_tau=1.00000
+  Epoch 049 [ 500/721]  loss=0.0495  lr=1.03e-06  ema_tau=1.00000
+  Epoch 049 [ 520/721]  loss=0.0418  lr=1.03e-06  ema_tau=1.00000
+  Epoch 049 [ 540/721]  loss=0.0526  lr=1.02e-06  ema_tau=1.00000
+  Epoch 049 [ 560/721]  loss=0.0548  lr=1.02e-06  ema_tau=1.00000
+  Epoch 049 [ 580/721]  loss=0.0518  lr=1.01e-06  ema_tau=1.00000
+  Epoch 049 [ 600/721]  loss=0.0522  lr=1.01e-06  ema_tau=1.00000
+  Epoch 049 [ 620/721]  loss=0.0560  lr=1.01e-06  ema_tau=1.00000
+  Epoch 049 [ 640/721]  loss=0.0438  lr=1.00e-06  ema_tau=1.00000
+  Epoch 049 [ 660/721]  loss=0.0424  lr=1.00e-06  ema_tau=1.00000
+  Epoch 049 [ 680/721]  loss=0.0522  lr=1.00e-06  ema_tau=1.00000
+  Epoch 049 [ 700/721]  loss=0.0448  lr=1.00e-06  ema_tau=1.00000
+  Epoch 049 [ 720/721]  loss=0.0429  lr=1.00e-06  ema_tau=1.00000
+
+Epoch 049 done | avg_loss=0.0482 | time=294.9s
+  Val loss: 0.0433
+  Checkpoint saved → /scratch/va2661/data/active_matter/checkpoints/jepa/latest.pt
+
+Training complete.
+End time : Fri Apr 10 14:21:06 EDT 2026
