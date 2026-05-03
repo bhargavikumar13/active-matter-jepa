@@ -271,12 +271,22 @@ bash run.sh python scripts/train.py --config configs/jepa_run5.yaml
 
 ### 4. Evaluation
 
+**Recommended — submit as a GPU job:**
+```bash
+sbatch slurm/probe.sbatch
+```
+
+This runs linear probing and kNN regression on a GPU node and saves results to
+`checkpoints/jepa/probe/`.
+
+**Alternative — run eval.sh directly on a GPU node (not the login node):**
 ```bash
 bash eval.sh checkpoints/jepa/best.pt configs/jepa_run5.yaml
 ```
 
-This runs linear probing and kNN regression and saves results to
-`checkpoints/jepa/probe/`.
+> ⚠️ `eval.sh` requires a GPU node. Do not run on the login node — feature
+> extraction over 11,550 samples will OOM. Use `sbatch slurm/probe.sbatch`
+> which handles GPU allocation automatically.
 
 Or step by step:
 
@@ -315,8 +325,11 @@ bash run.sh python scripts/train.py --config configs/jepa.yaml \
     training.num_workers=2 \
     training.use_amp=false \
     data.spatial_size=64 \
+    training.checkpoint_dir=/scratch/$USER/data/active_matter/checkpoints/sanity_check \
     --no-wandb
 ```
+
+This uses a separate checkpoint directory to avoid conflicts with the pre-trained Run 5 checkpoint.
 
 ---
 
@@ -333,6 +346,12 @@ with the 26.6M model, varying masking strategy and training duration.
 | Run 3 | 11,550 | 3.5M | 0.0680 | 0.185 | 0.257 |
 | Run 4 | 11,550 | 26.6M | 0.0424 | 0.316 | 0.424 |
 | Run 5 | 11,550 | 26.6M | 0.0699 | **0.095** | **0.258** |
+
+> **Note:** Configs for Runs 1 and 2 are not included as they used
+> data subsets (135 and 875 samples respectively) via a custom sampling
+> parameter not reflected in the standard config files. Runs 3–5 are
+> fully reproducible using the provided configs (`jepa_run3.yaml`,
+> `jepa_run4.yaml`, `jepa_run5.yaml`).
 
 Key insight: **JEPA val loss is not a reliable proxy for downstream performance.**
 The clearest evidence: Run 4 and Run 5 share the same architecture (26.6M parameters)
