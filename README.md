@@ -241,7 +241,7 @@ Place the file at:
 checkpoints/jepa/best.pt
 ```
 
-**Linear probe weights** (`linear_probe__best__mean.pt`, 5.9KB) — included in the repo at:
+**Linear probe weights** (`linear_probe__best__mean.pt`) — included in the repo at:
 ```
 checkpoints/jepa/probe/linear_probe__best__mean.pt
 ```
