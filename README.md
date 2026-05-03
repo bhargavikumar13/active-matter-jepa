@@ -224,9 +224,8 @@ Just make sure your data lives at:
 
 ### 1. Download pre-trained checkpoint
 
-The backbone weights (`best.pt`, 399MB) are hosted on Google Drive.
+**Backbone weights** (`best.pt`, 399MB) — hosted on Google Drive:
 
-**Download via command line:**
 ```bash
 pip install gdown
 mkdir -p checkpoints/jepa
@@ -241,6 +240,14 @@ Place the file at:
 ```
 checkpoints/jepa/best.pt
 ```
+
+**Linear probe weights** (`linear_probe__best__mean.pt`, 5.9KB) — included in the repo at:
+```
+checkpoints/jepa/probe/linear_probe__best__mean.pt
+```
+
+This is the trained `nn.Linear(384, 2)` head used to produce the final test MSE of 0.095.
+With both files you can reproduce the result directly without retraining the probe.
 
 ### 2. WandB setup (optional but recommended)
 
