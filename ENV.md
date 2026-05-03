@@ -1,7 +1,9 @@
 # Environment Setup (ENV.md)
 
 ## Platform
+
 NYU HPC Cloud Bursting via Open OnDemand: https://ood-burst-001.hpc.nyu.edu/
+
 All jobs run inside a Singularity container with a Conda overlay.
 
 ## Singularity + Conda Setup
@@ -23,7 +25,7 @@ conda activate active_matter
 
 # 4. Install dependencies
 pip install torch==2.1.0 torchvision==0.16.0 --index-url https://download.pytorch.org/whl/cu118
-pip install h5py numpy pyyaml wandb matplotlib scikit-learn tqdm
+pip install h5py numpy pyyaml wandb matplotlib scikit-learn tqdm umap-learn
 
 # 5. Exit the container
 exit
@@ -38,15 +40,16 @@ singularity exec --nv \
     /bin/bash -c "source /ext3/miniconda3/etc/profile.d/conda.sh && conda activate active_matter && python -c 'import torch; print(torch.__version__, torch.cuda.is_available())'"
 ```
 
-Expected output: `2.1.0 True`
+Expected output: `2.1.0+cu118 True` (or similar CUDA-enabled version)
 
 ## Data Location
+
 ```
 /scratch/$USER/data/active_matter/
 ├── data/
 │   ├── train/   # 45 HDF5 files, variable instances = 175 training trajectories
-│   ├── valid/
-│   └── test/
+│   ├── valid/   # 16 HDF5 files, variable instances = 24 val trajectories
+│   └── test/    # 21 HDF5 files, variable instances = 26 test trajectories
 └── stats.yaml
 ```
 
@@ -62,6 +65,15 @@ singularity exec --overlay /scratch/$USER/overlay-15GB-500K.ext3:ro \
         --repo-type dataset \
         --local-dir /scratch/$USER/data/active_matter
     "
+```
+
+## Downloading the pre-trained checkpoint
+
+```bash
+pip install gdown
+mkdir -p /scratch/$USER/data/active_matter/checkpoints/jepa
+python -m gdown https://drive.google.com/uc?id=1OhsF3AxGBAvdDQQ60t8KW1K702V9gF5j \
+    -O /scratch/$USER/data/active_matter/checkpoints/jepa/best.pt
 ```
 
 ## WandB Setup
