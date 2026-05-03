@@ -224,9 +224,8 @@ Just make sure your data lives at:
 
 ### 1. Download pre-trained checkpoint
 
-The backbone weights (`best.pt`, 399MB) are hosted on Google Drive.
+**Backbone weights** (`best.pt`, 399MB) — hosted on Google Drive:
 
-**Download via command line:**
 ```bash
 pip install gdown
 mkdir -p checkpoints/jepa
@@ -241,6 +240,14 @@ Place the file at:
 ```
 checkpoints/jepa/best.pt
 ```
+
+**Linear probe weights** (`linear_probe__best__mean.pt`) — included in the repo at:
+```
+checkpoints/jepa/probe/linear_probe__best__mean.pt
+```
+
+This is the trained `nn.Linear(384, 2)` head used to produce the final test MSE of 0.095.
+With both files you can reproduce the result directly without retraining the probe.
 
 ### 2. WandB setup (optional but recommended)
 
@@ -381,7 +388,7 @@ Additional experiments on the Run 5 encoder comparing different evaluation strat
 | **Attention pooling probe** | **0.0879** | **0.035** | **0.141** | **Best result (excluded from official metric)** |
 
 Key findings:
-- Attention pooling (0.0879) outperforms mean pooling (0.095) by 7.5% overall. Both α (0.038→0.035, ~8% relative) and ζ (0.152→0.141, ~7% relative) improve by similar relative margins — the larger absolute gain for ζ reflects its higher baseline error rather than a qualitative asymmetry. That said, ζ has more headroom for improvement, consistent with ζ having more headroom for improvement under spatially selective aggregation.
+- Attention pooling (0.0879) outperforms mean pooling (0.095) by 7.5% overall. Both α (0.038→0.035, ~8% relative) and ζ (0.152→0.141, ~7% relative) improve by similar relative margins — the larger absolute gain for ζ reflects its higher baseline error rather than a qualitative asymmetry. That said, ζ exhibits greater headroom for improvement under spatially selective aggregation.
 - Separate probes improve ζ from 0.152 → 0.142 (6.6% relative) while α barely changes (0.038 → 0.039), suggesting some interference between targets in the joint probe — ζ benefits from being predicted independently while α is largely unaffected, consistent with the two parameters being encoded differently in the representation space.
 - Default weight decay (1e-4) is nearly optimal — the best sweep value (wd=1e-5, MSE=0.0935) improves over the default (wd=1e-4, MSE=0.095) by ~1.6%, indicating the representations are naturally well-regularized and not sensitive to L2 strength.
 - CV variance is low (±0.005), confirming results are robust across data splits.
