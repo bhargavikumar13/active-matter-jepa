@@ -4,21 +4,42 @@
 # Usage:
 #   ./run.sh                        # interactive shell
 #   ./run.sh python scripts/train.py --config configs/jepa.yaml
-#   ./run.sh python src/model.py
+#   ./run.sh python scripts/probe.py --config configs/jepa.yaml --checkpoint checkpoints/jepa/best.pt
 
 OVERLAY=/scratch/$USER/overlay-15GB-500K.ext3
 IMAGE=/share/apps/images/cuda11.8.86-cudnn8.7-devel-ubuntu22.04.2.sif
 
-# If no arguments given, drop into an interactive bash shell
-if [ $# -eq 0 ]; then
-    singularity exec --nv \
-        --overlay $OVERLAY:ro \
-        $IMAGE \
-        /bin/bash -c "source /ext3/env.sh && conda activate active_matter && exec bash"
-else
-    # Run the command passed as arguments
-    singularity exec --nv \
-        --overlay $OVERLAY:ro \
-        $IMAGE \
-        /bin/bash -c "source /ext3/env.sh && conda activate active_matter && $*"
+# Check overlay exists
+if [ ! -f "$OVERLAY" ]; then
+    echo "ERROR: Overlay not found at $OVERLAY"
+    echo "See ENV.md for setup instructions."
+    exit 1
 fi
+
+# Write a temporary wrapper script to preserve argument quoting
+WRAPPER=$(mktemp /tmp/run_wrapper_XXXXXX.sh)
+cat > "$WRAPPER" << WRAPPER_EOF
+#!/bin/bash
+source /ext3/miniconda3/etc/profile.d/conda.sh
+conda activate active_matter
+WRAPPER_EOF
+
+if [ $# -eq 0 ]; then
+    echo "exec bash" >> "$WRAPPER"
+else
+    # Write each argument safely using printf
+    printf 'exec' >> "$WRAPPER"
+    for arg in "$@"; do
+        printf ' %q' "$arg" >> "$WRAPPER"
+    done
+    echo >> "$WRAPPER"
+fi
+
+chmod +x "$WRAPPER"
+
+singularity exec --nv \
+    --overlay $OVERLAY:ro \
+    $IMAGE \
+    /bin/bash "$WRAPPER"
+
+rm -f "$WRAPPER"
