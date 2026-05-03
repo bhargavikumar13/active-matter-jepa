@@ -347,6 +347,12 @@ with the 26.6M model, varying masking strategy and training duration.
 | Run 4 | 11,550 | 26.6M | 0.0424 | 0.316 | 0.424 |
 | Run 5 | 11,550 | 26.6M | 0.0699 | **0.095** | **0.258** |
 
+> **Note:** Configs for Runs 1 and 2 are not included as they used
+> data subsets (135 and 875 samples respectively) via a custom sampling
+> parameter not reflected in the standard config files. Runs 3–5 are
+> fully reproducible using the provided configs (`jepa_run3.yaml`,
+> `jepa_run4.yaml`, `jepa_run5.yaml`).
+
 Key insight: **JEPA val loss is not a reliable proxy for downstream performance.**
 The clearest evidence: Run 4 and Run 5 share the same architecture (26.6M parameters)
 but Run 4 achieves lower val loss (0.0424 vs 0.0699) yet far worse LP MSE (0.316 vs 0.095)
