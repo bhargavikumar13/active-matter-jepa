@@ -164,6 +164,20 @@ active_matter/
 │   ├── knn_run3.sbatch               # kNN evaluation for Run 3
 │   ├── knn_run4.sbatch               # kNN evaluation for Run 4
 │   └── viz.sbatch                    # Embedding visualization job
+├── logs/
+│   ├── train_run1.out               # Run 1 training log
+│   ├── train_run2.out               # Run 2 training log
+│   ├── train_run3.out               # Run 3 training log
+│   ├── train_run4.out               # Run 4 training log
+│   ├── train_run5.out               # Run 5 training log (best model)
+│   ├── supervised.out               # Supervised baseline log
+│   ├── eval_run5.out                # Full evaluation pipeline log
+│   ├── probe_run5.out               # Reproducibility probe log
+│   ├── probe_run3.out               # Run 3 probe log
+│   ├── knn_run3.out                 # kNN evaluation Run 3
+│   ├── knn_run4.out                 # kNN evaluation Run 4
+│   ├── ablations.out                # Ablation studies log
+│   └── competition.out              # Exploratory probing log
 ├── figures/
 │   └── embedding_viz.png            # UMAP embedding visualization (generated)
 ├── explore/
@@ -208,7 +222,27 @@ Just make sure your data lives at:
 /scratch/$USER/data/active_matter/data/
 ```
 
-### 1. WandB setup (optional but recommended)
+### 1. Download pre-trained checkpoint
+
+The backbone weights (`best.pt`, 399MB) are hosted on Google Drive.
+
+**Download via command line:**
+```bash
+pip install gdown
+mkdir -p checkpoints/jepa
+python -m gdown https://drive.google.com/uc?id=1OhsF3AxGBAvdDQQ60t8KW1K702V9gF5j \
+    -O checkpoints/jepa/best.pt
+```
+
+**Or download manually:**
+[Google Drive](https://drive.google.com/file/d/1OhsF3AxGBAvdDQQ60t8KW1K702V9gF5j/view?usp=sharing)
+
+Place the file at:
+```
+checkpoints/jepa/best.pt
+```
+
+### 2. WandB setup (optional but recommended)
 
 Training logs metrics to [Weights & Biases](https://wandb.ai). To enable:
 
@@ -223,7 +257,7 @@ To disable WandB entirely, add `--no-wandb` to any training command. The
 sbatch files use `YOUR_WANDB_API_KEY` as a placeholder — replace it with
 your key or remove the export line and use `--no-wandb`.
 
-### 2. Pre-training (Run 5 — best model)
+### 3. Pre-training (Run 5 — best model)
 
 ```bash
 sbatch slurm/train.sbatch
@@ -235,7 +269,7 @@ Or directly:
 bash run.sh python scripts/train.py --config configs/jepa_run5.yaml
 ```
 
-### 3. Evaluation
+### 4. Evaluation
 
 ```bash
 bash eval.sh checkpoints/jepa/best.pt configs/jepa_run5.yaml
@@ -265,13 +299,13 @@ Results saved to `checkpoints/jepa/probe/`:
 - `probe_results__best__mean.yaml` — linear probing MSE
 - `knn_results__best__mean.yaml` — kNN regression MSE across k values
 
-### 4. Supervised baseline
+### 5. Supervised baseline
 
 ```bash
 sbatch slurm/supervised.sbatch
 ```
 
-### 5. Sanity check (CPU, no GPU needed)
+### 6. Sanity check (CPU, no GPU needed)
 
 ```bash
 bash run.sh python scripts/train.py --config configs/jepa.yaml \
@@ -342,6 +376,28 @@ All experiments use:
 - `torch.backends.cudnn.deterministic = True`
 - `torch.backends.cudnn.benchmark = False`
 - Mixed precision (AMP): enabled
+
+---
+
+## Logs
+
+Training and evaluation logs for all runs are available in the `logs/` directory.
+
+| File | Description |
+|---|---|
+| `train_run1.out` | Run 1 — 3.5M model, 135 samples, val loss 0.1902 |
+| `train_run2.out` | Run 2 — 3.5M model, 875 samples, val loss 0.0619 |
+| `train_run3.out` | Run 3 — 3.5M model, 11,550 samples, val loss 0.0686 |
+| `train_run4.out` | Run 4 — 26.6M model, harder masking, val loss 0.0433 |
+| `train_run5.out` | Run 5 — 26.6M model, best model, val loss 0.0700 |
+| `supervised.out` | Supervised baseline — α=0.229, ζ=0.039 |
+| `eval_run5.out` | Full evaluation pipeline — LP MSE 0.095, kNN MSE 0.258 |
+| `probe_run5.out` | Reproducibility run — LP MSE 0.091, kNN MSE 0.254 |
+| `probe_run3.out` | Run 3 probe — kNN MSE 0.257 |
+| `knn_run3.out` | kNN evaluation Run 3 — test MSE 0.257 |
+| `knn_run4.out` | kNN evaluation Run 4 — test MSE 0.424 |
+| `ablations.out` | Ablation studies — pooling strategy, training duration |
+| `competition.out` | Exploratory probing — attention pooling, separate probes |
 
 ---
 

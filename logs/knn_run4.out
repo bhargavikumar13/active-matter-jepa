@@ -1,0 +1,51 @@
+Device: cuda
+Dataset sizes  — train: 11,550  val: 1,584  test: 1,716
+Batches/epoch  — train: 1,443  val: 198
+Loaded encoder from checkpoints/jepa_run4/best.pt  (epoch 48)
+Encoder frozen ✓
+
+Extracting features...
+  train...
+  val...
+  test...
+
+Features extracted:
+  train : torch.Size([11544, 384])
+  val   : torch.Size([1584, 384])
+  test  : torch.Size([1716, 384])
+
+Label stats (train split):
+  alpha  mean=-3.0230  std=1.4541
+  zeta   mean=9.0220  std=5.2118
+
+=======================================================
+kNN regression — sweeping k = [1, 5, 10, 20, 50]
+=======================================================
+
+  k = 1
+    val  — MSE_norm=0.6437  α=0.3371  ζ=0.9504
+    test — MSE_norm=0.7086  α=0.3354  ζ=1.0819
+
+  k = 5
+    val  — MSE_norm=0.4033  α=0.1670  ζ=0.6397
+    test — MSE_norm=0.4615  α=0.1966  ζ=0.7264
+
+  k = 10
+    val  — MSE_norm=0.3880  α=0.1563  ζ=0.6196
+    test — MSE_norm=0.4318  α=0.1762  ζ=0.6875
+
+  k = 20
+    val  — MSE_norm=0.3834  α=0.1511  ζ=0.6156
+    test — MSE_norm=0.4241  α=0.1719  ζ=0.6763
+
+  k = 50
+    val  — MSE_norm=0.4029  α=0.1650  ζ=0.6408
+    test — MSE_norm=0.4333  α=0.1832  ζ=0.6833
+
+=======================================================
+Best k = 20  (by val MSE)
+=======================================================
+  val  MSE_norm=0.3834  α=0.1511  ζ=0.6156
+  test MSE_norm=0.4241  α=0.1719  ζ=0.6763
+
+Results saved → /scratch/va2661/data/active_matter/checkpoints/jepa_run4/probe/knn_results__best__mean.yaml

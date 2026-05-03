@@ -1,0 +1,120 @@
+==============================================
+  JEPA Evaluation
+  Checkpoint : /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt
+  Config     : /scratch/va2661/data/active_matter/configs/jepa_run5.yaml
+  Date       : Sat Apr 11 14:03:57 EDT 2026
+==============================================
+
+── Linear Probe ──────────────────────────────
+Device: cuda
+Dataset sizes  — train: 11,550  val: 1,584  test: 1,716
+Batches/epoch  — train: 1,443  val: 198
+Loaded encoder from /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt  (epoch 97)
+Encoder frozen ✓
+
+Extracting features...
+  train split...
+  val split...
+  test split...
+
+Feature shapes:
+  train : torch.Size([11544, 384])  labels: torch.Size([11544, 2])
+  val   : torch.Size([1584, 384])  labels: torch.Size([1584, 2])
+  test  : torch.Size([1716, 384])  labels: torch.Size([1716, 2])
+
+Label stats (train):
+  alpha  mean=-3.0229  std=1.4539
+  zeta   mean=9.0215  std=5.2114
+
+Training linear probe for 100 epochs...
+  Train samples : 11544
+  Val samples   : 1584
+  Feature dim   : 384
+
+  Epoch   1/100 | train_loss=0.5233 | val_mse_norm=0.2221 (α=0.0779, ζ=0.3664) | val_mse_raw α=0.1646 ζ=9.9507
+  Epoch  10/100 | train_loss=0.1448 | val_mse_norm=0.1306 (α=0.0325, ζ=0.2286) | val_mse_raw α=0.0687 ζ=6.2094
+  Epoch  20/100 | train_loss=0.1285 | val_mse_norm=0.1208 (α=0.0295, ζ=0.2122) | val_mse_raw α=0.0623 ζ=5.7642
+  Epoch  30/100 | train_loss=0.1223 | val_mse_norm=0.1159 (α=0.0277, ζ=0.2042) | val_mse_raw α=0.0585 ζ=5.5451
+  Epoch  40/100 | train_loss=0.1197 | val_mse_norm=0.1146 (α=0.0268, ζ=0.2023) | val_mse_raw α=0.0567 ζ=5.4944
+  Epoch  50/100 | train_loss=0.1173 | val_mse_norm=0.1138 (α=0.0263, ζ=0.2013) | val_mse_raw α=0.0556 ζ=5.4681
+  Epoch  60/100 | train_loss=0.1154 | val_mse_norm=0.1107 (α=0.0256, ζ=0.1958) | val_mse_raw α=0.0542 ζ=5.3167
+  Epoch  70/100 | train_loss=0.1140 | val_mse_norm=0.1100 (α=0.0252, ζ=0.1948) | val_mse_raw α=0.0533 ζ=5.2903
+  Epoch  80/100 | train_loss=0.1150 | val_mse_norm=0.1099 (α=0.0251, ζ=0.1948) | val_mse_raw α=0.0531 ζ=5.2893
+  Epoch  90/100 | train_loss=0.1135 | val_mse_norm=0.1104 (α=0.0252, ζ=0.1957) | val_mse_raw α=0.0533 ζ=5.3142
+  Epoch 100/100 | train_loss=0.1155 | val_mse_norm=0.1099 (α=0.0251, ζ=0.1947) | val_mse_raw α=0.0531 ζ=5.2864
+
+Best val MSE (normalised): 0.1099
+
+=======================================================
+Linear probe results — val
+=======================================================
+  MSE (normalised, combined) : 0.1099
+  MSE alpha (normalised)     : 0.0253
+  MSE zeta  (normalised)     : 0.1944
+
+=======================================================
+Linear probe results — test
+=======================================================
+  MSE (normalised, combined) : 0.0923
+  MSE alpha (normalised)     : 0.0375
+  MSE zeta  (normalised)     : 0.1472
+
+Results saved → /scratch/va2661/data/active_matter/checkpoints/jepa/probe/probe_results__best__mean.yaml
+Probe weights  → /scratch/va2661/data/active_matter/checkpoints/jepa/probe/linear_probe__best__mean.pt
+
+── kNN Regression ────────────────────────────
+Device: cuda
+Dataset sizes  — train: 11,550  val: 1,584  test: 1,716
+Batches/epoch  — train: 1,443  val: 198
+Loaded encoder from /scratch/va2661/data/active_matter/checkpoints/jepa/best.pt  (epoch 97)
+Encoder frozen ✓
+
+Extracting features...
+  train...
+  val...
+  test...
+
+Features extracted:
+  train : torch.Size([11544, 384])
+  val   : torch.Size([1584, 384])
+  test  : torch.Size([1716, 384])
+
+Label stats (train split):
+  alpha  mean=-3.0225  std=1.4540
+  zeta   mean=9.0236  std=5.2113
+
+=======================================================
+kNN regression — sweeping k = [1, 5, 10, 20, 50]
+=======================================================
+
+  k = 1
+    val  — MSE_norm=0.5246  α=0.2622  ζ=0.7871
+    test — MSE_norm=0.5499  α=0.3473  ζ=0.7526
+
+  k = 5
+    val  — MSE_norm=0.2600  α=0.1006  ζ=0.4195
+    test — MSE_norm=0.2836  α=0.1472  ζ=0.4200
+
+  k = 10
+    val  — MSE_norm=0.2308  α=0.0866  ζ=0.3749
+    test — MSE_norm=0.2645  α=0.1251  ζ=0.4039
+
+  k = 20
+    val  — MSE_norm=0.2272  α=0.0843  ζ=0.3701
+    test — MSE_norm=0.2584  α=0.1172  ζ=0.3996
+
+  k = 50
+    val  — MSE_norm=0.2297  α=0.0876  ζ=0.3717
+    test — MSE_norm=0.2663  α=0.1182  ζ=0.4144
+
+=======================================================
+Best k = 20  (by val MSE)
+=======================================================
+  val  MSE_norm=0.2272  α=0.0843  ζ=0.3701
+  test MSE_norm=0.2584  α=0.1172  ζ=0.3996
+
+Results saved → /scratch/va2661/data/active_matter/checkpoints/jepa/probe/knn_results__best__mean.yaml
+
+==============================================
+  Evaluation complete.
+==============================================
